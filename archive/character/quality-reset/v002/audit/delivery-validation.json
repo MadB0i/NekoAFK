@@ -1,0 +1,23 @@
+{
+  "original_files_preserved": true,
+  "video": {
+    "duration": 8,
+    "width": 720,
+    "height": 864,
+    "ended": true,
+    "error": null
+  },
+  "runtime_errors": [],
+  "runtime_hip_drift_m": 0.0,
+  "blink_range": [
+    0,
+    0.9644277422447058
+  ],
+  "clip": {
+    "name": "Neko_QR02_EDITING_PHONE_08s",
+    "duration": 8,
+    "tracks": 511
+  },
+  "mtoon_material_instances": 19,
+  "remaining_limits": "See README.md. Visual candidate, not production sign-off."
+}

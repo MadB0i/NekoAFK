@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "fps": 24,
+  "clip_count": 42,
+  "states": {
+    "editing": {
+      "enter": "Neko_EDITING_Enter",
+      "enter_from": "testing",
+      "idle": "Neko_EDITING_Idle",
+      "idle_seconds": 12
+    },
+    "testing": {
+      "enter": "Neko_TESTING_Enter",
+      "enter_from": "editing",
+      "idle": "Neko_TESTING_Idle",
+      "idle_seconds": 8
+    },
+    "failed": {
+      "enter": "Neko_FAILED_Enter",
+      "enter_from": "testing",
+      "idle": "Neko_FAILED_Idle",
+      "idle_seconds": 8
+    },
+    "frustrated": {
+      "enter": "Neko_FRUSTRATED_Enter",
+      "enter_from": "failed",
+      "idle": "Neko_FRUSTRATED_Idle",
+      "idle_seconds": 8
+    },
+    "verifying": {
+      "enter": "Neko_VERIFYING_Enter",
+      "enter_from": "frustrated",
+      "idle": "Neko_VERIFYING_Idle",
+      "idle_seconds": 8
+    },
+    "success": {
+      "enter": "Neko_SUCCESS_Enter",
+      "enter_from": "verifying",
+      "idle": "Neko_SUCCESS_Idle",
+      "idle_seconds": 8
+    }
+  },
+  "transitions": {
+    "editing->testing": {
+      "clip": "Neko_EDITING_to_TESTING",
+      "seconds": 1.9166666666666667
+    },
+    "editing->failed": {
+      "clip": "Neko_EDITING_to_FAILED",
+      "seconds": 1.4166666666666667
+    },
+    "editing->frustrated": {
+      "clip": "Neko_EDITING_to_FRUSTRATED",
+      "seconds": 2.7916666666666665
+    },
+    "editing->verifying": {
+      "clip": "Neko_EDITING_to_VERIFYING",
+      "seconds": 2.7916666666666665
+    },
+    "editing->success": {
+      "clip": "Neko_EDITING_to_SUCCESS",
+      "seconds": 4.791666666666667
+    },
+    "testing->editing": {
+      "clip": "Neko_TESTING_to_EDITING",
+      "seconds": 1.9166666666666667
+    },
+    "testing->failed": {
+      "clip": "Neko_TESTING_to_FAILED",
+      "seconds": 1.4166666666666667
+    },
+    "testing->frustrated": {
+      "clip": "Neko_TESTING_to_FRUSTRATED",
+      "seconds": 2.7916666666666665
+    },
+    "testing->verifying": {
+      "clip": "Neko_TESTING_to_VERIFYING",
+      "seconds": 2.7916666666666665
+    },
+    "testing->success": {
+      "clip": "Neko_TESTING_to_SUCCESS",
+      "seconds": 4.791666666666667
+    },
+    "failed->editing": {
+      "clip": "Neko_FAILED_to_EDITING",
+      "seconds": 1.9166666666666667
+    },
+    "failed->testing": {
+      "clip": "Neko_FAILED_to_TESTING",
+      "seconds": 1.9166666666666667
+    },
+    "failed->frustrated": {
+      "clip": "Neko_FAILED_to_FRUSTRATED",
+      "seconds": 2.7916666666666665
+    },
+    "failed->verifying": {
+      "clip": "Neko_FAILED_to_VERIFYING",
+      "seconds": 2.7916666666666665
+    },
+    "failed->success": {
+      "clip": "Neko_FAILED_to_SUCCESS",
+      "seconds": 4.791666666666667
+    },
+    "frustrated->editing": {
+      "clip": "Neko_FRUSTRATED_to_EDITING",
+      "seconds": 2.7916666666666665
+    },
+    "frustrated->testing": {
+      "clip": "Neko_FRUSTRATED_to_TESTING",
+      "seconds": 2.7916666666666665
+    },
+    "frustrated->failed": {
+      "clip": "Neko_FRUSTRATED_to_FAILED",
+      "seconds": 2.7916666666666665
+    },
+    "frustrated->verifying": {
+      "clip": "Neko_FRUSTRATED_to_VERIFYING",
+      "seconds": 1.9166666666666667
+    },
+    "frustrated->success": {
+      "clip": "Neko_FRUSTRATED_to_SUCCESS",
+      "seconds": 3.2083333333333335
+    },
+    "verifying->editing": {
+      "clip": "Neko_VERIFYING_to_EDITING",
+      "seconds": 2.7916666666666665
+    },
+    "verifying->testing": {
+      "clip": "Neko_VERIFYING_to_TESTING",
+      "seconds": 2.7916666666666665
+    },
+    "verifying->failed": {
+      "clip": "Neko_VERIFYING_to_FAILED",
+      "seconds": 2.7916666666666665
+    },
+    "verifying->frustrated": {
+      "clip": "Neko_VERIFYING_to_FRUSTRATED",
+      "seconds": 1.9166666666666667
+    },
+    "verifying->success": {
+      "clip": "Neko_VERIFYING_to_SUCCESS",
+      "seconds": 3.2083333333333335
+    },
+    "success->editing": {
+      "clip": "Neko_SUCCESS_to_EDITING",
+      "seconds": 2.7916666666666665
+    },
+    "success->testing": {
+      "clip": "Neko_SUCCESS_to_TESTING",
+      "seconds": 2.7916666666666665
+    },
+    "success->failed": {
+      "clip": "Neko_SUCCESS_to_FAILED",
+      "seconds": 2.7916666666666665
+    },
+    "success->frustrated": {
+      "clip": "Neko_SUCCESS_to_FRUSTRATED",
+      "seconds": 1.9166666666666667
+    },
+    "success->verifying": {
+      "clip": "Neko_SUCCESS_to_VERIFYING",
+      "seconds": 1.9166666666666667
+    }
+  },
+  "coordinate_system": "Blender Z-up source; glTF Y-up runtime",
+  "phone_control": "Neko_Prop_Phone",
+  "hoodie_controls": [
+    "Neko_Cloth_Hem.L",
+    "Neko_Cloth_Hem.R"
+  ],
+  "runtime_policy": "Use ordered transition; blend current skeletal action into transition over 0.18 s to accommodate an arbitrary idle phase; enter destination idle at phase zero. AnimationMixer blending is skeletal, never image crossfading.",
+  "clips": [
+    {
+      "name": "Neko_EDITING_Enter",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_EDITING_Idle",
+      "seconds": 12.0,
+      "loop": true
+    },
+    {
+      "name": "Neko_TESTING_Enter",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_TESTING_Idle",
+      "seconds": 8.0,
+      "loop": true
+    },
+    {
+      "name": "Neko_FAILED_Enter",
+      "seconds": 1.4166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_FAILED_Idle",
+      "seconds": 8.0,
+      "loop": true
+    },
+    {
+      "name": "Neko_FRUSTRATED_Enter",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_FRUSTRATED_Idle",
+      "seconds": 8.0,
+      "loop": true
+    },
+    {
+      "name": "Neko_VERIFYING_Enter",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_VERIFYING_Idle",
+      "seconds": 8.0,
+      "loop": true
+    },
+    {
+      "name": "Neko_SUCCESS_Enter",
+      "seconds": 3.2083333333333335,
+      "loop": false
+    },
+    {
+      "name": "Neko_SUCCESS_Idle",
+      "seconds": 8.0,
+      "loop": true
+    },
+    {
+      "name": "Neko_EDITING_to_TESTING",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_EDITING_to_FAILED",
+      "seconds": 1.4166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_EDITING_to_FRUSTRATED",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_EDITING_to_VERIFYING",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_EDITING_to_SUCCESS",
+      "seconds": 4.791666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_TESTING_to_EDITING",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_TESTING_to_FAILED",
+      "seconds": 1.4166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_TESTING_to_FRUSTRATED",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_TESTING_to_VERIFYING",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_TESTING_to_SUCCESS",
+      "seconds": 4.791666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_FAILED_to_EDITING",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_FAILED_to_TESTING",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_FAILED_to_FRUSTRATED",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_FAILED_to_VERIFYING",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_FAILED_to_SUCCESS",
+      "seconds": 4.791666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_FRUSTRATED_to_EDITING",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_FRUSTRATED_to_TESTING",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_FRUSTRATED_to_FAILED",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_FRUSTRATED_to_VERIFYING",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_FRUSTRATED_to_SUCCESS",
+      "seconds": 3.2083333333333335,
+      "loop": false
+    },
+    {
+      "name": "Neko_VERIFYING_to_EDITING",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_VERIFYING_to_TESTING",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_VERIFYING_to_FAILED",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_VERIFYING_to_FRUSTRATED",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_VERIFYING_to_SUCCESS",
+      "seconds": 3.2083333333333335,
+      "loop": false
+    },
+    {
+      "name": "Neko_SUCCESS_to_EDITING",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_SUCCESS_to_TESTING",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_SUCCESS_to_FAILED",
+      "seconds": 2.7916666666666665,
+      "loop": false
+    },
+    {
+      "name": "Neko_SUCCESS_to_FRUSTRATED",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    },
+    {
+      "name": "Neko_SUCCESS_to_VERIFYING",
+      "seconds": 1.9166666666666667,
+      "loop": false
+    }
+  ]
+}

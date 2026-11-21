@@ -1,0 +1,8 @@
+/* All registration uses the existing stage canvas. Never style the room here. */
+.neko-rig,.neko-rig-slot,.neko-rig-pose,.neko-rig-motion,.neko-rig-gesture{position:absolute;inset:0;pointer-events:none}
+.neko-rig{isolation:isolate}
+.neko-rig-pose{transition:transform 280ms cubic-bezier(.22,.61,.36,1)}
+.neko-rig img{position:absolute;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.neko-rig [hidden],.neko-rig[hidden],.neko-motion[hidden]{display:none}
+.neko-stage[data-rig-snap] .neko-rig-pose{transition:none}
+@media (prefers-reduced-motion:reduce){.neko-rig-pose{transition:none}}

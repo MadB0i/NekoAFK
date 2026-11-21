@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "NekoAFK",
+  "version": "0.1.0",
+  "identifier": "com.nekoafk.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      { "label": "hud", "create": false, "title": "NekoAFK live progress", "url": "index.html?surface=hud", "width": 248, "height": 136, "resizable": false, "decorations": false, "transparent": true, "shadow": false, "alwaysOnTop": true, "skipTaskbar": true, "focus": false, "visible": false },
+      { "label": "settings", "create": false, "title": "NekoAFK Settings", "url": "index.html?surface=settings", "width": 880, "height": 640, "minWidth": 740, "minHeight": 500, "theme": "Light", "visible": false },
+      { "label": "neko", "create": false, "title": "NekoAFK companion", "url": "index.html?surface=neko", "width": 240, "height": 240, "minWidth": 120, "minHeight": 120, "maxWidth": 480, "maxHeight": 480, "decorations": false, "transparent": true, "shadow": false, "alwaysOnTop": true, "skipTaskbar": true, "visible": false },
+      { "label": "telemetry", "create": false, "title": "NekoAFK telemetry", "url": "index.html?surface=telemetry", "width": 368, "height": 520, "minWidth": 340, "minHeight": 112, "decorations": false, "transparent": false, "theme": "Light", "alwaysOnTop": true, "skipTaskbar": true, "visible": false }
+    ],
+    "security": { "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' asset: data:; connect-src ipc: http://ipc.localhost; object-src 'none'; frame-src 'none'; base-uri 'self'" }
+  },
+  "bundle": {
+    "active": true, "targets": ["nsis"], "icon": ["icons/icon.ico", "icons/32x32.png", "icons/128x128.png"],
+    "shortDescription": "A local-first companion for OpenCode",
+    "windows": { "allowDowngrades": false, "webviewInstallMode": { "type": "downloadBootstrapper", "silent": true }, "nsis": { "installMode": "currentUser", "displayLanguageSelector": false } }
+  }
+}

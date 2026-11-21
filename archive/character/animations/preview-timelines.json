@@ -1,0 +1,134 @@
+{
+  "all-states": {
+    "frames": 874,
+    "seconds": 36.416666666666664,
+    "events": [
+      {
+        "start": 1,
+        "end": 47,
+        "label": "EDITING / relaxed",
+        "clip": "Neko_EDITING_Enter"
+      },
+      {
+        "start": 41,
+        "end": 185,
+        "label": "EDITING / phone scroll",
+        "clip": "Neko_EDITING_Idle"
+      },
+      {
+        "start": 179,
+        "end": 225,
+        "label": "TESTING / curious",
+        "clip": "Neko_EDITING_to_TESTING"
+      },
+      {
+        "start": 219,
+        "end": 315,
+        "label": "TESTING / attentive",
+        "clip": "Neko_TESTING_Idle"
+      },
+      {
+        "start": 309,
+        "end": 343,
+        "label": "FAILED / startled",
+        "clip": "Neko_TESTING_to_FAILED"
+      },
+      {
+        "start": 337,
+        "end": 433,
+        "label": "FAILED / annoyed",
+        "clip": "Neko_FAILED_Idle"
+      },
+      {
+        "start": 427,
+        "end": 494,
+        "label": "FRUSTRATED / angry",
+        "clip": "Neko_FAILED_to_FRUSTRATED"
+      },
+      {
+        "start": 488,
+        "end": 584,
+        "label": "FRUSTRATED / tail reaction",
+        "clip": "Neko_FRUSTRATED_Idle"
+      },
+      {
+        "start": 578,
+        "end": 624,
+        "label": "VERIFYING / prove it",
+        "clip": "Neko_FRUSTRATED_to_VERIFYING"
+      },
+      {
+        "start": 618,
+        "end": 714,
+        "label": "VERIFYING / focused",
+        "clip": "Neko_VERIFYING_Idle"
+      },
+      {
+        "start": 708,
+        "end": 785,
+        "label": "SUCCESS / celebration",
+        "clip": "Neko_VERIFYING_to_SUCCESS"
+      },
+      {
+        "start": 779,
+        "end": 875,
+        "label": "SUCCESS / cheerful",
+        "clip": "Neko_SUCCESS_Idle"
+      }
+    ]
+  },
+  "reaction-chain": {
+    "frames": 446,
+    "seconds": 18.583333333333332,
+    "events": [
+      {
+        "start": 1,
+        "end": 35,
+        "label": "FAILED / startled",
+        "clip": "Neko_FAILED_Enter"
+      },
+      {
+        "start": 29,
+        "end": 77,
+        "label": "FAILED / annoyed",
+        "clip": "Neko_FAILED_Idle"
+      },
+      {
+        "start": 71,
+        "end": 138,
+        "label": "FRUSTRATED / angry",
+        "clip": "Neko_FAILED_to_FRUSTRATED"
+      },
+      {
+        "start": 132,
+        "end": 204,
+        "label": "FRUSTRATED / tail reaction",
+        "clip": "Neko_FRUSTRATED_Idle"
+      },
+      {
+        "start": 198,
+        "end": 244,
+        "label": "VERIFYING / prove it",
+        "clip": "Neko_FRUSTRATED_to_VERIFYING"
+      },
+      {
+        "start": 238,
+        "end": 310,
+        "label": "VERIFYING / focused",
+        "clip": "Neko_VERIFYING_Idle"
+      },
+      {
+        "start": 304,
+        "end": 381,
+        "label": "SUCCESS / celebration",
+        "clip": "Neko_VERIFYING_to_SUCCESS"
+      },
+      {
+        "start": 375,
+        "end": 447,
+        "label": "SUCCESS / cheerful",
+        "clip": "Neko_SUCCESS_Idle"
+      }
+    ]
+  }
+}

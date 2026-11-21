@@ -1,0 +1,16 @@
+{
+  "originals_unchanged": {
+    "D:\\Projects\\NekoAFK\\assets\\character\\quality-reset\\v001\\NekoAFK-editing-v001.blend": true,
+    "D:\\Projects\\NekoAFK\\assets\\character\\quality-reset\\v001\\NekoAFK-model-v001.blend": true,
+    "D:\\Projects\\NekoAFK\\assets\\character\\blender\\NekoAFK-canon.blend": true,
+    "D:\\Projects\\NekoAFK\\assets\\character\\animations\\NekoAFK-barefoot-animated.glb": true,
+    "D:\\Projects\\NekoAFK\\assets\\character\\animations\\NekoAFK-socks-animated.glb": true
+  },
+  "imported_bones": 168,
+  "face_keys": 57,
+  "actions": [
+    "Neko_QR02_EDITING_PHONE_08s"
+  ],
+  "tail_ears_toe_chains_present": true,
+  "note": "Blender core importer does not implement VRMC_materials_mtoon: material appearance is validated in Three.js using pixiv plugin, not inferred from this import."
+}

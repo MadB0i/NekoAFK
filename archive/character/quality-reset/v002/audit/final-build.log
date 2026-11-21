@@ -1,0 +1,354 @@
+00:01.343  blend            | Read blend: "D:\Projects\NekoAFK\assets\character\quality-reset\v002\NekoAFK-editing-v002.blend"
+Info: Saved as "NekoAFK-editing-v002.blend"
+CORRECTIVE 10 0.008000009082178298
+00:19.906  blend            | Read blend: "D:\Projects\NekoAFK\assets\character\quality-reset\v002\NekoAFK-editing-v002.blend"
+INFO Draco is available, use library at D:\Download\steam\steamapps\common\Blender\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at D:\Download\steam\steamapps\common\Blender\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+18:35:28 | INFO: Starting glTF 2.0 export
+18:35:28 | INFO: Extracting primitive: Body (merged).001
+18:35:29 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:29 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:29 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:29 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:29 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:29 | INFO: Primitives created: 5
+18:35:29 | WARNING: There are more than 4 joint vertex influences.The 4 with highest weight will be used (and normalized).
+18:35:29 | INFO: Extracting primitive: Face (merged)(Clone).001
+18:35:30 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:30 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:30 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:30 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:30 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:30 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:30 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:31 | INFO: Primitives created: 7
+18:35:31 | INFO: Extracting primitive: Hair001 (merged).001
+18:35:32 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:32 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:32 | INFO: Primitives created: 2
+18:35:33 | INFO: Extracting primitive: NekoAmberClip • permanent.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: NekoBareFeet • anatomical skin.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: NekoJoggerCuff.L.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: NekoJoggerCuff.R.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: NekoTail • curved fluffy rest
+18:35:33 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: Cube
+18:35:33 | INFO: Primitives created: 3
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Index.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Index • gold filament
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Index • proximal fold
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Little.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Little • gold filament
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Little • proximal fold
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Middle.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Middle • gold filament
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Middle • proximal fold
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Ring.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Ring • gold filament
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Ring • proximal fold
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Thumb.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Thumb • gold filament
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.L.Thumb • proximal fold
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.R.Index.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.R.Index • gold filament
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.R.Index • proximal fold
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.R.Little.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.R.Little • gold filament
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.R.Little • proximal fold
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.R.Middle.001
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.R.Middle • gold filament
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.R.Middle • proximal fold
+18:35:33 | INFO: Primitives created: 1
+18:35:33 | INFO: Extracting primitive: QR01.Nail.R.Ring.001
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Nail.R.Ring • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Nail.R.Ring • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Nail.R.Thumb.001
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Nail.R.Thumb • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Nail.R.Thumb • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.006
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.1 • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.1 • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.007
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.2 • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.2 • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.008
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.3 • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.3 • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.009
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.4 • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.4 • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.010
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.5 • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.L.5 • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.006
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.1 • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.1 • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.007
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.2 • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.2 • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.008
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.3 • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.3 • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.009
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.4 • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.4 • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.010
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.5 • gold filament
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Pedicure.R.5 • proximal fold
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Wrist continuity.L
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR01.Wrist continuity.R
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR02.Hair-tip.1.003
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR02.Hair-tip.1.004
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR02.Hair-tip.1.005
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR02.Hair-tip.-1.003
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR02.Hair-tip.-1.004
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: QR02.Hair-tip.-1.005
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cube.013
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cube.010
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.001
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cube.005
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cube.006
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.003
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.006
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.009
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.012
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.015
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.004
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.005
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.007
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.008
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.010
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.011
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.013
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.014
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.016
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.017
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cube.007
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cylinder.002
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cube.012
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cube.009
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cube.004
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cube.011
+18:35:34 | INFO: Primitives created: 1
+18:35:34 | INFO: Extracting primitive: Cube.008
+18:35:34 | INFO: Primitives created: 1
+18:35:39 | INFO: Finished glTF 2.0 export in 11.497947692871094 s
+
+RUNTIME_EXPORTED {"file": "D:\\Projects\\NekoAFK\\assets\\character\\quality-reset\\v002\\NekoAFK-editing-v002-mtoon.glb", "materials": 29, "mtoon_materials": 17, "animations": [{"name": "Neko_QR02_EDITING_PHONE_08s", "channels": 505, "morph_channels": 1}], "skins": 1, "largest_skin_joints": 168}
+18:35:41 | INFO: Data are loaded, start creating Blender stuff
+18:35:41 | INFO: Blender create Mesh node Body (merged).001
+18:35:42 | INFO: Blender create Mesh node Hair001 (merged).001
+18:35:43 | INFO: Blender create Mesh node NekoAmberClip • permanent.001
+18:35:43 | INFO: Blender create Mesh node NekoBareFeet • anatomical skin.001
+18:35:43 | INFO: Blender create Mesh node NekoJoggerCuff.L.001
+18:35:44 | INFO: Blender create Mesh node NekoJoggerCuff.R.001
+18:35:44 | INFO: Blender create Mesh node NekoTail • curved fluffy rest
+18:35:44 | INFO: Blender create Mesh node Cube
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Index.001
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Index • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Index • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Little.001
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Little • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Little • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Middle.001
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Middle • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Middle • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Ring.001
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Ring • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Ring • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Thumb.001
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Thumb • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.L.Thumb • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Index.001
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Index • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Index • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Little.001
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Little • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Little • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Middle.001
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Middle • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Middle • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Ring.001
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Ring • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Ring • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Thumb.001
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Thumb • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Nail.R.Thumb • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.006
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.1 • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.1 • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.007
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.2 • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.2 • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.008
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.3 • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.3 • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.009
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.4 • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.4 • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.010
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.5 • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.L.5 • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.006
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.1 • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.1 • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.007
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.2 • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.2 • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.008
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.3 • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.3 • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.009
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.4 • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.4 • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.010
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.5 • gold filament
+18:35:44 | INFO: Blender create Mesh node QR01.Pedicure.R.5 • proximal fold
+18:35:44 | INFO: Blender create Mesh node QR01.Wrist continuity.L
+18:35:44 | INFO: Blender create Mesh node QR01.Wrist continuity.R
+18:35:44 | INFO: Blender create Mesh node QR02.Hair-tip.1.003
+18:35:44 | INFO: Blender create Mesh node QR02.Hair-tip.1.004
+18:35:44 | INFO: Blender create Mesh node QR02.Hair-tip.1.005
+18:35:44 | INFO: Blender create Mesh node QR02.Hair-tip.-1.003
+18:35:44 | INFO: Blender create Mesh node QR02.Hair-tip.-1.004
+18:35:44 | INFO: Blender create Mesh node QR02.Hair-tip.-1.005
+18:35:44 | INFO: Blender create Mesh node Face (merged)(Clone).001
+18:35:44 | INFO: Blender create Mesh node Cube.013
+18:35:44 | INFO: Blender create Mesh node Cube.010
+18:35:45 | INFO: Blender create Mesh node Cylinder
+18:35:45 | INFO: Blender create Mesh node Cylinder.001
+18:35:45 | INFO: Blender create Mesh node Cube.005
+18:35:45 | INFO: Blender create Mesh node Cube.006
+18:35:45 | INFO: Blender create Mesh node Cylinder.003
+18:35:45 | INFO: Blender create Mesh node Cylinder.006
+18:35:45 | INFO: Blender create Mesh node Cylinder.009
+18:35:45 | INFO: Blender create Mesh node Cylinder.012
+18:35:45 | INFO: Blender create Mesh node Cylinder.015
+18:35:45 | INFO: Blender create Mesh node Cylinder.004
+18:35:45 | INFO: Blender create Mesh node Cylinder.005
+18:35:45 | INFO: Blender create Mesh node Cylinder.007
+18:35:45 | INFO: Blender create Mesh node Cylinder.008
+18:35:45 | INFO: Blender create Mesh node Cylinder.010
+18:35:45 | INFO: Blender create Mesh node Cylinder.011
+18:35:45 | INFO: Blender create Mesh node Cylinder.013
+18:35:45 | INFO: Blender create Mesh node Cylinder.014
+18:35:45 | INFO: Blender create Mesh node Cylinder.016
+18:35:45 | INFO: Blender create Mesh node Cylinder.017
+18:35:45 | INFO: Blender create Mesh node Cube.007
+18:35:45 | INFO: Blender create Mesh node Cylinder.002
+18:35:45 | INFO: Blender create Mesh node Cube.012
+18:35:45 | INFO: Blender create Mesh node Cube.009
+18:35:45 | INFO: Blender create Mesh node Cube.004
+18:35:45 | INFO: Blender create Mesh node Cube.011
+18:35:45 | INFO: Blender create Mesh node Cube.008
+18:35:45 | INFO: glTF import finished in 3.88s
+{"originals_unchanged": {"D:\\Projects\\NekoAFK\\assets\\character\\quality-reset\\v001\\NekoAFK-editing-v001.blend": true, "D:\\Projects\\NekoAFK\\assets\\character\\quality-reset\\v001\\NekoAFK-model-v001.blend": true, "D:\\Projects\\NekoAFK\\assets\\character\\blender\\NekoAFK-canon.blend": true, "D:\\Projects\\NekoAFK\\assets\\character\\animations\\NekoAFK-barefoot-animated.glb": true, "D:\\Projects\\NekoAFK\\assets\\character\\animations\\NekoAFK-socks-animated.glb": true}, "imported_bones": 168, "face_keys": 57, "actions": ["Neko_QR02_EDITING_PHONE_08s"], "tail_ears_toe_chains_present": true, "note": "Blender core importer does not implement VRMC_materials_mtoon: material appearance is validated in Three.js using pixiv plugin, not inferred from this import."}
+01:02.015  blend            | Read blend: "D:\Projects\NekoAFK\assets\character\quality-reset\v002\NekoAFK-editing-v002.blend"
+01:23.953  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v002\renders\after-fullbody.png'
+01:42.640  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v002\renders\after-seated-feet.png'
+01:42.875  blend            | Read blend: "D:\Projects\NekoAFK\assets\character\quality-reset\v002\NekoAFK-model-v002.blend"
+02:01.750  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v002\renders\after-face.png'
+02:19.922  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v002\renders\after-nails.png'
+CAPTURES_READY after
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

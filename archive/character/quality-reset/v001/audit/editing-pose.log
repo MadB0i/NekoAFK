@@ -1,0 +1,11 @@
+00:00.938  blend            | Read blend: "D:\Projects\NekoAFK\assets\character\quality-reset\v001\NekoAFK-model-v001.blend"
+D:\Projects\NekoAFK\assets\character\quality-reset\v001\build_editing.py:23: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*col,1);p.inputs['Roughness'].default_value=rough;p.inputs['Metallic'].default_value=metal;return m
+POSE_CONTACTS {'left_elbow': (0.16025495529174805, -0.03902411460876465, 0.7566016912460327), 'right_elbow': (-0.16006352007389069, -0.03214993327856064, 0.7579386234283447), 'phone': (-0.21193067729473114, -0.230521559715271, 0.9004155397415161), 'left_wrist': (0.14499999582767487, -0.20499998331069946, 0.6399999856948853), 'right_wrist': (-0.1899999976158142, -0.21999996900558472, 0.8299999833106995)}
+00:16.157  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v001\renders\seated-pose-check.png'
+00:27.094  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v001\renders\grip-check.png'
+00:38.875  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v001\renders\seated-leg-foot.png'
+Info: Saved as "NekoAFK-editing-work-v001.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

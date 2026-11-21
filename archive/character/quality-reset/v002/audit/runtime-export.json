@@ -1,0 +1,14 @@
+{
+  "file": "D:\\Projects\\NekoAFK\\assets\\character\\quality-reset\\v002\\NekoAFK-editing-v002-mtoon.glb",
+  "materials": 29,
+  "mtoon_materials": 17,
+  "animations": [
+    {
+      "name": "Neko_QR02_EDITING_PHONE_08s",
+      "channels": 505,
+      "morph_channels": 1
+    }
+  ],
+  "skins": 1,
+  "largest_skin_joints": 168
+}

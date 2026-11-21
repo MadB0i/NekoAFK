@@ -1,0 +1,22 @@
+{
+  "barefoot": {
+    "file": "D:\\Projects\\NekoAFK\\assets\\character\\animations\\NekoAFK-barefoot-animated.glb",
+    "bytes": 16629536,
+    "clips": 42,
+    "bone_nodes": 170,
+    "morph_tracks_in_every_clip": true,
+    "phone_tracks_in_every_clip": true,
+    "sha256": "9766fdbcdbc2423c2a2475d2cfe450bf82c9c07915f249821d1bfe51e724a25b",
+    "facial_samplers_repaired": true
+  },
+  "socks": {
+    "file": "D:\\Projects\\NekoAFK\\assets\\character\\animations\\NekoAFK-socks-animated.glb",
+    "bytes": 15896688,
+    "clips": 42,
+    "bone_nodes": 170,
+    "morph_tracks_in_every_clip": true,
+    "phone_tracks_in_every_clip": true,
+    "sha256": "7f271228ffbe7eb022670f1fdc1bea1714df3cb2d47ba3fda90984d1cdadb5dd",
+    "facial_samplers_repaired": true
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "blender_validator": [
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoTail \u2022 curved fluffy rest\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoJoggerCuff.R\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoJoggerCuff.L\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoCozySock.R\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoSockRib.R\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoCozySock.L\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoSockRib.L\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoAmberClip \u2022 permanent\". They will be triangulated automatically."
+    }
+  ],
+  "all_original_bones_preserved": true,
+  "neutral_pose_saved": true,
+  "authored_animation": false,
+  "calibration_actions": [
+    "T-Pose"
+  ],
+  "packed_images": [
+    {
+      "name": "_01",
+      "packed": true
+    },
+    {
+      "name": "_02",
+      "packed": true
+    },
+    {
+      "name": "_03",
+      "packed": true
+    },
+    {
+      "name": "_04",
+      "packed": true
+    },
+    {
+      "name": "_05",
+      "packed": true
+    },
+    {
+      "name": "_06",
+      "packed": true
+    },
+    {
+      "name": "_07",
+      "packed": true
+    },
+    {
+      "name": "_09",
+      "packed": true
+    },
+    {
+      "name": "_10",
+      "packed": true
+    },
+    {
+      "name": "_11",
+      "packed": true
+    },
+    {
+      "name": "_12",
+      "packed": true
+    },
+    {
+      "name": "_13",
+      "packed": true
+    },
+    {
+      "name": "_14",
+      "packed": true
+    },
+    {
+      "name": "_15",
+      "packed": true
+    },
+    {
+      "name": "_16",
+      "packed": true
+    },
+    {
+      "name": "_17",
+      "packed": true
+    },
+    {
+      "name": "_18",
+      "packed": true
+    },
+    {
+      "name": "_19",
+      "packed": true
+    },
+    {
+      "name": "MatcapWarp",
+      "packed": true
+    },
+    {
+      "name": "N00_000_00_Face_00_out",
+      "packed": true
+    },
+    {
+      "name": "N00_000_00_HairBack_00_nml",
+      "packed": true
+    },
+    {
+      "name": "N00_000_Hair_00_nml_01",
+      "packed": true
+    },
+    {
+      "name": "N00_000_Hair_00_nml_02",
+      "packed": true
+    },
+    {
+      "name": "Neko-tail-fur.png",
+      "packed": true
+    },
+    {
+      "name": "Shader_NoneBlack",
+      "packed": true
+    },
+    {
+      "name": "Shader_NoneNormal",
+      "packed": true
+    },
+    {
+      "name": "Thumbnail",
+      "packed": true
+    }
+  ],
+  "source_hashes": {
+    "NekoAFK-canon-v1.vroid": "7efe8875d1349aab035e39e052fc07789baf6e7826300157454f7f250960e607",
+    "NekoAFK-canon-v1.vrm": "2fc34e47641e904914fc0831d4d54106635c0e3bb61c1cca640d9e140030b7ab"
+  },
+  "runtime": {
+    "meshes": 11,
+    "skin_joints": 147,
+    "humanoid_assignments": 54,
+    "expressions": [
+      "aa",
+      "angry",
+      "blink",
+      "blinkLeft",
+      "blinkRight",
+      "ee",
+      "happy",
+      "ih",
+      "lookDown",
+      "lookLeft",
+      "lookRight",
+      "lookUp",
+      "neutral",
+      "oh",
+      "ou",
+      "relaxed",
+      "sad",
+      "surprised"
+    ],
+    "animations": 0,
+    "embedded_images": 27,
+    "qa_geometry_exported": false
+  },
+  "runtime_roundtrip": {
+    "import": "FINISHED",
+    "facial_keys": 57,
+    "tail_vertex_groups": 8,
+    "tail_uv_preserved": true,
+    "ears_preserved": true
+  }
+}

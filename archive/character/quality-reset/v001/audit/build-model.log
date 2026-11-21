@@ -1,0 +1,19 @@
+00:00.984  blend            | Read blend: "D:\Projects\NekoAFK\assets\character\blender\NekoAFK-canon.blend"
+D:\Projects\NekoAFK\assets\character\quality-reset\v001\build_model.py:37: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('QR01 • '+name);m.use_nodes=True;n=m.node_tree.nodes;l=m.node_tree.links;n.clear()
+FEET_SURFACE 14288 19037
+D:\Projects\NekoAFK\assets\character\quality-reset\v001\build_model.py:23: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*color,1);p.inputs['Roughness'].default_value=rough;p.inputs['Metallic'].default_value=metal
+D:\Projects\NekoAFK\assets\character\quality-reset\v001\build_model.py:212: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.data.worlds.new('QR01 • midnight studio');world.use_nodes=True;world.node_tree.nodes['Background'].inputs[0].default_value=(.028,.035,.058,1);world.node_tree.nodes['Background'].inputs[1].default_value=.35;scene.world=world
+00:29.109  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v001\renders\model-fullbody.png'
+00:43.094  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v001\renders\face-closeup.png'
+00:56.937  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v001\renders\hand-nails-closeup.png'
+01:11.172  render           | Saved: 'D:\Projects\NekoAFK\assets\character\quality-reset\v001\renders\feet-model-closeup.png'
+Info: No new files have been packed
+Info: Saved as "NekoAFK-model-v001.blend"
+QUALITY_MODEL_BUILT
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
+Error: Not freed memory blocks: 1, total unfreed memory 0.000023 MB

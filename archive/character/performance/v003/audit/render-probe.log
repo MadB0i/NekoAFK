@@ -1,0 +1,10 @@
+00:01.000  blend            | Read blend: "D:\Projects\NekoAFK\assets\character\performance\v003\NekoAFK-performance-v003.blend"
+00:17.266  render           | Saved: 'D:\Projects\NekoAFK\assets\character\performance\v003\renders\probe-0001.png'
+00:18.938  render           | Saved: 'D:\Projects\NekoAFK\assets\character\performance\v003\renders\probe-0002.png'
+00:20.282  render           | Saved: 'D:\Projects\NekoAFK\assets\character\performance\v003\renders\probe-0003.png'
+00:21.500  render           | Saved: 'D:\Projects\NekoAFK\assets\character\performance\v003\renders\probe-0004.png'
+GPU NVIDIA Corporation NVIDIA GeForce GTX 1650/PCIe/SSE2 4.6.0 NVIDIA 591.59
+PROBE_SUCCESS
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

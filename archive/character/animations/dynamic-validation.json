@@ -1,0 +1,558 @@
+{
+  "clips": {
+    "Neko_EDITING_Enter": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_EDITING_Idle": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_TESTING_Enter": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_TESTING_Idle": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FAILED_Enter": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FAILED_Idle": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FRUSTRATED_Enter": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FRUSTRATED_Idle": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_VERIFYING_Enter": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_VERIFYING_Idle": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_SUCCESS_Enter": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_SUCCESS_Idle": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_EDITING_to_TESTING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_EDITING_to_FAILED": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_EDITING_to_FRUSTRATED": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_EDITING_to_VERIFYING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_EDITING_to_SUCCESS": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_TESTING_to_EDITING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_TESTING_to_FAILED": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_TESTING_to_FRUSTRATED": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_TESTING_to_VERIFYING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_TESTING_to_SUCCESS": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FAILED_to_EDITING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FAILED_to_TESTING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FAILED_to_FRUSTRATED": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FAILED_to_VERIFYING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FAILED_to_SUCCESS": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FRUSTRATED_to_EDITING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FRUSTRATED_to_TESTING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FRUSTRATED_to_FAILED": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FRUSTRATED_to_VERIFYING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_FRUSTRATED_to_SUCCESS": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_VERIFYING_to_EDITING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_VERIFYING_to_TESTING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_VERIFYING_to_FAILED": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_VERIFYING_to_FRUSTRATED": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_VERIFYING_to_SUCCESS": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_SUCCESS_to_EDITING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_SUCCESS_to_TESTING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_SUCCESS_to_FAILED": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_SUCCESS_to_FRUSTRATED": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    },
+    "Neko_SUCCESS_to_VERIFYING": {
+      "samples": 9,
+      "floor_contacts": 0,
+      "chair_intersection_candidates": {
+        "NekoChair.Back": 0,
+        "NekoChair.BackInset": 0,
+        "NekoChair.Wing.-1": 0,
+        "NekoChair.Armrest.-1": 0,
+        "NekoChair.Wing.1": 0,
+        "NekoChair.Armrest.1": 0
+      },
+      "head_hand_min_distance_m": 1
+    }
+  },
+  "hips_max_drift_m": 0,
+  "feet_minimum_z_m": 0.004554295912384987,
+  "tail_minimum_z_m": 0.12932813167572021,
+  "seat_contact_z_range_m": [
+    0.4685189425945282,
+    0.4685189425945282
+  ],
+  "rig_hierarchy_preserved": true
+}

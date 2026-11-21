@@ -1,0 +1,175 @@
+{
+  "sample_count": 378,
+  "tolerance_m": 0.003,
+  "clips": {
+    "Neko_EDITING_Enter": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_EDITING_Idle": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_TESTING_Enter": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_TESTING_Idle": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FAILED_Enter": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FAILED_Idle": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FRUSTRATED_Enter": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FRUSTRATED_Idle": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_VERIFYING_Enter": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_VERIFYING_Idle": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_SUCCESS_Enter": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_SUCCESS_Idle": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_EDITING_to_TESTING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_EDITING_to_FAILED": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_EDITING_to_FRUSTRATED": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_EDITING_to_VERIFYING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_EDITING_to_SUCCESS": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_TESTING_to_EDITING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_TESTING_to_FAILED": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_TESTING_to_FRUSTRATED": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_TESTING_to_VERIFYING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_TESTING_to_SUCCESS": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FAILED_to_EDITING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FAILED_to_TESTING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FAILED_to_FRUSTRATED": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FAILED_to_VERIFYING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FAILED_to_SUCCESS": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FRUSTRATED_to_EDITING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FRUSTRATED_to_TESTING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FRUSTRATED_to_FAILED": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FRUSTRATED_to_VERIFYING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_FRUSTRATED_to_SUCCESS": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_VERIFYING_to_EDITING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_VERIFYING_to_TESTING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_VERIFYING_to_FAILED": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_VERIFYING_to_FRUSTRATED": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_VERIFYING_to_SUCCESS": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_SUCCESS_to_EDITING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_SUCCESS_to_TESTING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_SUCCESS_to_FAILED": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_SUCCESS_to_FRUSTRATED": {
+      "penetrating_vertices": 0,
+      "hits": []
+    },
+    "Neko_SUCCESS_to_VERIFYING": {
+      "penetrating_vertices": 0,
+      "hits": []
+    }
+  },
+  "max_penetration_m": 0
+}

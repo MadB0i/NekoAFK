@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NekoAFK — Visual Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./room.css" />
+<link rel="stylesheet" href="./character/rig.css" />
+</head>
+<body>
+<div class="page">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="22" height="22"><path d="M6 26V12l4-7 4 6 2-2 2 2 4-6 4 7v14" fill="none" stroke="#ffb86b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 26c2-5 6-7 9-4" fill="none" stroke="#7de8ff" stroke-width="2" stroke-linecap="round"/></svg>
+      </span>
+      <h1 class="word">nekoafk</h1>
+      <span class="proto">archived room study</span>
+    </div>
+    <div class="sess">
+      <span class="pill live"><i></i>opencode · ses_9f31 · <span id="elapsed">00:00</span></span>
+      <span class="pill sim">SIMULATED FEED — no agent connected</span>
+    </div>
+    <div class="statechip" id="stateChip"><span class="dot"></span><span id="stateLabel">EDITING</span></div>
+  </header>
+
+  <main class="stage-wrap">
+    <div class="stage" id="stage" data-state="editing">
+
+      <!-- room base -->
+      <div class="wall"></div>
+      <div class="wall-falloff"></div>
+
+      <!-- window : 2AM city + rain -->
+      <div class="window" aria-hidden="true">
+        <div class="win-frame">
+          <div class="win-sky">
+            <div class="moon"></div>
+            <div class="city"></div>
+            <div class="rain r1"></div>
+            <div class="rain r2"></div>
+            <div class="rain r3"></div>
+            <div class="win-glass"></div>
+          </div>
+          <div class="win-bar-v"></div>
+          <div class="win-bar-h"></div>
+        </div>
+        <div class="win-sill"></div>
+        <div class="win-plant"><span class="pot"></span><span class="leaf l1"></span><span class="leaf l2"></span><span class="leaf l3"></span></div>
+      </div>
+
+      <!-- posters : original micro-art -->
+      <div class="posters" aria-hidden="true">
+        <div class="poster p1"><div class="p1-moon"></div><div class="p1-tail"></div><span>night build club</span></div>
+        <div class="poster p2"><div class="p2-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div><span>ship &amp; nap</span></div>
+      </div>
+
+      <!-- shelf -->
+      <div class="shelf" aria-hidden="true">
+        <div class="books"><i style="--h:54px;--c:#3b2f52"></i><i style="--h:66px;--c:#54406e"></i><i style="--h:48px;--c:#8a5a3b"></i><i style="--h:62px;--c:#2f4a55"></i><i style="--h:52px;--c:#6e3b4d"></i><i style="--h:60px;--c:#3b2f52"></i></div>
+        <div class="plank"></div>
+        <div class="mug"><span></span></div>
+      </div>
+
+      <!-- hanging pothos : fills dead right space -->
+      <div class="hang" aria-hidden="true">
+        <span class="cord"></span><span class="hpot"></span>
+        <span class="vine v1"></span><span class="vine v2"></span><span class="vine v3"></span>
+      </div>
+
+      <!-- floor lamp -->
+      <div class="lamp" aria-hidden="true">
+        <div class="lamp-head"></div>
+        <div class="lamp-cone"></div>
+        <div class="lamp-pole"></div>
+        <div class="lamp-base"></div>
+      </div>
+
+      <!-- rug -->
+      <div class="rug" aria-hidden="true"></div>
+
+      <!-- desk -->
+      <div class="desk" aria-hidden="true">
+        <div class="desk-top"></div>
+        <div class="desk-edge"></div>
+        <div class="desk-items"><span class="kb"></span><span class="pad"></span><span class="can"></span></div>
+      </div>
+
+      <!-- LED strip : the honest progress bar -->
+      <div class="led" aria-hidden="true"><div class="led-fill" id="ledFill"></div><div class="led-ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+
+      <!-- monitor : agent activity lives here -->
+      <div class="monitor" role="region" aria-label="Agent activity">
+        <div class="mon-glow"></div>
+        <div class="mon-frame">
+          <div class="screen">
+            <div class="screen-head"><span class=" traffic"><i></i><i></i><i></i></span><span id="monTitle">agent · opencode — working</span></div>
+            <div class="screen-body" id="monBody"></div>
+            <div class="screen-foot"><span id="monPhase">EDITING</span><span id="monTime">turn 12:04</span></div>
+          </div>
+        </div>
+        <div class="mon-stand"></div>
+        <div class="mon-cable"></div>
+      </div>
+
+      <!-- side display : tasks + confidence -->
+      <div class="side" role="region" aria-label="Observable tasks">
+        <div class="side-frame">
+          <div class="side-title">observable tasks</div>
+          <div class="dots" id="taskDots"></div>
+          <div class="side-meta"><span id="taskCount">7 / 11</span><span class="conf" id="confChip">MED</span></div>
+          <div class="fails" id="failLine">last run · <b>ok</b></div>
+        </div>
+        <div class="side-stand"></div>
+      </div>
+
+      <!-- ============ NEKO : hero ============ -->
+      <div class="neko-stage" id="nekoStage" role="img" aria-label="Neko, cat-girl companion — editing">
+        <div class="neko-shadow"></div>
+        <div class="neko-position">
+          <div class="neko-motion">
+            <img data-k="editing" class="neko-layer is-active" width="1138" height="1382" src="./assets/neko/neko-editing.png" alt="" draggable="false" />
+            <img data-k="testing" class="neko-layer" width="1122" height="1402" src="./assets/neko/neko-testing.png" alt="" draggable="false" />
+            <img data-k="failed" class="neko-layer" width="1122" height="1402" src="./assets/neko/neko-failed.png" alt="" draggable="false" />
+            <img data-k="frustrated" class="neko-layer" width="1122" height="1402" src="./assets/neko/neko-frustrated.png" alt="" draggable="false" />
+            <img data-k="verifying" class="neko-layer" width="1122" height="1402" src="./assets/neko/neko-verifying.png" alt="" draggable="false" />
+            <img data-k="success" class="neko-layer" width="1122" height="1402" src="./assets/neko/neko-success.png" alt="" draggable="false" />
+          </div>
+        </div>
+      </div>
+      <!-- Room-anchored speech never inherits character motion. -->
+      <div class="bubble" id="bubble"><span id="bubbleText">scroll scroll…</span></div>
+
+      <!-- celebration burst -->
+      <div class="burst" id="burst" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+      <!-- dust -->
+      <div class="dust" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+      <!-- caption : honest telemetry -->
+      <div class="caption" role="status" aria-atomic="true">
+        <span class="cap-phase" id="capPhase">EDITING · phone scroll</span>
+        <span class="cap-sub"><span id="capTasks">7 / 11 observable tasks</span> · <span id="capConf">~72% · MEDIUM</span></span>
+      </div>
+
+      <!-- overlays -->
+      <div class="grade"></div>
+      <div class="vignette"></div>
+      <div class="grain"></div>
+    </div>
+  </main>
+
+  <footer class="director">
+    <span class="dir-label">director · simulated states</span>
+    <div class="dir-btns" role="group" aria-label="Simulated agent states">
+      <button data-s="editing" class="on">1 · editing</button>
+      <button data-s="testing">2 · testing</button>
+      <button data-s="failed">3 · failed</button>
+      <button data-s="frustrated">4 · frustrated</button>
+      <button data-s="verifying">5 · verifying</button>
+      <button data-s="success">6 · success</button>
+      <button id="autoBtn" class="auto">▶ 10s run</button>
+    </div>
+    <span class="hint">keys 1–6 · space = auto run · for screen recording</span>
+  </footer>
+</div>
+
+<script src="./character/rig-contract.js"></script>
+<script src="./character/layered-rig.js"></script>
+<script src="./character/neko-character.js"></script>
+<script src="./room.js"></script>
+</body>
+</html>

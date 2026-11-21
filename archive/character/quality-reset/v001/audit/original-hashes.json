@@ -1,0 +1,17 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "D40EE99D5AB58E559E34DBC06E848CCB183AE2BCDDA061405379B7D37CD159E5",
+    "Path": "D:\\Projects\\NekoAFK\\assets\\character\\blender\\NekoAFK-canon.blend"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "9766FDBCDBC2423C2A2475D2CFE450BF82C9C07915F249821D1BFE51E724A25B",
+    "Path": "D:\\Projects\\NekoAFK\\assets\\character\\animations\\NekoAFK-barefoot-animated.glb"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "7F271228FFBE7EB022670F1FDC1BEA1714DF3CB2D47BA3FDA90984D1CDADB5DD",
+    "Path": "D:\\Projects\\NekoAFK\\assets\\character\\animations\\NekoAFK-socks-animated.glb"
+  }
+]

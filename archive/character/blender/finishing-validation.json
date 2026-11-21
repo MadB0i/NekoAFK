@@ -1,0 +1,114 @@
+{
+  "humanoid_bones": {
+    "hips": "J_Bip_C_Hips",
+    "spine": "J_Bip_C_Spine",
+    "chest": "J_Bip_C_Chest",
+    "upperChest": "J_Bip_C_UpperChest",
+    "neck": "J_Bip_C_Neck",
+    "head": "J_Bip_C_Head",
+    "leftEye": "J_Adj_L_FaceEye",
+    "rightEye": "J_Adj_R_FaceEye",
+    "jaw": "",
+    "leftUpperLeg": "J_Bip_L_UpperLeg",
+    "leftLowerLeg": "J_Bip_L_LowerLeg",
+    "leftFoot": "J_Bip_L_Foot",
+    "leftToes": "J_Bip_L_ToeBase",
+    "rightUpperLeg": "J_Bip_R_UpperLeg",
+    "rightLowerLeg": "J_Bip_R_LowerLeg",
+    "rightFoot": "J_Bip_R_Foot",
+    "rightToes": "J_Bip_R_ToeBase",
+    "leftShoulder": "J_Bip_L_Shoulder",
+    "leftUpperArm": "J_Bip_L_UpperArm",
+    "leftLowerArm": "J_Bip_L_LowerArm",
+    "leftHand": "J_Bip_L_Hand",
+    "rightShoulder": "J_Bip_R_Shoulder",
+    "rightUpperArm": "J_Bip_R_UpperArm",
+    "rightLowerArm": "J_Bip_R_LowerArm",
+    "rightHand": "J_Bip_R_Hand",
+    "leftThumbMetacarpal": "J_Bip_L_Thumb1",
+    "leftThumbProximal": "J_Bip_L_Thumb2",
+    "leftThumbDistal": "J_Bip_L_Thumb3",
+    "leftIndexProximal": "J_Bip_L_Index1",
+    "leftIndexIntermediate": "J_Bip_L_Index2",
+    "leftIndexDistal": "J_Bip_L_Index3",
+    "leftMiddleProximal": "J_Bip_L_Middle1",
+    "leftMiddleIntermediate": "J_Bip_L_Middle2",
+    "leftMiddleDistal": "J_Bip_L_Middle3",
+    "leftRingProximal": "J_Bip_L_Ring1",
+    "leftRingIntermediate": "J_Bip_L_Ring2",
+    "leftRingDistal": "J_Bip_L_Ring3",
+    "leftLittleProximal": "J_Bip_L_Little1",
+    "leftLittleIntermediate": "J_Bip_L_Little2",
+    "leftLittleDistal": "J_Bip_L_Little3",
+    "rightThumbMetacarpal": "J_Bip_R_Thumb1",
+    "rightThumbProximal": "J_Bip_R_Thumb2",
+    "rightThumbDistal": "J_Bip_R_Thumb3",
+    "rightIndexProximal": "J_Bip_R_Index1",
+    "rightIndexIntermediate": "J_Bip_R_Index2",
+    "rightIndexDistal": "J_Bip_R_Index3",
+    "rightMiddleProximal": "J_Bip_R_Middle1",
+    "rightMiddleIntermediate": "J_Bip_R_Middle2",
+    "rightMiddleDistal": "J_Bip_R_Middle3",
+    "rightRingProximal": "J_Bip_R_Ring1",
+    "rightRingIntermediate": "J_Bip_R_Ring2",
+    "rightRingDistal": "J_Bip_R_Ring3",
+    "rightLittleProximal": "J_Bip_R_Little1",
+    "rightLittleIntermediate": "J_Bip_R_Little2",
+    "rightLittleDistal": "J_Bip_R_Little3"
+  },
+  "bones": 147,
+  "tail_bones": [
+    "Neko_Tail_01",
+    "Neko_Tail_02",
+    "Neko_Tail_03",
+    "Neko_Tail_04",
+    "Neko_Tail_05",
+    "Neko_Tail_06",
+    "Neko_Tail_07",
+    "Neko_Tail_08"
+  ],
+  "facial_keys": 57,
+  "animation_actions": 1,
+  "new_meshes": [
+    {
+      "name": "NekoTail \u2022 curved fluffy rest",
+      "vertices": 2842,
+      "non_normalized_vertices": 0
+    },
+    {
+      "name": "NekoJoggerCuff.R",
+      "vertices": 576,
+      "non_normalized_vertices": 0
+    },
+    {
+      "name": "NekoJoggerCuff.L",
+      "vertices": 576,
+      "non_normalized_vertices": 0
+    },
+    {
+      "name": "NekoCozySock.R",
+      "vertices": 1216,
+      "non_normalized_vertices": 0
+    },
+    {
+      "name": "NekoSockRib.R",
+      "vertices": 576,
+      "non_normalized_vertices": 0
+    },
+    {
+      "name": "NekoCozySock.L",
+      "vertices": 1216,
+      "non_normalized_vertices": 0
+    },
+    {
+      "name": "NekoSockRib.L",
+      "vertices": 576,
+      "non_normalized_vertices": 0
+    },
+    {
+      "name": "NekoAmberClip \u2022 permanent",
+      "vertices": 102,
+      "non_normalized_vertices": 0
+    }
+  ]
+}

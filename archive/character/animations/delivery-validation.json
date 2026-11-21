@@ -1,0 +1,50 @@
+{
+  "all-states": {
+    "codec_name": "h264",
+    "width": 800,
+    "height": 960,
+    "r_frame_rate": "24/1",
+    "duration": "36.416667",
+    "nb_frames": "874",
+    "file": "D:\\Projects\\NekoAFK\\assets\\character\\animations\\previews\\NekoAFK-all-states.mp4",
+    "sha256": "aeb307261fbd7cba8cb47e97796cb579317ded201a924b8e70808a4d1d51fac6"
+  },
+  "reaction-chain": {
+    "codec_name": "h264",
+    "width": 800,
+    "height": 960,
+    "r_frame_rate": "24/1",
+    "duration": "18.583333",
+    "nb_frames": "446",
+    "file": "D:\\Projects\\NekoAFK\\assets\\character\\animations\\previews\\NekoAFK-reaction-chain.mp4",
+    "sha256": "4b0ef6f637abc7d7c9e5caf697e6724c15cb90246308d551db4a8b14ff18bae7"
+  },
+  "NekoAFK-animation-library.blend": {
+    "bytes": 25924008,
+    "sha256": "586e60d78c3359db0d7ea1cb07c601e6fe87f1665315cdf4c2736ff32facee2c"
+  },
+  "NekoAFK-animation-previews.blend": {
+    "bytes": 25923101,
+    "sha256": "06ae62ff144c1448789f8edaeb783ece14ed980afedce936d178b5b46de6315e"
+  },
+  "NekoAFK-barefoot-animated.glb": {
+    "bytes": 16629536,
+    "sha256": "9766fdbcdbc2423c2a2475d2cfe450bf82c9c07915f249821d1bfe51e724a25b"
+  },
+  "NekoAFK-socks-animated.glb": {
+    "bytes": 15896688,
+    "sha256": "7f271228ffbe7eb022670f1fdc1bea1714df3cb2d47ba3fda90984d1cdadb5dd"
+  },
+  "validation": {
+    "clips": 42,
+    "entrances": 6,
+    "living_loops": 6,
+    "directed_transitions": 30,
+    "geometry_frames_checked": 3546,
+    "chair_penetrations_beyond_3mm": 0,
+    "both_variants_reimported": true,
+    "facial_playback_preserved": true,
+    "secondary_motion": "baked",
+    "runtime_materials": "PBR fallback; original toon source retained"
+  }
+}

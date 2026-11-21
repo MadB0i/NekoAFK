@@ -1,0 +1,360 @@
+{
+  "barefoot": {
+    "reimport": "FINISHED",
+    "armature_bones": 170,
+    "actions": 42,
+    "facial_keys": 57,
+    "animated_bones_sampled": 118,
+    "facial_movement": true,
+    "blink_survives": true,
+    "clip_checks": {
+      "Neko_EDITING_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_to_TESTING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_to_FAILED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_to_FRUSTRATED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_to_VERIFYING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_to_SUCCESS": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_to_EDITING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_to_FAILED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_to_FRUSTRATED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_to_VERIFYING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_to_SUCCESS": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_to_EDITING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_to_TESTING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_to_FRUSTRATED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_to_VERIFYING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_to_SUCCESS": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_to_EDITING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_to_TESTING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_to_FAILED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_to_VERIFYING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_to_SUCCESS": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_to_EDITING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_to_TESTING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_to_FAILED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_to_FRUSTRATED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_to_SUCCESS": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_to_EDITING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_to_TESTING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_to_FAILED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_to_FRUSTRATED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_to_VERIFYING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      }
+    }
+  },
+  "socks": {
+    "reimport": "FINISHED",
+    "armature_bones": 170,
+    "actions": 42,
+    "facial_keys": 57,
+    "animated_bones_sampled": 118,
+    "facial_movement": true,
+    "blink_survives": true,
+    "clip_checks": {
+      "Neko_EDITING_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_Enter": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_Idle": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_to_TESTING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_to_FAILED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_to_FRUSTRATED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_to_VERIFYING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_EDITING_to_SUCCESS": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_to_EDITING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_to_FAILED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_to_FRUSTRATED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_to_VERIFYING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_TESTING_to_SUCCESS": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_to_EDITING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_to_TESTING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_to_FRUSTRATED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_to_VERIFYING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FAILED_to_SUCCESS": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_to_EDITING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_to_TESTING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_to_FAILED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_to_VERIFYING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_FRUSTRATED_to_SUCCESS": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_to_EDITING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_to_TESTING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_to_FAILED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_to_FRUSTRATED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_VERIFYING_to_SUCCESS": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_to_EDITING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_to_TESTING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_to_FAILED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_to_FRUSTRATED": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      },
+      "Neko_SUCCESS_to_VERIFYING": {
+        "sampled_frames": 5,
+        "hip_drift_m": 0
+      }
+    }
+  }
+}

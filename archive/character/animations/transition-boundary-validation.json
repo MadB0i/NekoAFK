@@ -1,0 +1,434 @@
+{
+  "Neko_EDITING_Enter": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_TESTING_Enter": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_FAILED_Enter": {
+    "source": {
+      "max_rotation_difference_deg": 0.35165872244201535,
+      "max_location_difference_m": 0.0011725425720214844,
+      "max_expression_difference": 0.03224468231201172
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_FRUSTRATED_Enter": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 1.1920928955078125e-07
+    }
+  },
+  "Neko_VERIFYING_Enter": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_SUCCESS_Enter": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_EDITING_to_TESTING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_EDITING_to_FAILED": {
+    "source": {
+      "max_rotation_difference_deg": 0.349425944339065,
+      "max_location_difference_m": 0.0011725425720214844,
+      "max_expression_difference": 0.03224468231201172
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_EDITING_to_FRUSTRATED": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 2.384185791015625e-07
+    }
+  },
+  "Neko_EDITING_to_VERIFYING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 1.1920928955078125e-07
+    }
+  },
+  "Neko_EDITING_to_SUCCESS": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0.0017135143280029297
+    }
+  },
+  "Neko_TESTING_to_EDITING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_TESTING_to_FAILED": {
+    "source": {
+      "max_rotation_difference_deg": 0.35165872244201535,
+      "max_location_difference_m": 0.0011725425720214844,
+      "max_expression_difference": 0.03224468231201172
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_TESTING_to_FRUSTRATED": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 2.384185791015625e-07
+    }
+  },
+  "Neko_TESTING_to_VERIFYING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 1.1920928955078125e-07
+    }
+  },
+  "Neko_TESTING_to_SUCCESS": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0.0017135143280029297
+    }
+  },
+  "Neko_FAILED_to_EDITING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_FAILED_to_TESTING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_FAILED_to_FRUSTRATED": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 1.1920928955078125e-07
+    }
+  },
+  "Neko_FAILED_to_VERIFYING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 1.2597448062479089e-07
+    }
+  },
+  "Neko_FAILED_to_SUCCESS": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0.0017135143280029297
+    }
+  },
+  "Neko_FRUSTRATED_to_EDITING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 2.384185791015625e-07,
+      "max_expression_difference": 2.2570426949641842e-07
+    }
+  },
+  "Neko_FRUSTRATED_to_TESTING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 1.7881393432617188e-07,
+      "max_expression_difference": 2.2570426949641842e-07
+    }
+  },
+  "Neko_FRUSTRATED_to_FAILED": {
+    "source": {
+      "max_rotation_difference_deg": 0.34717880712400273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0.03224468231201172
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 1.7881393432617188e-07,
+      "max_expression_difference": 8.940696716308594e-08
+    }
+  },
+  "Neko_FRUSTRATED_to_VERIFYING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_FRUSTRATED_to_SUCCESS": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_VERIFYING_to_EDITING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 2.384185791015625e-07,
+      "max_expression_difference": 1.2597448062479089e-07
+    }
+  },
+  "Neko_VERIFYING_to_TESTING": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 1.7881393432617188e-07,
+      "max_expression_difference": 1.2597448062479089e-07
+    }
+  },
+  "Neko_VERIFYING_to_FAILED": {
+    "source": {
+      "max_rotation_difference_deg": 0.35165872244201535,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0.03224468231201172
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 1.7881393432617188e-07,
+      "max_expression_difference": 1.1920928955078125e-07
+    }
+  },
+  "Neko_VERIFYING_to_FRUSTRATED": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_VERIFYING_to_SUCCESS": {
+    "source": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_SUCCESS_to_EDITING": {
+    "source": {
+      "max_rotation_difference_deg": 0,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 2.384185791015625e-07,
+      "max_expression_difference": 1.312234161332526e-07
+    }
+  },
+  "Neko_SUCCESS_to_TESTING": {
+    "source": {
+      "max_rotation_difference_deg": 0,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 1.7881393432617188e-07,
+      "max_expression_difference": 1.312234161332526e-07
+    }
+  },
+  "Neko_SUCCESS_to_FAILED": {
+    "source": {
+      "max_rotation_difference_deg": 0.4441127303848266,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0.03224468231201172
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 1.7881393432617188e-07,
+      "max_expression_difference": 1.7881393432617188e-07
+    }
+  },
+  "Neko_SUCCESS_to_FRUSTRATED": {
+    "source": {
+      "max_rotation_difference_deg": 0,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  },
+  "Neko_SUCCESS_to_VERIFYING": {
+    "source": {
+      "max_rotation_difference_deg": 0,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    },
+    "destination": {
+      "max_rotation_difference_deg": 0.03956468205889273,
+      "max_location_difference_m": 0,
+      "max_expression_difference": 0
+    }
+  }
+}

@@ -1,0 +1,11 @@
+00:01.032  blend            | Read blend: "D:\Projects\NekoAFK\assets\character\performance\v003\NekoAFK-fashion-v003.blend"
+D:\Projects\NekoAFK\assets\character\performance\v003\scripts\build_performance.py:27: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.diffuse_color=(*c,1);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*c,1);p.inputs['Roughness'].default_value=rough;p.inputs['Metallic'].default_value=metal;return m
+00:22.875  render           | Saved: 'D:\Projects\NekoAFK\assets\character\performance\v003\renders\pose-check.png'
+00:42.719  render           | Saved: 'D:\Projects\NekoAFK\assets\character\performance\v003\renders\grip-check.png'
+01:02.469  render           | Saved: 'D:\Projects\NekoAFK\assets\character\performance\v003\renders\outfit-check.png'
+01:25.422  render           | Saved: 'D:\Projects\NekoAFK\assets\character\performance\v003\renders\angry-check.png'
+Info: Saved as "NekoAFK-performance-work-v003.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

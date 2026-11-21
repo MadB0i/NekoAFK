@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NekoAFK · Editing quality gate</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="desktop/editing-lab.css"></head><body>
+<header class="lab-header"><div><span class="eyebrow">NEKOAFK / ANIMATION PROOF 01</span><h1>A quiet moment between edits.</h1><p id="rendererStatus">Preparing editing rig…</p></div><span class="gate-label">EDITING ONLY · QUALITY GATE</span></header>
+<aside class="lab-tools" aria-label="Editing animation controls">
+<span class="eyebrow">PHONE-SCROLL STUDY</span>
+<button id="play" aria-pressed="true">Pause animation</button>
+<label for="time">Clip position <output id="timeValue">0.00 / 24s</output></label><input id="time" type="range" min="0" max="24" step="0.01" value="0">
+<label><input id="slow" type="checkbox"> Quarter speed</label>
+<label><input id="original" type="checkbox"> Compare approved original</label>
+<label><input id="debug" type="checkbox"> Rig debug</label>
+<label for="scale">Character scale <output id="scaleValue">100%</output></label><input id="scale" type="range" min="65" max="125" step="5" value="100">
+<label><input id="checker" type="checkbox"> Transparency grid</label>
+<button id="reset">Reset placement</button><p>Drag Neko to place her.<br>Scrub to inspect a joint or blink.<br>Space pauses · G toggles debug.</p>
+</aside>
+<aside id="rigInspector" hidden aria-label="Rig inspector"><span class="eyebrow">LIVE JOINT HIERARCHY</span><p id="clipName">editing / phone-scroll</p><div id="jointTree"></div><p id="jointReadout"></p><p class="debug-key">Mint: pivots & hierarchy<br>Amber: selected part bounds</p></aside>
+<main id="desktop" aria-label="Editing desktop companion proof"><iframe id="characterWindow" title="Neko editing rig" src="editing-character.html"></iframe><iframe id="dockWindow" title="Editing telemetry" src="dock.html"></iframe><div class="desktop-note"><span>ONE POSE. EVERY JOINT MATTERS.</span><p>Articulated editing candidate · approval pending</p></div></main>
+<footer class="director"><span class="eyebrow">CURRENT CLIP</span><strong>EDITING / PHONE-SCROLL</strong><span id="motionStatus">Seated · knee swing · phone scroll</span><span class="gate-note">Other states are outside this proof.</span></footer>
+<script src="simulation/states.js"></script><script src="desktop/browser-host.js"></script><script src="desktop/editing-lab.js"></script></body></html>

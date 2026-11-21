@@ -1,0 +1,194 @@
+{
+  "original_bones_preserved": 147,
+  "bones": 167,
+  "facial_keys": 57,
+  "additional_toe_bones": 20,
+  "default": "barefoot",
+  "optional_variant": "cream socks",
+  "authored_animation": false,
+  "weight_errors": [],
+  "toe_control_names": {
+    "R": [
+      [
+        "Neko_R_Toe01_Prox",
+        "Neko_R_Toe01_Dist"
+      ],
+      [
+        "Neko_R_Toe02_Prox",
+        "Neko_R_Toe02_Dist"
+      ],
+      [
+        "Neko_R_Toe03_Prox",
+        "Neko_R_Toe03_Dist"
+      ],
+      [
+        "Neko_R_Toe04_Prox",
+        "Neko_R_Toe04_Dist"
+      ],
+      [
+        "Neko_R_Toe05_Prox",
+        "Neko_R_Toe05_Dist"
+      ]
+    ],
+    "L": [
+      [
+        "Neko_L_Toe01_Prox",
+        "Neko_L_Toe01_Dist"
+      ],
+      [
+        "Neko_L_Toe02_Prox",
+        "Neko_L_Toe02_Dist"
+      ],
+      [
+        "Neko_L_Toe03_Prox",
+        "Neko_L_Toe03_Dist"
+      ],
+      [
+        "Neko_L_Toe04_Prox",
+        "Neko_L_Toe04_Dist"
+      ],
+      [
+        "Neko_L_Toe05_Prox",
+        "Neko_L_Toe05_Dist"
+      ]
+    ]
+  },
+  "meshes": {
+    "Face": {
+      "vertices": 3989,
+      "faces": 7012,
+      "max_influences": 1
+    },
+    "Body": {
+      "vertices": 10317,
+      "faces": 18522,
+      "max_influences": 4
+    },
+    "Hair": {
+      "vertices": 22862,
+      "faces": 28836,
+      "max_influences": 2
+    },
+    "NekoTail \u2022 curved fluffy rest": {
+      "vertices": 2842,
+      "faces": 2662,
+      "max_influences": 2
+    },
+    "NekoJoggerCuff.R": {
+      "vertices": 576,
+      "faces": 512,
+      "max_influences": 1
+    },
+    "NekoJoggerCuff.L": {
+      "vertices": 576,
+      "faces": 512,
+      "max_influences": 1
+    },
+    "NekoAmberClip \u2022 permanent": {
+      "vertices": 102,
+      "faces": 95,
+      "max_influences": 1
+    },
+    "NekoManicure \u2022 black and amber": {
+      "vertices": 2210,
+      "faces": 2072,
+      "max_influences": 3
+    },
+    "NekoCozySock.R": {
+      "vertices": 1216,
+      "faces": 1185,
+      "max_influences": 2
+    },
+    "NekoSockRib.R": {
+      "vertices": 576,
+      "faces": 512,
+      "max_influences": 1
+    },
+    "NekoCozySock.L": {
+      "vertices": 1216,
+      "faces": 1185,
+      "max_influences": 2
+    },
+    "NekoSockRib.L": {
+      "vertices": 576,
+      "faces": 512,
+      "max_influences": 1
+    },
+    "NekoBareFeet \u2022 anatomical skin": {
+      "vertices": 14288,
+      "faces": 26654,
+      "max_influences": 4
+    },
+    "NekoPedicure \u2022 black and amber": {
+      "vertices": 2210,
+      "faces": 2072,
+      "max_influences": 4
+    }
+  },
+  "validator": [
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoBareFeet \u2022 anatomical skin\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoPedicure \u2022 black and amber\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"Body\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoTail \u2022 curved fluffy rest\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoJoggerCuff.R\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoJoggerCuff.L\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoAmberClip \u2022 permanent\". They will be triangulated automatically."
+    },
+    {
+      "severity": 3,
+      "message": "Non-triangular faces detected in \"NekoManicure \u2022 black and amber\". They will be triangulated automatically."
+    }
+  ],
+  "runtime_variants": {
+    "barefoot": {
+      "roundtrip_import": "FINISHED",
+      "skin_joints": 167,
+      "humanoid_assignments": 54,
+      "facial_keys": 57,
+      "expression_presets": 18,
+      "mesh_count": 10,
+      "animation_clips": 0,
+      "size_bytes": 17094136
+    },
+    "socks": {
+      "roundtrip_import": "FINISHED",
+      "skin_joints": 167,
+      "humanoid_assignments": 54,
+      "facial_keys": 57,
+      "expression_presets": 18,
+      "mesh_count": 12,
+      "animation_clips": 0,
+      "size_bytes": 16364928
+    }
+  },
+  "visual_checks": {
+    "source": "Front, three-quarter, side, seated, closeups and static deformation captures inspected. No major failures observed.",
+    "runtime": "Barefoot VRM reimport standing and seated renders inspected.",
+    "limits": "Dynamic hair/clothing collision and chair contact are animation-stage checks."
+  },
+  "production_files": {
+    "blender": "D:\\Projects\\NekoAFK\\assets\\character\\blender\\NekoAFK-canon.blend",
+    "runtime": "D:\\Projects\\NekoAFK\\assets\\character\\runtime\\NekoAFK-canon.vrm",
+    "socks_runtime": "D:\\Projects\\NekoAFK\\assets\\character\\runtime\\NekoAFK-canon-socks.vrm"
+  }
+}

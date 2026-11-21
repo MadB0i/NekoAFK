@@ -1,0 +1,22 @@
+from pathlib import Path
+R=Path(__file__).parent
+s=(R.parent/'v001/build_editing.py').read_text(encoding='utf-8')
+s=s.replace('v001','v002').replace('QR01_EDITING_PHONE_08s','QR02_EDITING_PHONE_08s').replace('single approved-quality candidate','single refinement candidate')
+s=s.replace('breath=.17*','breath=.12*')
+s=s.replace('-28+23*glance','-22+11*glance').replace('pitch+6','pitch*.64+3.0').replace('-2.5-2*smile','-1.5-1.2*smile')
+s=s.replace("knee=curve(t,[(0,96),(1.15,89),(2.15,101),(3.35,91),(4.6,98),(5.7,96),(6.5,96),(7.3,93),(8,96)])","knee=96-4.2*math.sin(3*math.tau*t/8)*(.72+.28*math.cos(math.tau*t/8))")
+s=s.replace("ankle=curve(t,[(0,-8),(1.4,-5),(2.4,-11),(3.6,-6),(4.8,-9),(6.3,-8),(8,-8)])","ankle=-7.0+1.65*math.sin(3*math.tau*t/8-.45)")
+s=s.replace("(.105,-.185,.638)","(.106,-.183,.616)")
+s=s.replace("(0,-.10,.995)","(.36,-.10,.927)")
+s=s.replace("compound(f'J_Bip_{s}_Thumb1',[((0,0,1),-8 if s=='L' else 22),((1,0,0),0 if s=='L' else 35)])","compound(f'J_Bip_{s}_Thumb1',[((0,0,1),-8 if s=='L' else 22),((1,0,0),0 if s=='L' else 35),((0,1,0),-10 if s=='L' else 0)])")
+s=s.replace("(-.190,-.220,.830+shift)","(-.184,-.225,.850+shift)")
+s=s.replace("(-.38,-.45,.81)","(-.28,-.42,.86)")
+s=s.replace("[(1,3+j*.65),(2,8+j*1.2),(3,3+j*.65)]","[(1,3+j*.65),(2,9+j*1.2),(3,3+j*.65)]")
+s=s.replace('long*.075-back*.026+xx*.005','long*.070-back*.029+xx*.005')
+s=s.replace(".0012*scroll/4.5",".0035*scroll/4.5")
+s=s.replace("keys['Fcl_MTH_Fun'].value=.12+.13*smile","keys['Fcl_EYE_Natural'].value=.045;keys['Fcl_MTH_Fun'].value=.14+.10*smile")
+s=s.replace("s.frame", "s.frame")
+# Render quick proof views before investing in the full sequence.
+s=s.replace("scene.render.fps=24;", "scene.eevee.taa_render_samples=24;scene.render.fps=24;")
+s=s.replace("(1200,1440)","(800,960)").replace("(1200,1200)","(850,850)")
+(R/'build_editing.py').write_text(s,encoding='utf-8')

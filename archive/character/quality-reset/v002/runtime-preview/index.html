@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neko — isolated material and motion proof</title>
+<style>html,body{margin:0;background:#141824;color:#e6dfd5;font:14px system-ui;height:100%;overflow:hidden}canvas{display:block}footer{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;padding:10px 14px;background:#20232de8;border-radius:8px}button,select{background:#343642;color:inherit;border:1px solid #656371;border-radius:4px;padding:7px}input{width:170px;accent-color:#d3a255}#note{position:fixed;top:18px;left:22px;color:#b5adad;font-size:12px;line-height:1.7}#error{color:#ffaaaa}</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/","mtoon":"./node_modules/@pixiv/three-vrm-materials-mtoon/lib/three-vrm-materials-mtoon.module.js"}}</script>
+<div id="note">NEKO / EDITING STUDY 02<br>Actual MToon · skeletal + facial animation<br><span id="status">Loading character…</span><span id="error"></span></div>
+<footer><button id="play">Pause</button><label>Time <input id="time" aria-label="Animation time" type="range" min="0" max="8" step="0.01" value="0"></label><select id="view" aria-label="Camera view"><option value="full">Full character</option><option value="face">Face</option><option value="hand">Phone grip</option><option value="feet">Seated feet</option></select></footer>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+import {MToonMaterialLoaderPlugin} from 'mtoon';
+const renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setPixelRatio(1);renderer.setSize(innerWidth,innerHeight);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.0;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFShadowMap;document.body.prepend(renderer.domElement);
+const scene=new THREE.Scene();scene.background=new THREE.Color('#202431');
+const camera=new THREE.OrthographicCamera(-.8,.8,.8,-.8,.01,25);const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=false;
+const env=new THREE.PMREMGenerator(renderer);scene.environment=env.fromScene(new RoomEnvironment(),.06).texture;
+scene.add(new THREE.AmbientLight(0xffffff,.75));
+function light(col,power,pos){const l=new THREE.DirectionalLight(col,power);l.position.set(...pos);scene.add(l);return l;}
+const key=light(0xffead6,2.0,[-1.3,2.7,2.1]);key.castShadow=true;key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.camera,{left:-1.2,right:1.2,top:1.7,bottom:-.5,near:.1,far:8});key.shadow.bias=-.0001;key.shadow.normalBias=.002;
+light(0x9eafff,.65,[1.5,1.9,1.1]);light(0xc3acff,1.0,[.5,2.2,-.95]);
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(200,200),new THREE.MeshStandardMaterial({color:0x080d15,roughness:.9}));floor.rotation.x=-Math.PI/2;floor.position.y=-.012;floor.receiveShadow=true;scene.add(floor);
+let mixer,gltf,playing=true,t=0,previous=performance.now();let mats=[];
+const viewPresets={full:{pos:[-2.5,1.35,4.6],target:[0,.66,.065],scale:1.57},face:{pos:[-.6,1.42,2],target:[-.014,1.13,.035],scale:.47},hand:{pos:[-.8,1.2,.04],target:[-.19,.922,.218],scale:.32},feet:{pos:[-.9,.63,2],target:[0,.24,.32],scale:.68}};
+function view(name){const v=viewPresets[name];const a=innerWidth/innerHeight;camera.left=-v.scale*a/2;camera.right=v.scale*a/2;camera.top=v.scale/2;camera.bottom=-v.scale/2;camera.position.set(...v.pos);controls.target.set(...v.target);controls.update();camera.updateProjectionMatrix();renderer.render(scene,camera);}
+view('full');
+function sample(time){t=time;mixer?.setTime(time);scene.updateMatrixWorld(true);for(const m of mats)m.update?.(0);renderer.render(scene,camera);document.querySelector('#time').value=time;}
+const loader=new GLTFLoader();loader.register(parser=>new MToonMaterialLoaderPlugin(parser));
+try{
+ gltf=await loader.loadAsync('../NekoAFK-editing-v002-mtoon.glb');scene.add(gltf.scene);
+ const unique=new Set();gltf.scene.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true;for(const m of(Array.isArray(o.material)?o.material:[o.material])){unique.add(m);if(/HAIR|Face|EYE|Eyeline|Brow/.test(m.name))o.receiveShadow=false;}}});mats=[...unique];
+ mixer=new THREE.AnimationMixer(gltf.scene);for(const clip of gltf.animations)mixer.clipAction(clip).play();sample(0);
+ const count=mats.filter(m=>m.isMToonMaterial).length;
+ document.querySelector('#status').textContent=`${count} MToon materials · ${gltf.animations.length} clip · 8 seconds`;
+ window.qa={ready:true,setTime(time){playing=false;sample(time);},view(name){view(name);},stats(){const bones=[],morphs=[];gltf.scene.traverse(o=>{if(o.isBone)bones.push({name:o.name,pos:o.getWorldPosition(new THREE.Vector3()).toArray(),q:o.quaternion.toArray()});if(o.morphTargetInfluences)morphs.push({name:o.name,dict:o.morphTargetDictionary,values:[...o.morphTargetInfluences]});});return {mtoon:count,materials:mats.map(m=>({name:m.name,type:m.type,mtoon:!!m.isMToonMaterial,map:!!m.map})),clips:gltf.animations.map(a=>({name:a.name,duration:a.duration,tracks:a.tracks.length})),bones,morphs,render:renderer.info.render,webglError:renderer.getContext().getError()};}};
+}catch(e){document.querySelector('#error').textContent=String(e);window.qa={error:String(e)};console.error(e);}
+document.querySelector('#play').onclick=()=>{playing=!playing;document.querySelector('#play').textContent=playing?'Pause':'Play';};
+document.querySelector('#time').oninput=e=>{playing=false;sample(+e.target.value);document.querySelector('#play').textContent='Play';};document.querySelector('#view').onchange=e=>view(e.target.value);
+window.addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);view(document.querySelector('#view').value);});
+function tick(now){requestAnimationFrame(tick);const dt=Math.min((now-previous)/1000,.1);previous=now;if(playing&&mixer)sample((t+dt)%8);else renderer.render(scene,camera);}requestAnimationFrame(tick);
+</script></html>

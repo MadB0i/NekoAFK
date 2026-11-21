@@ -1,0 +1,11 @@
+00:01.000  blend            | Read blend: "D:\Projects\NekoAFK\assets\character\quality-reset\v001\NekoAFK-model-v001.blend"
+D:\Projects\NekoAFK\assets\character\quality-reset\v001\build_editing.py:23: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*col,1);p.inputs['Roughness'].default_value=rough;p.inputs['Metallic'].default_value=metal;return m
+POSE_CONTACTS {'left_elbow': (0.1592566817998886, -0.027106821537017822, 0.75420081615448), 'right_elbow': (-0.16006352007389069, -0.03214993327856064, 0.7579386234283447), 'phone': (-0.2138276994228363, -0.23189404606819153, 0.9049451351165771), 'left_wrist': (0.10499999672174454, -0.1850000023841858, 0.6380000114440918), 'right_wrist': (-0.1899999976158142, -0.21999996900558472, 0.8299999833106995)}
+Info: Saved as "NekoAFK-editing-work-v001.blend"
+Info: No new files have been packed
+Info: Saved as "NekoAFK-editing-v001.blend"
+EDITING_BUILT 507 3
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

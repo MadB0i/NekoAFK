@@ -1,0 +1,391 @@
+{
+  "clips": {
+    "Neko_EDITING_Enter": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 1.823002462355556,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_EDITING_Idle": {
+      "frames": 289,
+      "duration": 12.0,
+      "loop": true,
+      "max_joint_step_deg": 1.3146028810143575,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_TESTING_Enter": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 1.8238609317568621,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_TESTING_Idle": {
+      "frames": 193,
+      "duration": 8.0,
+      "loop": true,
+      "max_joint_step_deg": 1.2517767733161704,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FAILED_Enter": {
+      "frames": 35,
+      "duration": 1.4166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 2.4524189085242174,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FAILED_Idle": {
+      "frames": 193,
+      "duration": 8.0,
+      "loop": true,
+      "max_joint_step_deg": 1.2517767733161704,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FRUSTRATED_Enter": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.076141033895537,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FRUSTRATED_Idle": {
+      "frames": 193,
+      "duration": 8.0,
+      "loop": true,
+      "max_joint_step_deg": 1.2524018423469325,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_VERIFYING_Enter": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 10.229546145397771,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_VERIFYING_Idle": {
+      "frames": 193,
+      "duration": 8.0,
+      "loop": true,
+      "max_joint_step_deg": 1.2517767733161704,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_SUCCESS_Enter": {
+      "frames": 78,
+      "duration": 3.2083333333333335,
+      "loop": false,
+      "max_joint_step_deg": 17.081124906570064,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_SUCCESS_Idle": {
+      "frames": 193,
+      "duration": 8.0,
+      "loop": true,
+      "max_joint_step_deg": 1.2524018423469325,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_EDITING_to_TESTING": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 1.8238609317568621,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_EDITING_to_FAILED": {
+      "frames": 35,
+      "duration": 1.4166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 2.288642071284713,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_EDITING_to_FRUSTRATED": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.076141033895537,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_EDITING_to_VERIFYING": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.076141033895537,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_EDITING_to_SUCCESS": {
+      "frames": 116,
+      "duration": 4.791666666666667,
+      "loop": false,
+      "max_joint_step_deg": 18.212033478394925,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_TESTING_to_EDITING": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 1.823002462355556,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_TESTING_to_FAILED": {
+      "frames": 35,
+      "duration": 1.4166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 2.4524189085242174,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_TESTING_to_FRUSTRATED": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 12.258893531777877,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_TESTING_to_VERIFYING": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 12.258893531777877,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_TESTING_to_SUCCESS": {
+      "frames": 116,
+      "duration": 4.791666666666667,
+      "loop": false,
+      "max_joint_step_deg": 17.073765377739374,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FAILED_to_EDITING": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 1.6874384685347297,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FAILED_to_TESTING": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 2.6770435532018384,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FAILED_to_FRUSTRATED": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.076141033895537,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FAILED_to_VERIFYING": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.076141033895537,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FAILED_to_SUCCESS": {
+      "frames": 116,
+      "duration": 4.791666666666667,
+      "loop": false,
+      "max_joint_step_deg": 18.212033478394925,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FRUSTRATED_to_EDITING": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.820132195843868,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FRUSTRATED_to_TESTING": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.83658612155443,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FRUSTRATED_to_FAILED": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.829098526676804,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FRUSTRATED_to_VERIFYING": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 10.229546145397771,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_FRUSTRATED_to_SUCCESS": {
+      "frames": 78,
+      "duration": 3.2083333333333335,
+      "loop": false,
+      "max_joint_step_deg": 14.88568012617994,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_VERIFYING_to_EDITING": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 14.154075512291424,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_VERIFYING_to_TESTING": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 14.167651367040472,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_VERIFYING_to_FAILED": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 14.160448932560692,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_VERIFYING_to_FRUSTRATED": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 10.237204495004647,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_VERIFYING_to_SUCCESS": {
+      "frames": 78,
+      "duration": 3.2083333333333335,
+      "loop": false,
+      "max_joint_step_deg": 17.081124906570064,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_SUCCESS_to_EDITING": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.586079542234103,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_SUCCESS_to_TESTING": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.600104481921079,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_SUCCESS_to_FAILED": {
+      "frames": 68,
+      "duration": 2.7916666666666665,
+      "loop": false,
+      "max_joint_step_deg": 13.594449939061954,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_SUCCESS_to_FRUSTRATED": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 7.566924109741591,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    },
+    "Neko_SUCCESS_to_VERIFYING": {
+      "frames": 47,
+      "duration": 1.9166666666666667,
+      "loop": false,
+      "max_joint_step_deg": 3.8436603540075263,
+      "rig_slot": "OBArmature",
+      "face_slot": "KEFace (merged)(Clone)"
+    }
+  },
+  "original_bones_preserved": 167,
+  "bones": 170,
+  "fps": 24,
+  "loop_endpoint_errors": {
+    "Neko_EDITING_Idle": {
+      "radians": 0.0,
+      "morph": 0.0
+    },
+    "Neko_TESTING_Idle": {
+      "radians": 0.0,
+      "morph": 0.0
+    },
+    "Neko_FAILED_Idle": {
+      "radians": 0.0,
+      "morph": 0.0
+    },
+    "Neko_FRUSTRATED_Idle": {
+      "radians": 0.0,
+      "morph": 0.0
+    },
+    "Neko_VERIFYING_Idle": {
+      "radians": 0.0,
+      "morph": 0.0
+    },
+    "Neko_SUCCESS_Idle": {
+      "radians": 0.0,
+      "morph": 0.0
+    }
+  },
+  "maximum_hip_translation_drift_m": 0,
+  "phone_release_errors_m": [
+    5.960464477539063e-08,
+    6.664001874625056e-08,
+    6.664001874625056e-08,
+    6.664001874625056e-08,
+    5.960464477539063e-08,
+    5.960464477539063e-08,
+    6.664001874625056e-08,
+    5.960464477539063e-08,
+    5.960464477539063e-08,
+    0.0,
+    2.9802322387695312e-08,
+    5.960464477539063e-08,
+    2.9802322387695312e-08,
+    6.664001874625056e-08,
+    1.228781230931777e-07,
+    5.960464477539063e-08,
+    6.664001874625056e-08,
+    5.960464477539063e-08,
+    0.0
+  ]
+}

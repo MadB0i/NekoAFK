@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nova rig preview</title>
+<style>
+ body{margin:0;font-family:'Segoe UI',sans-serif;display:grid;grid-template-columns:1fr 1fr;min-height:100vh}
+ .light{background:#f8f7f4;padding:24px}.dark{background:#171123;padding:24px}
+ h2{font-size:13px;font-weight:600;margin:8px 0;color:#62645e}.dark h2{color:#b9a2c9}
+ .row{display:flex;align-items:flex-end;gap:16px}
+ img{display:block}
+</style>
+</head>
+<body>
+<div class="light">
+ <h2>Nova — light, 480 / 320 / 96 px</h2>
+ <div class="row"><img src="../assets/robot.svg" width="480" height="480"><img src="../assets/robot.svg" width="320" height="320"><img src="../assets/robot.svg" width="96" height="96"></div>
+ <h2>Neko (existing cat) — 240 px</h2>
+ <div class="row"><img src="../assets/cat.svg" width="240" height="240"></div>
+</div>
+<div class="dark">
+ <h2>Nova — dark, 480 px</h2>
+ <div class="row"><img src="../assets/robot.svg" width="480" height="480"></div>
+ <h2>Nova — dark, 320 / 96 px</h2>
+ <div class="row"><img src="../assets/robot.svg" width="320" height="320"><img src="../assets/robot.svg" width="96" height="96"></div>
+</div>
+</body>
+</html>

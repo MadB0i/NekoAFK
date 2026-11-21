@@ -1,0 +1,936 @@
+{
+  "schemaVersion": 2,
+  "approved": false,
+  "note": "Artist handoff only; no layered art exists. Proposed joint angles and entry curves require visual tuning with the approved layered export. See character/RIG_PLAN.md.",
+  "canvas": [
+    1274,
+    1491
+  ],
+  "floor": [
+    637,
+    1418
+  ],
+  "nodes": {
+    "body": null,
+    "head": null,
+    "ear-far": null,
+    "ear-near": null,
+    "tail-root": null,
+    "tail-tip": null,
+    "arm-far": null,
+    "forearm-far": null,
+    "hand-far": null,
+    "pelvis": null,
+    "thigh-near": null,
+    "shin-near": null,
+    "foot-near": null,
+    "thigh-far": null,
+    "shin-far": null,
+    "foot-far": null,
+    "hair-back": null,
+    "hair-front": null,
+    "hair-lock-near": null,
+    "phone": null,
+    "thumb-near": null,
+    "arm-near": null,
+    "forearm-near": null,
+    "hand-near": null
+  },
+  "layers": [
+    {
+      "id": "chair-back",
+      "node": "root",
+      "variants": {}
+    },
+    {
+      "id": "chair-base",
+      "node": "root",
+      "variants": {}
+    },
+    {
+      "id": "tail-root",
+      "node": "tail-root",
+      "variants": {}
+    },
+    {
+      "id": "tail-tip",
+      "node": "tail-tip",
+      "variants": {}
+    },
+    {
+      "id": "hair-back",
+      "node": "hair-back",
+      "variants": {}
+    },
+    {
+      "id": "neck",
+      "node": "body",
+      "variants": {}
+    },
+    {
+      "id": "torso",
+      "node": "body",
+      "variants": {}
+    },
+    {
+      "id": "arm-far-upper",
+      "node": "arm-far",
+      "variants": {}
+    },
+    {
+      "id": "arm-far-lower",
+      "node": "forearm-far",
+      "variants": {}
+    },
+    {
+      "id": "hand-far",
+      "node": "hand-far",
+      "variants": {}
+    },
+    {
+      "id": "pelvis",
+      "node": "pelvis",
+      "variants": {}
+    },
+    {
+      "id": "leg-far-upper",
+      "node": "thigh-far",
+      "variants": {}
+    },
+    {
+      "id": "leg-far-lower",
+      "node": "shin-far",
+      "variants": {}
+    },
+    {
+      "id": "foot-far",
+      "node": "foot-far",
+      "variants": {}
+    },
+    {
+      "id": "leg-near-upper",
+      "node": "thigh-near",
+      "variants": {}
+    },
+    {
+      "id": "leg-near-lower",
+      "node": "shin-near",
+      "variants": {}
+    },
+    {
+      "id": "foot-near",
+      "node": "foot-near",
+      "variants": {}
+    },
+    {
+      "id": "chair-arm-far",
+      "node": "root",
+      "variants": {}
+    },
+    {
+      "id": "head-base",
+      "node": "head",
+      "variants": {}
+    },
+    {
+      "id": "ear-far",
+      "node": "ear-far",
+      "variants": {}
+    },
+    {
+      "id": "ear-near",
+      "node": "ear-near",
+      "variants": {}
+    },
+    {
+      "id": "eye-far",
+      "node": "head",
+      "variants": {}
+    },
+    {
+      "id": "eye-near",
+      "node": "head",
+      "variants": {}
+    },
+    {
+      "id": "brows",
+      "node": "head",
+      "variants": {}
+    },
+    {
+      "id": "mouth",
+      "node": "head",
+      "variants": {}
+    },
+    {
+      "id": "hair-front",
+      "node": "hair-front",
+      "variants": {}
+    },
+    {
+      "id": "chair-arm-near",
+      "node": "root",
+      "variants": {}
+    },
+    {
+      "id": "arm-near-upper",
+      "node": "arm-near",
+      "variants": {}
+    },
+    {
+      "id": "arm-near-lower",
+      "node": "forearm-near",
+      "variants": {}
+    },
+    {
+      "id": "hand-near-back",
+      "node": "hand-near",
+      "variants": {}
+    },
+    {
+      "id": "phone",
+      "node": "phone",
+      "variants": {}
+    },
+    {
+      "id": "hand-near-front",
+      "node": "thumb-near",
+      "variants": {}
+    },
+    {
+      "id": "hair-lock-near",
+      "node": "hair-lock-near",
+      "variants": {}
+    },
+    {
+      "id": "expression-accent",
+      "node": "head",
+      "variants": {}
+    }
+  ],
+  "poses": {
+    "editing": {
+      "views": {
+        "chair-back": null,
+        "chair-base": null,
+        "tail-root": null,
+        "tail-tip": null,
+        "hair-back": null,
+        "neck": null,
+        "torso": null,
+        "arm-far-upper": null,
+        "arm-far-lower": null,
+        "hand-far": null,
+        "pelvis": null,
+        "leg-far-upper": null,
+        "leg-far-lower": null,
+        "foot-far": null,
+        "leg-near-upper": null,
+        "leg-near-lower": null,
+        "foot-near": null,
+        "chair-arm-far": null,
+        "head-base": null,
+        "ear-far": null,
+        "ear-near": null,
+        "eye-far": null,
+        "eye-near": null,
+        "brows": null,
+        "mouth": null,
+        "hair-front": null,
+        "chair-arm-near": null,
+        "arm-near-upper": null,
+        "arm-near-lower": null,
+        "hand-near-back": null,
+        "phone": null,
+        "hand-near-front": null,
+        "hair-lock-near": null,
+        "expression-accent": null
+      },
+      "order": [
+        "chair-back",
+        "chair-base",
+        "tail-root",
+        "tail-tip",
+        "hair-back",
+        "neck",
+        "torso",
+        "arm-far-upper",
+        "arm-far-lower",
+        "hand-far",
+        "pelvis",
+        "leg-far-upper",
+        "leg-far-lower",
+        "foot-far",
+        "leg-near-upper",
+        "leg-near-lower",
+        "foot-near",
+        "chair-arm-far",
+        "head-base",
+        "ear-far",
+        "ear-near",
+        "eye-far",
+        "eye-near",
+        "brows",
+        "mouth",
+        "hair-front",
+        "chair-arm-near",
+        "arm-near-upper",
+        "arm-near-lower",
+        "hand-near-back",
+        "phone",
+        "hand-near-front",
+        "hair-lock-near",
+        "expression-accent"
+      ],
+      "rotations": {},
+      "blink": {
+        "eye-near": [
+          "open",
+          "half",
+          "closed"
+        ],
+        "eye-far": [
+          "open",
+          "half",
+          "closed"
+        ]
+      }
+    },
+    "testing": {
+      "views": {
+        "chair-back": null,
+        "chair-base": null,
+        "tail-root": null,
+        "tail-tip": null,
+        "hair-back": null,
+        "neck": null,
+        "torso": null,
+        "arm-far-upper": null,
+        "arm-far-lower": null,
+        "hand-far": null,
+        "pelvis": null,
+        "leg-far-upper": null,
+        "leg-far-lower": null,
+        "foot-far": null,
+        "leg-near-upper": null,
+        "leg-near-lower": null,
+        "foot-near": null,
+        "chair-arm-far": null,
+        "head-base": null,
+        "ear-far": null,
+        "ear-near": null,
+        "eye-far": null,
+        "eye-near": null,
+        "brows": null,
+        "mouth": null,
+        "hair-front": null,
+        "chair-arm-near": null,
+        "arm-near-upper": null,
+        "arm-near-lower": null,
+        "hand-near-back": null,
+        "phone": null,
+        "hand-near-front": null,
+        "hair-lock-near": null,
+        "expression-accent": null
+      },
+      "order": [
+        "chair-back",
+        "chair-base",
+        "tail-root",
+        "tail-tip",
+        "hair-back",
+        "neck",
+        "torso",
+        "arm-far-upper",
+        "arm-far-lower",
+        "hand-far",
+        "pelvis",
+        "leg-far-upper",
+        "leg-far-lower",
+        "foot-far",
+        "leg-near-upper",
+        "leg-near-lower",
+        "foot-near",
+        "chair-arm-far",
+        "head-base",
+        "ear-far",
+        "ear-near",
+        "eye-far",
+        "eye-near",
+        "brows",
+        "mouth",
+        "hair-front",
+        "chair-arm-near",
+        "arm-near-upper",
+        "arm-near-lower",
+        "hand-near-back",
+        "phone",
+        "hand-near-front",
+        "hair-lock-near",
+        "expression-accent"
+      ],
+      "rotations": {
+        "head": -1,
+        "ear-near": -2,
+        "ear-far": 2,
+        "forearm-near": 3
+      },
+      "blink": {
+        "eye-near": [
+          "open",
+          "half",
+          "closed"
+        ],
+        "eye-far": [
+          "open",
+          "half",
+          "closed"
+        ]
+      }
+    },
+    "failed": {
+      "views": {
+        "chair-back": null,
+        "chair-base": null,
+        "tail-root": null,
+        "tail-tip": null,
+        "hair-back": null,
+        "neck": null,
+        "torso": null,
+        "arm-far-upper": null,
+        "arm-far-lower": null,
+        "hand-far": null,
+        "pelvis": null,
+        "leg-far-upper": null,
+        "leg-far-lower": null,
+        "foot-far": null,
+        "leg-near-upper": null,
+        "leg-near-lower": null,
+        "foot-near": null,
+        "chair-arm-far": null,
+        "head-base": null,
+        "ear-far": null,
+        "ear-near": null,
+        "eye-far": null,
+        "eye-near": null,
+        "brows": null,
+        "mouth": null,
+        "hair-front": null,
+        "chair-arm-near": null,
+        "arm-near-upper": null,
+        "arm-near-lower": null,
+        "hand-near-back": null,
+        "phone": null,
+        "hand-near-front": null,
+        "hair-lock-near": null,
+        "expression-accent": null
+      },
+      "order": [
+        "chair-back",
+        "chair-base",
+        "tail-root",
+        "tail-tip",
+        "hair-back",
+        "neck",
+        "torso",
+        "arm-far-upper",
+        "arm-far-lower",
+        "hand-far",
+        "pelvis",
+        "leg-far-upper",
+        "leg-far-lower",
+        "foot-far",
+        "leg-near-upper",
+        "leg-near-lower",
+        "foot-near",
+        "chair-arm-far",
+        "head-base",
+        "ear-far",
+        "ear-near",
+        "eye-far",
+        "eye-near",
+        "brows",
+        "mouth",
+        "hair-front",
+        "chair-arm-near",
+        "arm-near-upper",
+        "arm-near-lower",
+        "hand-near-back",
+        "phone",
+        "hand-near-front",
+        "hair-lock-near",
+        "expression-accent"
+      ],
+      "rotations": {
+        "ear-near": 6,
+        "ear-far": -6
+      },
+      "blink": {
+        "eye-near": [
+          "open",
+          "half",
+          "closed"
+        ],
+        "eye-far": [
+          "open",
+          "half",
+          "closed"
+        ]
+      },
+      "entry": {
+        "duration": 500,
+        "tracks": [
+          {
+            "node": "tail-root",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.35,
+                3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "tail-tip",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.35,
+                7
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "frustrated": {
+      "views": {
+        "chair-back": null,
+        "chair-base": null,
+        "tail-root": null,
+        "tail-tip": null,
+        "hair-back": null,
+        "neck": null,
+        "torso": null,
+        "arm-far-upper": null,
+        "arm-far-lower": null,
+        "hand-far": null,
+        "pelvis": null,
+        "leg-far-upper": null,
+        "leg-far-lower": null,
+        "foot-far": null,
+        "leg-near-upper": null,
+        "leg-near-lower": null,
+        "foot-near": null,
+        "chair-arm-far": null,
+        "head-base": null,
+        "ear-far": null,
+        "ear-near": null,
+        "eye-far": null,
+        "eye-near": null,
+        "brows": null,
+        "mouth": null,
+        "hair-front": null,
+        "chair-arm-near": null,
+        "arm-near-upper": null,
+        "arm-near-lower": null,
+        "hand-near-back": null,
+        "phone": null,
+        "hand-near-front": null,
+        "hair-lock-near": null,
+        "expression-accent": null
+      },
+      "order": [
+        "chair-back",
+        "chair-base",
+        "tail-root",
+        "tail-tip",
+        "hair-back",
+        "neck",
+        "torso",
+        "arm-far-upper",
+        "arm-far-lower",
+        "hand-far",
+        "pelvis",
+        "leg-far-upper",
+        "leg-far-lower",
+        "foot-far",
+        "leg-near-upper",
+        "leg-near-lower",
+        "foot-near",
+        "chair-arm-far",
+        "head-base",
+        "ear-far",
+        "ear-near",
+        "eye-far",
+        "eye-near",
+        "brows",
+        "mouth",
+        "hair-front",
+        "chair-arm-near",
+        "arm-near-upper",
+        "arm-near-lower",
+        "hand-near-back",
+        "phone",
+        "hand-near-front",
+        "hair-lock-near",
+        "expression-accent"
+      ],
+      "rotations": {
+        "head": 1.5,
+        "ear-near": 7,
+        "ear-far": -7
+      },
+      "blink": {
+        "eye-near": [
+          "open",
+          "half",
+          "closed"
+        ],
+        "eye-far": [
+          "open",
+          "half",
+          "closed"
+        ]
+      },
+      "entry": {
+        "duration": 750,
+        "tracks": [
+          {
+            "node": "tail-root",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.35,
+                5
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "tail-tip",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.35,
+                10
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "head",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.35,
+                -1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "forearm-far",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.35,
+                3
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "verifying": {
+      "views": {
+        "chair-back": null,
+        "chair-base": null,
+        "tail-root": null,
+        "tail-tip": null,
+        "hair-back": null,
+        "neck": null,
+        "torso": null,
+        "arm-far-upper": null,
+        "arm-far-lower": null,
+        "hand-far": null,
+        "pelvis": null,
+        "leg-far-upper": null,
+        "leg-far-lower": null,
+        "foot-far": null,
+        "leg-near-upper": null,
+        "leg-near-lower": null,
+        "foot-near": null,
+        "chair-arm-far": null,
+        "head-base": null,
+        "ear-far": null,
+        "ear-near": null,
+        "eye-far": null,
+        "eye-near": null,
+        "brows": null,
+        "mouth": null,
+        "hair-front": null,
+        "chair-arm-near": null,
+        "arm-near-upper": null,
+        "arm-near-lower": null,
+        "hand-near-back": null,
+        "phone": null,
+        "hand-near-front": null,
+        "hair-lock-near": null,
+        "expression-accent": null
+      },
+      "order": [
+        "chair-back",
+        "chair-base",
+        "tail-root",
+        "tail-tip",
+        "hair-back",
+        "neck",
+        "torso",
+        "arm-far-upper",
+        "arm-far-lower",
+        "hand-far",
+        "pelvis",
+        "leg-far-upper",
+        "leg-far-lower",
+        "foot-far",
+        "leg-near-upper",
+        "leg-near-lower",
+        "foot-near",
+        "chair-arm-far",
+        "head-base",
+        "ear-far",
+        "ear-near",
+        "eye-far",
+        "eye-near",
+        "brows",
+        "mouth",
+        "hair-front",
+        "chair-arm-near",
+        "arm-near-upper",
+        "arm-near-lower",
+        "hand-near-back",
+        "phone",
+        "hand-near-front",
+        "hair-lock-near",
+        "expression-accent"
+      ],
+      "rotations": {
+        "body": 2,
+        "head": -1,
+        "forearm-near": 6
+      },
+      "blink": {
+        "eye-near": [
+          "open",
+          "half",
+          "closed"
+        ],
+        "eye-far": [
+          "open",
+          "half",
+          "closed"
+        ]
+      }
+    },
+    "success": {
+      "views": {
+        "chair-back": null,
+        "chair-base": null,
+        "tail-root": null,
+        "tail-tip": null,
+        "hair-back": null,
+        "neck": null,
+        "torso": null,
+        "arm-far-upper": null,
+        "arm-far-lower": null,
+        "hand-far": null,
+        "pelvis": null,
+        "leg-far-upper": null,
+        "leg-far-lower": null,
+        "foot-far": null,
+        "leg-near-upper": null,
+        "leg-near-lower": null,
+        "foot-near": null,
+        "chair-arm-far": null,
+        "head-base": null,
+        "ear-far": null,
+        "ear-near": null,
+        "eye-far": null,
+        "eye-near": null,
+        "brows": null,
+        "mouth": null,
+        "hair-front": null,
+        "chair-arm-near": null,
+        "arm-near-upper": null,
+        "arm-near-lower": null,
+        "hand-near-back": null,
+        "phone": null,
+        "hand-near-front": null,
+        "hair-lock-near": null,
+        "expression-accent": null
+      },
+      "order": [
+        "chair-back",
+        "chair-base",
+        "tail-root",
+        "tail-tip",
+        "hair-back",
+        "neck",
+        "torso",
+        "arm-far-upper",
+        "arm-far-lower",
+        "hand-far",
+        "pelvis",
+        "leg-far-upper",
+        "leg-far-lower",
+        "foot-far",
+        "leg-near-upper",
+        "leg-near-lower",
+        "foot-near",
+        "chair-arm-far",
+        "head-base",
+        "ear-far",
+        "ear-near",
+        "eye-far",
+        "eye-near",
+        "brows",
+        "mouth",
+        "hair-front",
+        "chair-arm-near",
+        "arm-near-upper",
+        "arm-near-lower",
+        "hand-near-back",
+        "phone",
+        "hand-near-front",
+        "hair-lock-near",
+        "expression-accent"
+      ],
+      "rotations": {},
+      "blink": {
+        "eye-near": [
+          "open",
+          "half",
+          "closed"
+        ],
+        "eye-far": [
+          "open",
+          "half",
+          "closed"
+        ]
+      },
+      "entry": {
+        "duration": 950,
+        "tracks": [
+          {
+            "node": "arm-near",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.35,
+                -12
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "forearm-near",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.35,
+                8
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "arm-far",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.35,
+                12
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "node": "forearm-far",
+            "keys": [
+              [
+                0,
+                0
+              ],
+              [
+                0.35,
+                -8
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

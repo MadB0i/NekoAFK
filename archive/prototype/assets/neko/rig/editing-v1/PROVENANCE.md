@@ -1,0 +1,23 @@
+# Editing-only support artwork
+
+Tool: built-in `image_gen.imagegen` through the imagegen skill. Every call used `transparent_background: true` and the immutable `prototype/assets/neko/neko-editing.png` as its reference. Original artwork was never overwritten. Parts use original source pixels with runtime masks from `character/editing-parts.js`; generated derivatives supply only hidden repairs and blinking eye patches.
+
+Selected files:
+
+- `repair-plate.png`: concealed surfaces, generated output `exec-155f3e6c-62dd-4bfb-b2aa-173ba5aed79b.png`.
+- `blink-closed.png`: closed eye patches only, output `exec-5ead2e50-415b-446a-8509-bf91d7222734.png`.
+- `blink-half.png`: half-closed eye patches only, output `exec-c1754014-d22c-435e-bb3f-8c77f74c16ca.png`.
+
+The eye patches are locally registered against unchanged nose, brow and hair landmarks. They never replace the full generated face or body. The generated source canvases are 1137×1383; their image coordinate mapping registers to the approved 1138×1382 source. The original texture itself is uniformly contained without stretching.
+
+## Repair-plate prompt
+
+Create a technical support sprite for a 2D articulated puppet from this EXACT approved Neko illustration. Output ONE image, same full composition, same 1138x1382 portrait framing and EXACT pixel registration / camera / perspective / scale as the reference. It is a concealed repair plate, not new character art. Preserve the exact black/plum gold-trim gaming chair, wheels, seat, backrest, torso hoodie and pants fabric. Remove the entire head including hair and ears above the shoulders; reconstruct the tiny hidden chair back there. Remove ALL long hair hanging behind the torso and sides; reconstruct chair/hoodie underneath. Remove the curled tail completely to transparent outside chair silhouette, reconstruct covered chair edges. Remove ONLY the prominent hanging near shin and its white sock/foot (screen-right, from knee near x825 y530 down to x990 y1190); reconstruct behind that region with the black/gold chair seat and matching black pants where appropriate, and transparency outside the actual chair. Remove the second horizontal white sock/foot near x400..620 y850..930; reconstruct black chair-seat fabric behind it. Remove the phone and phone-holding palm/thumb around x720..880 y380..510; reconstruct dark hoodie/upper leg underneath. Keep the upper bent thigh, stationary hip, torso, sleeves and chair exactly aligned with reference. This layer will be BEHIND the original separately cut parts, only exposed in tiny gaps as joints rotate, so priority is stable exact chair/body registration, consistent hidden fabric and no duplicate moving parts. No full new pose, no eyes, no head, no ears, no hair, no tail, no detached limbs, no text, no checkerboard. Actual transparent background. This is NOT a new state.
+
+## Closed-blink prompt
+
+Precise identity-preserving edit for animation. Keep the entire supplied approved Neko image pixel-aligned: EXACT same seated pose, face, head tilt, cat ears, hair, hoodie, chair, hands, phone, socks, lighting, framing and transparent background. Change ONLY BOTH EYES from open to naturally closed relaxed blink: delicate dark upper eyelid lash curves following her existing tilted eye axes. Closed eyelids, no irises showing, no smiling squint, no changed brows, no expression change, no changed mouth. This is one CLOSED BLINK frame of the EDITING / PHONE SCROLL pose, not a new character state. Match reference canvas 1138x1382 and all existing positions exactly. The result will be used only in tiny masked eye patches aligned over the original, so eye-region skin color must be identical and all lines must register. No additional marks, no background, no text.
+
+## Half-blink prompt
+
+Precise animation in-between edit of this exact approved Neko phone-scrolling illustration. Change ONLY BOTH EYES: upper eyelids lowered halfway for a natural half-closed BLINK transition. Both amber irises are partially visible in narrow relaxed eye openings, upper lids cut across the middle of each iris. NOT an annoyed expression, NOT closed all the way, NOT a new state. Preserve every other pixel and exact pose, facial features, brow shape, mouth, head tilt, hair, ears, phone, body, chair, legs and socks. Same canvas framing and scale 1138x1382, transparent background. Especially preserve exact eye positions, their tilted axes and skin tones around them because only two tiny eye-region patches will be used from this image over the approved original. No text, no new light, no line or color changes beyond the lowered upper eyelids.

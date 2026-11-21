@@ -1,0 +1,9 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+.artifacts/
+__pycache__/
+*.pyc
+archive/**/node_modules/
+

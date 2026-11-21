@@ -1,0 +1,111 @@
+14:01:02 | INFO: Data are loaded, start creating Blender stuff
+14:01:02 | INFO: Blender create Mesh node Body (merged).001
+14:01:03 | INFO: Blender create Mesh node Hair001 (merged).001
+14:01:04 | INFO: Blender create Mesh node NekoAmberClip • permanent.001
+14:01:04 | INFO: Blender create Mesh node NekoBareFeet • anatomical skin.001
+14:01:05 | INFO: Blender create Mesh node NekoJoggerCuff.L.001
+14:01:05 | INFO: Blender create Mesh node NekoJoggerCuff.R.001
+14:01:05 | INFO: Blender create Mesh node NekoTail • curved fluffy rest
+14:01:05 | INFO: Blender create Mesh node Cube
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Index.001
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Index • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Index • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Little.001
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Little • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Little • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Middle.001
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Middle • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Middle • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Ring.001
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Ring • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Ring • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Thumb.001
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Thumb • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.L.Thumb • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Index.001
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Index • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Index • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Little.001
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Little • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Little • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Middle.001
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Middle • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Middle • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Ring.001
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Ring • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Ring • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Thumb.001
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Thumb • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Nail.R.Thumb • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.006
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.1 • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.1 • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.007
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.2 • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.2 • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.008
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.3 • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.3 • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.009
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.4 • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.4 • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.010
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.5 • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.L.5 • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.006
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.1 • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.1 • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.007
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.2 • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.2 • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.008
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.3 • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.3 • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.009
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.4 • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.4 • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.010
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.5 • gold filament
+14:01:05 | INFO: Blender create Mesh node QR01.Pedicure.R.5 • proximal fold
+14:01:05 | INFO: Blender create Mesh node QR01.Wrist continuity.L
+14:01:05 | INFO: Blender create Mesh node QR01.Wrist continuity.R
+14:01:05 | INFO: Blender create Mesh node QR02.Hair-tip.1.003
+14:01:05 | INFO: Blender create Mesh node QR02.Hair-tip.1.004
+14:01:05 | INFO: Blender create Mesh node QR02.Hair-tip.1.005
+14:01:05 | INFO: Blender create Mesh node QR02.Hair-tip.-1.003
+14:01:05 | INFO: Blender create Mesh node QR02.Hair-tip.-1.004
+14:01:05 | INFO: Blender create Mesh node QR02.Hair-tip.-1.005
+14:01:05 | INFO: Blender create Mesh node Face (merged)(Clone).001
+14:01:06 | INFO: Blender create Mesh node Cube.013
+14:01:06 | INFO: Blender create Mesh node Cube.010
+14:01:06 | INFO: Blender create Mesh node Cylinder
+14:01:06 | INFO: Blender create Mesh node Cylinder.001
+14:01:06 | INFO: Blender create Mesh node Cube.005
+14:01:06 | INFO: Blender create Mesh node Cube.006
+14:01:06 | INFO: Blender create Mesh node Cylinder.003
+14:01:06 | INFO: Blender create Mesh node Cylinder.006
+14:01:06 | INFO: Blender create Mesh node Cylinder.009
+14:01:06 | INFO: Blender create Mesh node Cylinder.012
+14:01:06 | INFO: Blender create Mesh node Cylinder.015
+14:01:06 | INFO: Blender create Mesh node Cylinder.004
+14:01:06 | INFO: Blender create Mesh node Cylinder.005
+14:01:06 | INFO: Blender create Mesh node Cylinder.007
+14:01:06 | INFO: Blender create Mesh node Cylinder.008
+14:01:06 | INFO: Blender create Mesh node Cylinder.010
+14:01:06 | INFO: Blender create Mesh node Cylinder.011
+14:01:06 | INFO: Blender create Mesh node Cylinder.013
+14:01:06 | INFO: Blender create Mesh node Cylinder.014
+14:01:06 | INFO: Blender create Mesh node Cylinder.016
+14:01:06 | INFO: Blender create Mesh node Cylinder.017
+14:01:06 | INFO: Blender create Mesh node Cube.007
+14:01:06 | INFO: Blender create Mesh node Cylinder.002
+14:01:06 | INFO: Blender create Mesh node Cube.012
+14:01:06 | INFO: Blender create Mesh node Cube.009
+14:01:06 | INFO: Blender create Mesh node Cube.004
+14:01:06 | INFO: Blender create Mesh node Cube.011
+14:01:06 | INFO: Blender create Mesh node Cube.008
+14:01:06 | INFO: glTF import finished in 4.31s
+{"originals_unchanged": {"D:\\Projects\\NekoAFK\\assets\\character\\quality-reset\\v001\\NekoAFK-editing-v001.blend": true, "D:\\Projects\\NekoAFK\\assets\\character\\quality-reset\\v001\\NekoAFK-model-v001.blend": true, "D:\\Projects\\NekoAFK\\assets\\character\\blender\\NekoAFK-canon.blend": true, "D:\\Projects\\NekoAFK\\assets\\character\\animations\\NekoAFK-barefoot-animated.glb": true, "D:\\Projects\\NekoAFK\\assets\\character\\animations\\NekoAFK-socks-animated.glb": true}, "imported_bones": 168, "face_keys": 57, "actions": ["Neko_QR02_EDITING_PHONE_08s"], "tail_ears_toe_chains_present": true, "note": "Blender core importer does not implement VRMC_materials_mtoon: material appearance is validated in Three.js using pixiv plugin, not inferred from this import."}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

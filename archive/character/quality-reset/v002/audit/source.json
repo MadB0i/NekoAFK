@@ -1,0 +1,3486 @@
+{
+  "objects": [
+    {
+      "name": "Body",
+      "vertices": 10317,
+      "materials": [
+        "QR01 \u2022 N00_000_00_Body_00_SKIN (Instance)",
+        "QR01 \u2022 N00_001_01_Bottoms_01_CLOTH (Instance)",
+        "QR01 \u2022 N00_005_01_Tops_01_CLOTH (Instance)",
+        "QR01 \u2022 N00_000_00_HairBack_00_HAIR (Instance)",
+        "QR01 \u2022 Accessory_CatEar_01_CLOTH (Instance)"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ],
+        [
+          "Surface refinement \u2022 hands and cloth",
+          "SUBSURF"
+        ]
+      ]
+    },
+    {
+      "name": "Face",
+      "vertices": 3989,
+      "materials": [
+        "QR01 \u2022 N00_000_00_FaceMouth_00_FACE (Instance)",
+        "QR01 \u2022 N00_000_00_EyeIris_00_EYE (Instance)",
+        "QR01 \u2022 N00_000_00_EyeHighlight_00_EYE (Instance)",
+        "QR01 \u2022 N00_000_00_Face_00_SKIN (Instance)",
+        "QR01 \u2022 N00_000_00_EyeWhite_00_EYE (Instance)",
+        "QR01 \u2022 N00_000_00_FaceBrow_00_FACE (Instance)",
+        "QR01 \u2022 N00_000_00_FaceEyeline_00_FACE (Instance)"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ],
+        [
+          "Face surface refinement",
+          "SUBSURF"
+        ]
+      ]
+    },
+    {
+      "name": "Hair",
+      "vertices": 22862,
+      "materials": [
+        "QR01 \u2022 N00_000_Hair_00_HAIR_01 (Instance)",
+        "QR01 \u2022 N00_000_Hair_00_HAIR_02 (Instance)"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "NekoAmberClip \u2022 permanent",
+      "vertices": 102,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Neko humanoid skin",
+          "ARMATURE"
+        ],
+        [
+          "Hair clip softened metal edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "NekoBareFeet \u2022 anatomical skin",
+      "vertices": 14288,
+      "materials": [
+        "QR01 \u2022 Neko \u2022 barefoot warm skin"
+      ],
+      "modifiers": [
+        [
+          "Neko humanoid skin",
+          "ARMATURE"
+        ],
+        [
+          "Smooth heel arch and toe silhouette",
+          "SUBSURF"
+        ]
+      ]
+    },
+    {
+      "name": "NekoChair.Armrest.-1",
+      "vertices": 96,
+      "materials": [
+        "Chair \u2022 charcoal fabric"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Armrest.1",
+      "vertices": 96,
+      "materials": [
+        "Chair \u2022 charcoal fabric"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.ArmSupport",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 dark alloy"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.ArmSupport.001",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 dark alloy"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Back",
+      "vertices": 96,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.BackInset",
+      "vertices": 96,
+      "materials": [
+        "Chair \u2022 charcoal fabric"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.BaseSpoke",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 dark alloy"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.BaseSpoke.001",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 dark alloy"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.BaseSpoke.002",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 dark alloy"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.BaseSpoke.003",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 dark alloy"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.BaseSpoke.004",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 dark alloy"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Caster",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Caster.001",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Caster.002",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Caster.003",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Caster.004",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Caster.005",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Caster.006",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Caster.007",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Caster.008",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Caster.009",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Headrest",
+      "vertices": 96,
+      "materials": [
+        "Chair \u2022 charcoal fabric"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Pedestal",
+      "vertices": 40,
+      "materials": [
+        "Chair \u2022 dark alloy"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Piping.-1",
+      "vertices": 96,
+      "materials": [
+        "Chair \u2022 restrained amber piping"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Piping.1",
+      "vertices": 96,
+      "materials": [
+        "Chair \u2022 restrained amber piping"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Seat",
+      "vertices": 96,
+      "materials": [
+        "Chair \u2022 charcoal fabric"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Wing.-1",
+      "vertices": 96,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoChair.Wing.1",
+      "vertices": 96,
+      "materials": [
+        "Chair \u2022 graphite"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "NekoCozySock.L",
+      "vertices": 1216,
+      "materials": [
+        "QR01 \u2022 Neko \u2022 cream cozy socks"
+      ],
+      "modifiers": [
+        [
+          "Neko humanoid skin",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "NekoCozySock.R",
+      "vertices": 1216,
+      "materials": [
+        "QR01 \u2022 Neko \u2022 cream cozy socks"
+      ],
+      "modifiers": [
+        [
+          "Neko humanoid skin",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "NekoJoggerCuff.L",
+      "vertices": 576,
+      "materials": [
+        "QR01 \u2022 Neko \u2022 charcoal rib knit"
+      ],
+      "modifiers": [
+        [
+          "Neko humanoid skin",
+          "ARMATURE"
+        ],
+        [
+          "Soft ribbed cuff edges",
+          "SUBSURF"
+        ]
+      ]
+    },
+    {
+      "name": "NekoJoggerCuff.R",
+      "vertices": 576,
+      "materials": [
+        "QR01 \u2022 Neko \u2022 charcoal rib knit"
+      ],
+      "modifiers": [
+        [
+          "Neko humanoid skin",
+          "ARMATURE"
+        ],
+        [
+          "Soft ribbed cuff edges",
+          "SUBSURF"
+        ]
+      ]
+    },
+    {
+      "name": "NekoSockRib.L",
+      "vertices": 576,
+      "materials": [
+        "QR01 \u2022 Neko \u2022 sock rib highlight"
+      ],
+      "modifiers": [
+        [
+          "Neko humanoid skin",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "NekoSockRib.R",
+      "vertices": 576,
+      "materials": [
+        "QR01 \u2022 Neko \u2022 sock rib highlight"
+      ],
+      "modifiers": [
+        [
+          "Neko humanoid skin",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "NekoTail \u2022 curved fluffy rest",
+      "vertices": 2842,
+      "materials": [
+        "QR01 \u2022 Neko \u2022 purple-black fur"
+      ],
+      "modifiers": [
+        [
+          "Neko humanoid skin",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01 Phone",
+      "vertices": 1728,
+      "materials": [
+        "QR01 Phone \u2022 satin obsidian",
+        "QR01 Phone \u2022 screen glass",
+        "QR01 Phone \u2022 amber trim"
+      ],
+      "modifiers": [
+        [
+          "Rigid grip attachment",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01 Studio cyclorama",
+      "vertices": 4,
+      "materials": [
+        "QR01 \u2022 studio floor"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "QR01.Nail.L.Index",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Index \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Index \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Little",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Little \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Little \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Middle",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Middle \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Middle \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Ring",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Ring \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Ring \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Thumb",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Thumb \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.L.Thumb \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Index",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Index \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Index \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Little",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Little \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Little \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Middle",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Middle \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Middle \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Ring",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Ring \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Ring \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Thumb",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Thumb \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Nail.R.Thumb \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.1",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.1 \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.1 \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.2",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.2 \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.2 \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.3",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.3 \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.3 \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.4",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.4 \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.4 \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.5",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.5 \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.L.5 \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.1",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.1 \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.1 \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.2",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.2 \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.2 \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.3",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.3 \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.3 \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.4",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.4 \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.4 \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.5",
+      "vertices": 493,
+      "materials": [
+        "QR01 \u2022 obsidian amber lacquer"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ],
+        [
+          "Acrylic free-edge thickness",
+          "SOLIDIFY"
+        ],
+        [
+          "Polished acrylic edge",
+          "BEVEL"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.5 \u2022 gold filament",
+      "vertices": 70,
+      "materials": [
+        "QR01 \u2022 brushed gold micro-inlay"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Pedicure.R.5 \u2022 proximal fold",
+      "vertices": 42,
+      "materials": [
+        "QR01 \u2022 soft cuticle"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Wrist continuity.L",
+      "vertices": 288,
+      "materials": [
+        "QR01 \u2022 N00_000_00_Body_00_SKIN (Instance)"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    },
+    {
+      "name": "QR01.Wrist continuity.R",
+      "vertices": 288,
+      "materials": [
+        "QR01 \u2022 N00_000_00_Body_00_SKIN (Instance)"
+      ],
+      "modifiers": [
+        [
+          "Canonical skeleton",
+          "ARMATURE"
+        ]
+      ]
+    }
+  ],
+  "bones": {
+    "Root": {
+      "head": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail": [
+        0.0,
+        3.2429099405817396e-08,
+        0.9474285244941711
+      ]
+    },
+    "J_Bip_C_Hips": {
+      "head": [
+        0.0,
+        -0.003576037473976612,
+        0.9474284052848816
+      ],
+      "tail": [
+        -5.618001079805719e-16,
+        -0.010154174640774727,
+        0.9994093775749207
+      ]
+    },
+    "J_Bip_C_Spine": {
+      "head": [
+        -6.066340194699581e-32,
+        -0.015897158533334732,
+        0.9986826181411743
+      ],
+      "tail": [
+        2.5560796782262774e-16,
+        -0.03255908936262131,
+        1.10783851146698
+      ]
+    },
+    "J_Bip_C_Chest": {
+      "head": [
+        2.054766603290719e-17,
+        -0.018899166956543922,
+        1.1099236011505127
+      ],
+      "tail": [
+        4.4307253208534104e-16,
+        -0.00590630155056715,
+        1.21605384349823
+      ]
+    },
+    "J_Bip_C_UpperChest": {
+      "head": [
+        -9.110802185953012e-18,
+        -0.004482203628867865,
+        1.2158795595169067
+      ],
+      "tail": [
+        -3.3615238371659836e-16,
+        0.04042898118495941,
+        1.343576192855835
+      ]
+    },
+    "J_Sec_L_Bust1": {
+      "head": [
+        0.05187595263123512,
+        -0.07238031178712845,
+        1.208736777305603
+      ],
+      "tail": [
+        0.06635462492704391,
+        -0.10052722692489624,
+        1.2122000455856323
+      ]
+    },
+    "J_Sec_L_Bust2": {
+      "head": [
+        0.0661260187625885,
+        -0.10064304620027542,
+        1.212214469909668
+      ],
+      "tail": [
+        0.09795483946800232,
+        -0.16251909732818604,
+        1.2198278903961182
+      ]
+    },
+    "J_Sec_L_Bust2_end": {
+      "head": [
+        0.0974523052573204,
+        -0.16277366876602173,
+        1.2198596000671387
+      ],
+      "tail": [
+        0.11336672306060791,
+        -0.19371169805526733,
+        1.2236663103103638
+      ]
+    },
+    "J_Sec_R_Bust1": {
+      "head": [
+        -0.05187595263123512,
+        -0.07238031178712845,
+        1.208736777305603
+      ],
+      "tail": [
+        -0.06635462492704391,
+        -0.10052722692489624,
+        1.2122000455856323
+      ]
+    },
+    "J_Sec_R_Bust2": {
+      "head": [
+        -0.0661260187625885,
+        -0.10064304620027542,
+        1.212214469909668
+      ],
+      "tail": [
+        -0.09795483946800232,
+        -0.16251909732818604,
+        1.2198278903961182
+      ]
+    },
+    "J_Sec_R_Bust2_end": {
+      "head": [
+        -0.0974523052573204,
+        -0.16277366876602173,
+        1.2198596000671387
+      ],
+      "tail": [
+        -0.11336672306060791,
+        -0.19371169805526733,
+        1.2236663103103638
+      ]
+    },
+    "J_Sec_C_Hood_01": {
+      "head": [
+        2.6608421689805673e-17,
+        0.10002346336841583,
+        1.3515032529830933
+      ],
+      "tail": [
+        1.8794375727075466e-15,
+        0.10792464017868042,
+        1.271704077720642
+      ]
+    },
+    "J_Sec_C_Hood_end_01": {
+      "head": [
+        1.8794375727075466e-15,
+        0.10792464017868042,
+        1.271704077720642
+      ],
+      "tail": [
+        3.379232649115111e-15,
+        0.11482183635234833,
+        1.2020447254180908
+      ]
+    },
+    "J_Sec_C_Hood_end_01_end": {
+      "head": [
+        3.379232649115111e-15,
+        0.11482183635234833,
+        1.2020447254180908
+      ],
+      "tail": [
+        3.210725907365486e-09,
+        0.11827041953802109,
+        1.16721510887146
+      ]
+    },
+    "J_Sec_L_HoodString1_01": {
+      "head": [
+        0.03307401016354561,
+        -0.05706636235117912,
+        1.328341007232666
+      ],
+      "tail": [
+        0.038996435701847076,
+        -0.12203626334667206,
+        1.2299293279647827
+      ]
+    },
+    "J_Sec_L_HoodString2_01": {
+      "head": [
+        0.03910508751869202,
+        -0.1132136881351471,
+        1.2241113185882568
+      ],
+      "tail": [
+        0.043697185814380646,
+        -0.11877632141113281,
+        1.0981382131576538
+      ]
+    },
+    "J_Sec_L_HoodString2_end_01": {
+      "head": [
+        0.043606217950582504,
+        -0.1187763437628746,
+        1.0981348752975464
+      ],
+      "tail": [
+        0.04615374654531479,
+        -0.12186231464147568,
+        1.0282493829727173
+      ]
+    },
+    "J_Sec_L_HoodString2_end_01_end": {
+      "head": [
+        0.046103283762931824,
+        -0.12186231464147568,
+        1.028247594833374
+      ],
+      "tail": [
+        0.047377049922943115,
+        -0.12340530008077621,
+        0.9933048486709595
+      ]
+    },
+    "J_Sec_R_HoodString1_01": {
+      "head": [
+        -0.03307401016354561,
+        -0.05706636235117912,
+        1.328341007232666
+      ],
+      "tail": [
+        -0.03899645432829857,
+        -0.12203626334667206,
+        1.2299293279647827
+      ]
+    },
+    "J_Sec_R_HoodString2_01": {
+      "head": [
+        -0.03910508751869202,
+        -0.1132136881351471,
+        1.2241113185882568
+      ],
+      "tail": [
+        -0.043697208166122437,
+        -0.11877632141113281,
+        1.0981382131576538
+      ]
+    },
+    "J_Sec_R_HoodString2_end_01": {
+      "head": [
+        -0.043606217950582504,
+        -0.1187763437628746,
+        1.0981348752975464
+      ],
+      "tail": [
+        -0.04615376144647598,
+        -0.12186231464147568,
+        1.0282493829727173
+      ]
+    },
+    "J_Sec_R_HoodString2_end_01_end": {
+      "head": [
+        -0.046103283762931824,
+        -0.12186231464147568,
+        1.028247594833374
+      ],
+      "tail": [
+        -0.04737705737352371,
+        -0.12340530008077621,
+        0.9933048486709595
+      ]
+    },
+    "J_Bip_C_Neck": {
+      "head": [
+        -1.0218948259321721e-16,
+        0.03327256441116333,
+        1.3460931777954102
+      ],
+      "tail": [
+        -2.614365603513622e-16,
+        0.024416860193014145,
+        1.4198251962661743
+      ]
+    },
+    "J_Bip_C_Head": {
+      "head": [
+        2.600535065067078e-10,
+        0.02380930632352829,
+        1.4197522401809692
+      ],
+      "tail": [
+        -3.6604512754223606e-09,
+        0.02292392961680889,
+        1.5016649961471558
+      ]
+    },
+    "J_Adj_L_FaceEye": {
+      "head": [
+        0.017233964055776596,
+        0.004016901832073927,
+        1.479394793510437
+      ],
+      "tail": [
+        0.03222095966339111,
+        -0.034041013568639755,
+        1.4772487878799438
+      ]
+    },
+    "J_Adj_R_FaceEye": {
+      "head": [
+        -0.017233956605196,
+        0.0040168920531868935,
+        1.479394793510437
+      ],
+      "tail": [
+        -0.03222087770700455,
+        -0.03404105827212334,
+        1.4772487878799438
+      ]
+    },
+    "J_Sec_Hair1_01": {
+      "head": [
+        -0.07357735186815262,
+        0.005839692894369364,
+        1.4528512954711914
+      ],
+      "tail": [
+        -0.06148945540189743,
+        0.0028884238563477993,
+        1.4069840908050537
+      ]
+    },
+    "J_Sec_Hair2_01": {
+      "head": [
+        -0.061503879725933075,
+        0.002888217568397522,
+        1.406980276107788
+      ],
+      "tail": [
+        -0.04369953274726868,
+        -0.0014587263576686382,
+        1.3394221067428589
+      ]
+    },
+    "J_Sec_Hair2_01_end": {
+      "head": [
+        -0.04372077062726021,
+        -0.0014590336941182613,
+        1.33941650390625
+      ],
+      "tail": [
+        -0.034818604588508606,
+        -0.003632504492998123,
+        1.3056373596191406
+      ]
+    },
+    "J_Sec_Hair1_02": {
+      "head": [
+        0.07357736676931381,
+        0.005839742720127106,
+        1.4528512954711914
+      ],
+      "tail": [
+        0.06148960813879967,
+        0.002888498129323125,
+        1.4069846868515015
+      ]
+    },
+    "J_Sec_Hair2_02": {
+      "head": [
+        0.0615040548145771,
+        0.0028883060440421104,
+        1.4069808721542358
+      ],
+      "tail": [
+        0.04369968920946121,
+        -0.0014586602337658405,
+        1.3394227027893066
+      ]
+    },
+    "J_Sec_Hair2_02_end": {
+      "head": [
+        0.04372096061706543,
+        -0.0014589367201551795,
+        1.3394170999526978
+      ],
+      "tail": [
+        0.034818775951862335,
+        -0.003632419742643833,
+        1.305638074874878
+      ]
+    },
+    "J_Sec_Hair1_03": {
+      "head": [
+        -0.08685421943664551,
+        -0.029951855540275574,
+        1.5249069929122925
+      ],
+      "tail": [
+        -0.08679460734128952,
+        -0.030436279252171516,
+        1.4784871339797974
+      ]
+    },
+    "J_Sec_Hair2_03": {
+      "head": [
+        -0.08679460734128952,
+        -0.030436279252171516,
+        1.4784871339797974
+      ],
+      "tail": [
+        -0.06922930479049683,
+        -0.040877144783735275,
+        1.4370408058166504
+      ]
+    },
+    "J_Sec_Hair3_03": {
+      "head": [
+        -0.06924833357334137,
+        -0.040879037231206894,
+        1.4370331764221191
+      ],
+      "tail": [
+        -0.04263994097709656,
+        -0.05669514089822769,
+        1.3742491006851196
+      ]
+    },
+    "J_Sec_Hair3_03_end": {
+      "head": [
+        -0.04266878962516785,
+        -0.056697990745306015,
+        1.3742376565933228
+      ],
+      "tail": [
+        -0.029364585876464844,
+        -0.06460604816675186,
+        1.3428456783294678
+      ]
+    },
+    "J_Sec_Hair1_04": {
+      "head": [
+        0.07256405055522919,
+        -0.04333357512950897,
+        1.5377750396728516
+      ],
+      "tail": [
+        0.08026224374771118,
+        -0.03975947946310043,
+        1.489618182182312
+      ]
+    },
+    "J_Sec_Hair2_04": {
+      "head": [
+        0.08025266975164413,
+        -0.03975936397910118,
+        1.4896166324615479
+      ],
+      "tail": [
+        0.06675973534584045,
+        -0.03839877247810364,
+        1.4432294368743896
+      ]
+    },
+    "J_Sec_Hair3_04": {
+      "head": [
+        0.06677550077438354,
+        -0.038398630917072296,
+        1.4432249069213867
+      ],
+      "tail": [
+        0.047232210636138916,
+        -0.03642792999744415,
+        1.376037359237671
+      ]
+    },
+    "J_Sec_Hair3_04_end": {
+      "head": [
+        0.04725503548979759,
+        -0.03642772510647774,
+        1.376030683517456
+      ],
+      "tail": [
+        0.037483397871255875,
+        -0.035442378371953964,
+        1.3424369096755981
+      ]
+    },
+    "J_Sec_Hair1_05": {
+      "head": [
+        -0.04922889545559883,
+        -0.06325363367795944,
+        1.5468900203704834
+      ],
+      "tail": [
+        -0.056480180472135544,
+        -0.06356029957532883,
+        1.5096348524093628
+      ]
+    },
+    "J_Sec_Hair2_05": {
+      "head": [
+        -0.056471239775419235,
+        -0.06356023997068405,
+        1.5096330642700195
+      ],
+      "tail": [
+        -0.05282532423734665,
+        -0.06190865486860275,
+        1.4726409912109375
+      ]
+    },
+    "J_Sec_Hair3_05": {
+      "head": [
+        -0.05282983556389809,
+        -0.06190863996744156,
+        1.4726405143737793
+      ],
+      "tail": [
+        -0.045970719307661057,
+        -0.058801472187042236,
+        1.403046727180481
+      ]
+    },
+    "J_Sec_Hair3_05_end": {
+      "head": [
+        -0.04597922042012215,
+        -0.05880146846175194,
+        1.403045892715454
+      ],
+      "tail": [
+        -0.04254966229200363,
+        -0.05724788457155228,
+        1.3682489395141602
+      ]
+    },
+    "J_Sec_Hair1_06": {
+      "head": [
+        0.013915670104324818,
+        -0.07416509836912155,
+        1.5403757095336914
+      ],
+      "tail": [
+        0.03699333593249321,
+        -0.06668521463871002,
+        1.5098069906234741
+      ]
+    },
+    "J_Sec_Hair2_06": {
+      "head": [
+        0.036974091082811356,
+        -0.06668178737163544,
+        1.5097932815551758
+      ],
+      "tail": [
+        0.060232169926166534,
+        -0.058142371475696564,
+        1.4795584678649902
+      ]
+    },
+    "J_Sec_Hair3_06": {
+      "head": [
+        0.06021307781338692,
+        -0.05813860520720482,
+        1.4795448780059814
+      ],
+      "tail": [
+        0.10186260938644409,
+        -0.04284660145640373,
+        1.4254018068313599
+      ]
+    },
+    "J_Sec_Hair3_06_end": {
+      "head": [
+        0.10182837396860123,
+        -0.04283986985683441,
+        1.425377368927002
+      ],
+      "tail": [
+        0.12265313416719437,
+        -0.03519387170672417,
+        1.3983057737350464
+      ]
+    },
+    "J_Sec_Hair1_07": {
+      "head": [
+        -0.0021963410545140505,
+        -0.07663609087467194,
+        1.553186297416687
+      ],
+      "tail": [
+        0.0242284145206213,
+        -0.07814907282590866,
+        1.514806866645813
+      ]
+    },
+    "J_Sec_Hair2_07": {
+      "head": [
+        0.024205656722187996,
+        -0.07814967632293701,
+        1.5147912502288818
+      ],
+      "tail": [
+        0.05689164996147156,
+        -0.06212802231311798,
+        1.4852651357650757
+      ]
+    },
+    "J_Sec_Hair3_07": {
+      "head": [
+        0.05687010660767555,
+        -0.062118079513311386,
+        1.4852466583251953
+      ],
+      "tail": [
+        0.10568562150001526,
+        -0.038190245628356934,
+        1.441150188446045
+      ]
+    },
+    "J_Sec_Hair3_07_end": {
+      "head": [
+        0.1056535392999649,
+        -0.038175348192453384,
+        1.4411227703094482
+      ],
+      "tail": [
+        0.1300612986087799,
+        -0.02621142752468586,
+        1.419074535369873
+      ]
+    },
+    "J_Sec_Hair1_08": {
+      "head": [
+        0.10351114720106125,
+        0.03779497370123863,
+        1.4716918468475342
+      ],
+      "tail": [
+        0.1098853200674057,
+        0.05675319582223892,
+        1.4013805389404297
+      ]
+    },
+    "J_Sec_Hair2_08": {
+      "head": [
+        0.10987725108861923,
+        0.05675340071320534,
+        1.4013798236846924
+      ],
+      "tail": [
+        0.12014682590961456,
+        0.08779171109199524,
+        1.3361831903457642
+      ]
+    },
+    "J_Sec_Hair3_08": {
+      "head": [
+        0.12013398110866547,
+        0.0877925455570221,
+        1.3361815214157104
+      ],
+      "tail": [
+        0.11422257125377655,
+        0.09005264937877655,
+        1.2678794860839844
+      ]
+    },
+    "J_Sec_Hair4_08": {
+      "head": [
+        0.11423011869192123,
+        0.09005261957645416,
+        1.2678788900375366
+      ],
+      "tail": [
+        0.10819758474826813,
+        0.0923590436577797,
+        1.198177456855774
+      ]
+    },
+    "J_Sec_Hair4_08_end": {
+      "head": [
+        0.10820530354976654,
+        0.09235900640487671,
+        1.1981767416000366
+      ],
+      "tail": [
+        0.10518904030323029,
+        0.09351222217082977,
+        1.1633260250091553
+      ]
+    },
+    "J_Sec_Hair1_09": {
+      "head": [
+        -0.09285946190357208,
+        -0.006877940613776445,
+        1.4651381969451904
+      ],
+      "tail": [
+        -0.08985789120197296,
+        -0.01708117499947548,
+        1.390894889831543
+      ]
+    },
+    "J_Sec_Hair2_09": {
+      "head": [
+        -0.08986171334981918,
+        -0.01708114892244339,
+        1.3908947706222534
+      ],
+      "tail": [
+        -0.07239832729101181,
+        -0.04596669226884842,
+        1.3286198377609253
+      ]
+    },
+    "J_Sec_Hair3_09": {
+      "head": [
+        -0.07241926342248917,
+        -0.045969050377607346,
+        1.3286150693893433
+      ],
+      "tail": [
+        -0.05516158044338226,
+        -0.07451434433460236,
+        1.2670737504959106
+      ]
+    },
+    "J_Sec_Hair3_09_end": {
+      "head": [
+        -0.05518227815628052,
+        -0.0745166540145874,
+        1.2670689821243286
+      ],
+      "tail": [
+        -0.046553440392017365,
+        -0.08878929913043976,
+        1.2362983226776123
+      ]
+    },
+    "J_Sec_Hair1_10": {
+      "head": [
+        0.08590035885572433,
+        0.006552079226821661,
+        1.462304711341858
+      ],
+      "tail": [
+        0.08179125934839249,
+        -0.009298020973801613,
+        1.3964370489120483
+      ]
+    },
+    "J_Sec_Hair2_10": {
+      "head": [
+        0.08179648965597153,
+        -0.009298103861510754,
+        1.3964366912841797
+      ],
+      "tail": [
+        0.05843909829854965,
+        -0.030345600098371506,
+        1.3394521474838257
+      ]
+    },
+    "J_Sec_Hair3_10": {
+      "head": [
+        0.05846504494547844,
+        -0.030349180102348328,
+        1.3394428491592407
+      ],
+      "tail": [
+        0.033343009650707245,
+        -0.052986808121204376,
+        1.2781531810760498
+      ]
+    },
+    "J_Sec_Hair3_10_end": {
+      "head": [
+        0.033370934426784515,
+        -0.05299064517021179,
+        1.2781431674957275
+      ],
+      "tail": [
+        0.020809922367334366,
+        -0.06430947035551071,
+        1.2474983930587769
+      ]
+    },
+    "J_Sec_Hair1_11": {
+      "head": [
+        0.05349837616086006,
+        0.11381976306438446,
+        1.4741311073303223
+      ],
+      "tail": [
+        0.0512138232588768,
+        0.11746793240308762,
+        1.4027948379516602
+      ]
+    },
+    "J_Sec_Hair2_11": {
+      "head": [
+        0.051216766238212585,
+        0.11746792495250702,
+        1.4027947187423706
+      ],
+      "tail": [
+        0.05521829426288605,
+        0.13138215243816376,
+        1.3328566551208496
+      ]
+    },
+    "J_Sec_Hair3_11": {
+      "head": [
+        0.055213265120983124,
+        0.13138219714164734,
+        1.3328564167022705
+      ],
+      "tail": [
+        0.04981691390275955,
+        0.12823447585105896,
+        1.2640836238861084
+      ]
+    },
+    "J_Sec_Hair4_11": {
+      "head": [
+        0.049823738634586334,
+        0.12823443114757538,
+        1.2640831470489502
+      ],
+      "tail": [
+        0.04435361176729202,
+        0.12504367530345917,
+        1.1943702697753906
+      ]
+    },
+    "J_Sec_Hair4_11_end": {
+      "head": [
+        0.044360529631376266,
+        0.1250436156988144,
+        1.1943696737289429
+      ],
+      "tail": [
+        0.04162546992301941,
+        0.12344823777675629,
+        1.159513235092163
+      ]
+    },
+    "J_Sec_Hair1_12": {
+      "head": [
+        -0.0026649332139641047,
+        0.12844857573509216,
+        1.475965976715088
+      ],
+      "tail": [
+        -0.006987930275499821,
+        0.12985756993293762,
+        1.4017298221588135
+      ]
+    },
+    "J_Sec_Hair2_12": {
+      "head": [
+        -0.006982414051890373,
+        0.12985752522945404,
+        1.4017294645309448
+      ],
+      "tail": [
+        -0.010507074184715748,
+        0.14421792328357697,
+        1.3288918733596802
+      ]
+    },
+    "J_Sec_Hair3_12": {
+      "head": [
+        -0.010502612218260765,
+        0.14421801269054413,
+        1.328891634941101
+      ],
+      "tail": [
+        -0.0052557396702468395,
+        0.13228094577789307,
+        1.2587463855743408
+      ]
+    },
+    "J_Sec_Hair4_12": {
+      "head": [
+        -0.005262397695332766,
+        0.1322808712720871,
+        1.2587459087371826
+      ],
+      "tail": [
+        -0.00011457502841949463,
+        0.12056914716959,
+        1.1899248361587524
+      ]
+    },
+    "J_Sec_Hair4_12_end": {
+      "head": [
+        -0.00012110885290894657,
+        0.12056907266378403,
+        1.1899243593215942
+      ],
+      "tail": [
+        0.0024528021458536386,
+        0.11471320688724518,
+        1.1555137634277344
+      ]
+    },
+    "J_Sec_Hair1_13": {
+      "head": [
+        -0.04740072786808014,
+        0.09374985843896866,
+        1.479539394378662
+      ],
+      "tail": [
+        -0.05404231697320938,
+        0.10949737578630447,
+        1.4077256917953491
+      ]
+    },
+    "J_Sec_Hair2_13": {
+      "head": [
+        -0.05403387174010277,
+        0.10949750989675522,
+        1.4077249765396118
+      ],
+      "tail": [
+        -0.05414315685629845,
+        0.11573538929224014,
+        1.3339650630950928
+      ]
+    },
+    "J_Sec_Hair3_13": {
+      "head": [
+        -0.05414315685629845,
+        0.11573538929224014,
+        1.3339650630950928
+      ],
+      "tail": [
+        -0.054075688123703,
+        0.1217135563492775,
+        1.2601780891418457
+      ]
+    },
+    "J_Sec_Hair4_13": {
+      "head": [
+        -0.054075688123703,
+        0.1217135563492775,
+        1.2601780891418457
+      ],
+      "tail": [
+        -0.054011888802051544,
+        0.12736636400222778,
+        1.1904067993164062
+      ]
+    },
+    "J_Sec_Hair4_13_end": {
+      "head": [
+        -0.054011888802051544,
+        0.12736636400222778,
+        1.1904067993164062
+      ],
+      "tail": [
+        -0.05397995188832283,
+        0.13019274175167084,
+        1.1555211544036865
+      ]
+    },
+    "J_Sec_Hair1_14": {
+      "head": [
+        -0.10348239541053772,
+        0.037702374160289764,
+        1.4721426963806152
+      ],
+      "tail": [
+        -0.10981147736310959,
+        0.056126147508621216,
+        1.401806354522705
+      ]
+    },
+    "J_Sec_Hair2_14": {
+      "head": [
+        -0.1098034456372261,
+        0.05612625926733017,
+        1.4018056392669678
+      ],
+      "tail": [
+        -0.12155299633741379,
+        0.08314450085163116,
+        1.3350797891616821
+      ]
+    },
+    "J_Sec_Hair3_14": {
+      "head": [
+        -0.1215384230017662,
+        0.08314536511898041,
+        1.3350775241851807
+      ],
+      "tail": [
+        -0.11422097682952881,
+        0.09005225449800491,
+        1.267879843711853
+      ]
+    },
+    "J_Sec_Hair4_14": {
+      "head": [
+        -0.11423022300004959,
+        0.09005235880613327,
+        1.2678788900375366
+      ],
+      "tail": [
+        -0.10669168084859848,
+        0.09716794639825821,
+        1.19865083694458
+      ]
+    },
+    "J_Sec_Hair4_14_end": {
+      "head": [
+        -0.10670120269060135,
+        0.09716805815696716,
+        1.1986497640609741
+      ],
+      "tail": [
+        -0.1029319316148758,
+        0.10072584450244904,
+        1.1640357971191406
+      ]
+    },
+    "J_Opt_L_CatEar1_01": {
+      "head": [
+        0.07874198257923126,
+        0.023234784603118896,
+        1.579512119293213
+      ],
+      "tail": [
+        0.07873648405075073,
+        0.023237571120262146,
+        1.5795042514801025
+      ]
+    },
+    "J_Opt_L_CatEar2_01": {
+      "head": [
+        0.07874196767807007,
+        0.02323484607040882,
+        1.5795120000839233
+      ],
+      "tail": [
+        0.12345560640096664,
+        0.0005890019237995148,
+        1.6434857845306396
+      ]
+    },
+    "J_Opt_L_CatEar2_end_01": {
+      "head": [
+        0.12341558188199997,
+        0.0005802931846119463,
+        1.6435106992721558
+      ],
+      "tail": [
+        0.16192862391471863,
+        -0.018925171345472336,
+        1.698613166809082
+      ]
+    },
+    "J_Opt_L_CatEar2_end_01_end": {
+      "head": [
+        0.16189420223236084,
+        -0.018932698294520378,
+        1.6986345052719116
+      ],
+      "tail": [
+        0.18115073442459106,
+        -0.02868543565273285,
+        1.72618567943573
+      ]
+    },
+    "J_Opt_R_CatEar1_01": {
+      "head": [
+        -0.07874199748039246,
+        0.023234713822603226,
+        1.579512357711792
+      ],
+      "tail": [
+        -0.07874036580324173,
+        0.02322511002421379,
+        1.5795100927352905
+      ]
+    },
+    "J_Opt_R_CatEar2_01": {
+      "head": [
+        -0.07874199748039246,
+        0.023234713822603226,
+        1.579512357711792
+      ],
+      "tail": [
+        -0.12345541268587112,
+        0.0005889404565095901,
+        1.6434859037399292
+      ]
+    },
+    "J_Opt_R_CatEar2_end_01": {
+      "head": [
+        -0.12341567873954773,
+        0.0005802053492516279,
+        1.6435105800628662
+      ],
+      "tail": [
+        -0.1619287133216858,
+        -0.018925298005342484,
+        1.6986130475997925
+      ]
+    },
+    "J_Opt_R_CatEar2_end_01_end": {
+      "head": [
+        -0.1618945300579071,
+        -0.01893283613026142,
+        1.6986342668533325
+      ],
+      "tail": [
+        -0.18115104734897614,
+        -0.028685588389635086,
+        1.7261855602264404
+      ]
+    },
+    "J_Bip_L_Shoulder": {
+      "head": [
+        0.021219473332166672,
+        0.02501673810184002,
+        1.3199083805084229
+      ],
+      "tail": [
+        0.09289436042308807,
+        0.02501673437654972,
+        1.3097093105316162
+      ]
+    },
+    "J_Bip_L_UpperArm": {
+      "head": [
+        0.09283916652202606,
+        0.025016790255904198,
+        1.309321403503418
+      ],
+      "tail": [
+        0.3085784912109375,
+        0.025016779080033302,
+        1.3093212842941284
+      ]
+    },
+    "J_Bip_L_LowerArm": {
+      "head": [
+        0.3085784912109375,
+        0.025016779080033302,
+        1.3093212842941284
+      ],
+      "tail": [
+        0.511991024017334,
+        0.025016792118549347,
+        1.3093212842941284
+      ]
+    },
+    "J_Bip_L_Hand": {
+      "head": [
+        0.511991024017334,
+        0.024990754202008247,
+        1.3093235492706299
+      ],
+      "tail": [
+        0.5616587400436401,
+        0.024990759789943695,
+        1.3093235492706299
+      ]
+    },
+    "J_Bip_L_Index1": {
+      "head": [
+        0.5740354061126709,
+        0.005642242729663849,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.6055514812469482,
+        0.006254013627767563,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_L_Index2": {
+      "head": [
+        0.60555100440979,
+        0.006278331391513348,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.6249378323554993,
+        0.007025981321930885,
+        1.3160276412963867
+      ]
+    },
+    "J_Bip_L_Index3": {
+      "head": [
+        0.6249361038208008,
+        0.007054929155856371,
+        1.316006064414978
+      ],
+      "tail": [
+        0.634629487991333,
+        0.007378480397164822,
+        1.315669059753418
+      ]
+    },
+    "J_Bip_L_Little1": {
+      "head": [
+        0.5698832869529724,
+        0.05370892956852913,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.5996752977371216,
+        0.05370890349149704,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_L_Little2": {
+      "head": [
+        0.5996752977371216,
+        0.05370890349149704,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.6168455481529236,
+        0.05370890349149704,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_L_Little3": {
+      "head": [
+        0.6168455481529236,
+        0.05370890349149704,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.6254280805587769,
+        0.05354391410946846,
+        1.3167215585708618
+      ]
+    },
+    "J_Bip_L_Middle1": {
+      "head": [
+        0.5748804807662964,
+        0.022975875064730644,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.6099919676780701,
+        0.022975871339440346,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_L_Middle2": {
+      "head": [
+        0.6099919676780701,
+        0.022975871339440346,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.6316527128219604,
+        0.02297588437795639,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_L_Middle3": {
+      "head": [
+        0.6316527128219604,
+        0.02297588437795639,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.642483115196228,
+        0.02297588437795639,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_L_Ring1": {
+      "head": [
+        0.5741642117500305,
+        0.03836575523018837,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.6067343354225159,
+        0.03836575895547867,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_L_Ring2": {
+      "head": [
+        0.6067343354225159,
+        0.03836575895547867,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.6255307197570801,
+        0.03836577758193016,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_L_Ring3": {
+      "head": [
+        0.6255307197570801,
+        0.03836577758193016,
+        1.3165881633758545
+      ],
+      "tail": [
+        0.6349257230758667,
+        0.0385807603597641,
+        1.3164712190628052
+      ]
+    },
+    "J_Bip_L_Thumb1": {
+      "head": [
+        0.5153301358222961,
+        0.00927773304283619,
+        1.2994722127914429
+      ],
+      "tail": [
+        0.54939866065979,
+        -0.019867924973368645,
+        1.2974857091903687
+      ]
+    },
+    "J_Bip_L_Thumb2": {
+      "head": [
+        0.5488466024398804,
+        -0.020510245114564896,
+        1.297442078590393
+      ],
+      "tail": [
+        0.5705416798591614,
+        -0.03748057782649994,
+        1.2965092658996582
+      ]
+    },
+    "J_Bip_L_Thumb3": {
+      "head": [
+        0.5702256560325623,
+        -0.03788333386182785,
+        1.2964869737625122
+      ],
+      "tail": [
+        0.5803651809692383,
+        -0.04717989265918732,
+        1.2956815958023071
+      ]
+    },
+    "J_Bip_R_Shoulder": {
+      "head": [
+        -0.021219473332166672,
+        0.02501673810184002,
+        1.3199083805084229
+      ],
+      "tail": [
+        -0.09289436042308807,
+        0.025016730651259422,
+        1.3097093105316162
+      ]
+    },
+    "J_Bip_R_UpperArm": {
+      "head": [
+        -0.09283916652202606,
+        0.025016790255904198,
+        1.309321403503418
+      ],
+      "tail": [
+        -0.3085784912109375,
+        0.025016779080033302,
+        1.3093212842941284
+      ]
+    },
+    "J_Bip_R_LowerArm": {
+      "head": [
+        -0.3085784912109375,
+        0.025016779080033302,
+        1.3093212842941284
+      ],
+      "tail": [
+        -0.511991024017334,
+        0.025016779080033302,
+        1.3093212842941284
+      ]
+    },
+    "J_Bip_R_Hand": {
+      "head": [
+        -0.511991024017334,
+        0.024990754202008247,
+        1.3093235492706299
+      ],
+      "tail": [
+        -0.5616587400436401,
+        0.024990754202008247,
+        1.3093235492706299
+      ]
+    },
+    "J_Bip_R_Index1": {
+      "head": [
+        -0.5740354061126709,
+        0.005642242729663849,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.6055514812469482,
+        0.006254011765122414,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_R_Index2": {
+      "head": [
+        -0.60555100440979,
+        0.006278331391513348,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.6249378323554993,
+        0.007025979924947023,
+        1.3160276412963867
+      ]
+    },
+    "J_Bip_R_Index3": {
+      "head": [
+        -0.6249361038208008,
+        0.007054929155856371,
+        1.316006064414978
+      ],
+      "tail": [
+        -0.634629487991333,
+        0.007378479931503534,
+        1.315669059753418
+      ]
+    },
+    "J_Bip_R_Little1": {
+      "head": [
+        -0.5698832869529724,
+        0.05370892956852913,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.5996752977371216,
+        0.05370890349149704,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_R_Little2": {
+      "head": [
+        -0.5996752977371216,
+        0.05370890349149704,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.6168455481529236,
+        0.05370890349149704,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_R_Little3": {
+      "head": [
+        -0.6168455481529236,
+        0.05370890349149704,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.6254280805587769,
+        0.05354391410946846,
+        1.3167215585708618
+      ]
+    },
+    "J_Bip_R_Middle1": {
+      "head": [
+        -0.5748804807662964,
+        0.022975875064730644,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.6099919676780701,
+        0.022975871339440346,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_R_Middle2": {
+      "head": [
+        -0.6099919676780701,
+        0.022975871339440346,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.6316527128219604,
+        0.02297588437795639,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_R_Middle3": {
+      "head": [
+        -0.6316527128219604,
+        0.02297588437795639,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.642483115196228,
+        0.02297588437795639,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_R_Ring1": {
+      "head": [
+        -0.5741642117500305,
+        0.03836575523018837,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.6067343354225159,
+        0.03836575895547867,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_R_Ring2": {
+      "head": [
+        -0.6067343354225159,
+        0.03836575895547867,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.6255307197570801,
+        0.03836577758193016,
+        1.3165881633758545
+      ]
+    },
+    "J_Bip_R_Ring3": {
+      "head": [
+        -0.6255307197570801,
+        0.03836577758193016,
+        1.3165881633758545
+      ],
+      "tail": [
+        -0.6349257230758667,
+        0.0385807566344738,
+        1.3164712190628052
+      ]
+    },
+    "J_Bip_R_Thumb1": {
+      "head": [
+        -0.5153301358222961,
+        0.00927773304283619,
+        1.2994722127914429
+      ],
+      "tail": [
+        -0.54939866065979,
+        -0.01986793614923954,
+        1.2974857091903687
+      ]
+    },
+    "J_Bip_R_Thumb2": {
+      "head": [
+        -0.5488466024398804,
+        -0.020510245114564896,
+        1.297442078590393
+      ],
+      "tail": [
+        -0.5705416798591614,
+        -0.03748057782649994,
+        1.2965092658996582
+      ]
+    },
+    "J_Bip_R_Thumb3": {
+      "head": [
+        -0.5702256560325623,
+        -0.03788333386182785,
+        1.2964869737625122
+      ],
+      "tail": [
+        -0.5803651809692383,
+        -0.04717989265918732,
+        1.2956815958023071
+      ]
+    },
+    "QR01_Phone": {
+      "head": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail": [
+        0.0,
+        0.0,
+        0.10000000149011612
+      ]
+    },
+    "J_Bip_L_UpperLeg": {
+      "head": [
+        0.07310475409030914,
+        2.286501694470644e-05,
+        0.9082778096199036
+      ],
+      "tail": [
+        0.07310471683740616,
+        0.008091944269835949,
+        0.5226614475250244
+      ]
+    },
+    "J_Bip_L_LowerLeg": {
+      "head": [
+        0.07310473918914795,
+        0.009838685393333435,
+        0.522697925567627
+      ],
+      "tail": [
+        0.07310470193624496,
+        0.03903905674815178,
+        0.08456617593765259
+      ]
+    },
+    "J_Bip_L_Foot": {
+      "head": [
+        0.07310473918914795,
+        0.03455064818263054,
+        0.08426706492900848
+      ],
+      "tail": [
+        0.07310476154088974,
+        -0.06669668853282928,
+        0.08371219038963318
+      ]
+    },
+    "J_Bip_L_ToeBase": {
+      "head": [
+        0.07310473918914795,
+        -0.06636101752519608,
+        0.022465363144874573
+      ],
+      "tail": [
+        0.07310474663972855,
+        -0.11698301136493683,
+        0.021968550980091095
+      ]
+    },
+    "Neko_L_Toe01_Prox": {
+      "head": [
+        0.055799998342990875,
+        -0.06599999964237213,
+        0.02199999988079071
+      ],
+      "tail": [
+        0.055799998342990875,
+        -0.0860000029206276,
+        0.019999999552965164
+      ]
+    },
+    "Neko_L_Toe01_Dist": {
+      "head": [
+        0.055799998342990875,
+        -0.0860000029206276,
+        0.019999999552965164
+      ],
+      "tail": [
+        0.055799998342990875,
+        -0.10530239343643188,
+        0.017000000923871994
+      ]
+    },
+    "Neko_L_Toe02_Prox": {
+      "head": [
+        0.07109999656677246,
+        -0.06599999964237213,
+        0.02199999988079071
+      ],
+      "tail": [
+        0.07109999656677246,
+        -0.0860000029206276,
+        0.019999999552965164
+      ]
+    },
+    "Neko_L_Toe02_Dist": {
+      "head": [
+        0.07109999656677246,
+        -0.0860000029206276,
+        0.019999999552965164
+      ],
+      "tail": [
+        0.07109999656677246,
+        -0.10849940031766891,
+        0.017000000923871994
+      ]
+    },
+    "Neko_L_Toe03_Prox": {
+      "head": [
+        0.08410000056028366,
+        -0.06599999964237213,
+        0.02199999988079071
+      ],
+      "tail": [
+        0.08410000056028366,
+        -0.0860000029206276,
+        0.019999999552965164
+      ]
+    },
+    "Neko_L_Toe03_Dist": {
+      "head": [
+        0.08410000056028366,
+        -0.0860000029206276,
+        0.019999999552965164
+      ],
+      "tail": [
+        0.08410000056028366,
+        -0.10311988741159439,
+        0.017000000923871994
+      ]
+    },
+    "Neko_L_Toe04_Prox": {
+      "head": [
+        0.09529999643564224,
+        -0.06599999964237213,
+        0.02199999988079071
+      ],
+      "tail": [
+        0.09529999643564224,
+        -0.0860000029206276,
+        0.019999999552965164
+      ]
+    },
+    "Neko_L_Toe04_Dist": {
+      "head": [
+        0.09529999643564224,
+        -0.0860000029206276,
+        0.019999999552965164
+      ],
+      "tail": [
+        0.09529999643564224,
+        -0.09660764038562775,
+        0.017000000923871994
+      ]
+    },
+    "Neko_L_Toe05_Prox": {
+      "head": [
+        0.10440000146627426,
+        -0.06599999964237213,
+        0.02199999988079071
+      ],
+      "tail": [
+        0.10440000146627426,
+        -0.0860000029206276,
+        0.019999999552965164
+      ]
+    },
+    "Neko_L_Toe05_Dist": {
+      "head": [
+        0.10440000146627426,
+        -0.0860000029206276,
+        0.019999999552965164
+      ],
+      "tail": [
+        0.10440000146627426,
+        -0.09600000083446503,
+        0.017000000923871994
+      ]
+    },
+    "J_Bip_R_UpperLeg": {
+      "head": [
+        -0.07310475409030914,
+        2.286501694470644e-05,
+        0.9082778096199036
+      ],
+      "tail": [
+        -0.07310479134321213,
+        0.008091944269835949,
+        0.5226614475250244
+      ]
+    },
+    "J_Bip_R_LowerLeg": {
+      "head": [
+        -0.07310473918914795,
+        0.009838685393333435,
+        0.522697925567627
+      ],
+      "tail": [
+        -0.07310477644205093,
+        0.03903905674815178,
+        0.08456617593765259
+      ]
+    },
+    "J_Bip_R_Foot": {
+      "head": [
+        -0.07310473918914795,
+        0.03455064818263054,
+        0.08426706492900848
+      ],
+      "tail": [
+        -0.07310471683740616,
+        -0.06669668853282928,
+        0.08371219038963318
+      ]
+    },
+    "J_Bip_R_ToeBase": {
+      "head": [
+        -0.07310473918914795,
+        -0.06636101752519608,
+        0.022465363144874573
+      ],
+      "tail": [
+        -0.07310473173856735,
+        -0.11698301136493683,
+        0.021968550980091095
+      ]
+    },
+    "Neko_R_Toe01_Prox": {
+      "head": [
+        -0.055799998342990875,
+        -0.06599999964237213,
+        0.02199999988079071
+      ],
+      "tail": [
+        -0.055799998342990875,
+        -0.0860000029206276,
+        0.019999999552965164
+      ]
+    },
+    "Neko_R_Toe01_Dist": {
+      "head": [
+        -0.055799998342990875,
+        -0.0860000029206276,
+        0.019999999552965164
+      ],
+      "tail": [
+        -0.055799998342990875,
+        -0.10530239343643188,
+        0.017000000923871994
+      ]
+    },
+    "Neko_R_Toe02_Prox": {
+      "head": [
+        -0.07109999656677246,
+        -0.06599999964237213,
+        0.02199999988079071
+      ],
+      "tail": [
+        -0.07109999656677246,
+        -0.0860000029206276,
+        0.019999999552965164
+      ]
+    },
+    "Neko_R_Toe02_Dist": {
+      "head": [
+        -0.07109999656677246,
+        -0.0860000029206276,
+        0.019999999552965164
+      ],
+      "tail": [
+        -0.07109999656677246,
+        -0.10849940031766891,
+        0.017000000923871994
+      ]
+    },
+    "Neko_R_Toe03_Prox": {
+      "head": [
+        -0.08410000056028366,
+        -0.06599999964237213,
+        0.02199999988079071
+      ],
+      "tail": [
+        -0.08410000056028366,
+        -0.0860000029206276,
+        0.019999999552965164
+      ]
+    },
+    "Neko_R_Toe03_Dist": {
+      "head": [
+        -0.08410000056028366,
+        -0.0860000029206276,
+        0.019999999552965164
+      ],
+      "tail": [
+        -0.08410000056028366,
+        -0.10311988741159439,
+        0.017000000923871994
+      ]
+    },
+    "Neko_R_Toe04_Prox": {
+      "head": [
+        -0.09529999643564224,
+        -0.06599999964237213,
+        0.02199999988079071
+      ],
+      "tail": [
+        -0.09529999643564224,
+        -0.0860000029206276,
+        0.019999999552965164
+      ]
+    },
+    "Neko_R_Toe04_Dist": {
+      "head": [
+        -0.09529999643564224,
+        -0.0860000029206276,
+        0.019999999552965164
+      ],
+      "tail": [
+        -0.09529999643564224,
+        -0.09660764038562775,
+        0.017000000923871994
+      ]
+    },
+    "Neko_R_Toe05_Prox": {
+      "head": [
+        -0.10440000146627426,
+        -0.06599999964237213,
+        0.02199999988079071
+      ],
+      "tail": [
+        -0.10440000146627426,
+        -0.0860000029206276,
+        0.019999999552965164
+      ]
+    },
+    "Neko_R_Toe05_Dist": {
+      "head": [
+        -0.10440000146627426,
+        -0.0860000029206276,
+        0.019999999552965164
+      ],
+      "tail": [
+        -0.10440000146627426,
+        -0.09600000083446503,
+        0.017000000923871994
+      ]
+    },
+    "Neko_Tail_01": {
+      "head": [
+        0.0,
+        0.10999999940395355,
+        0.8799999952316284
+      ],
+      "tail": [
+        0.05000000074505806,
+        0.20000000298023224,
+        0.8100000023841858
+      ]
+    },
+    "Neko_Tail_02": {
+      "head": [
+        0.05000000074505806,
+        0.20000000298023224,
+        0.8100000023841858
+      ],
+      "tail": [
+        0.17000000178813934,
+        0.23499999940395355,
+        0.7099999785423279
+      ]
+    },
+    "Neko_Tail_03": {
+      "head": [
+        0.17000000178813934,
+        0.23499999940395355,
+        0.7099999785423279
+      ],
+      "tail": [
+        0.2849999964237213,
+        0.2150000035762787,
+        0.5550000071525574
+      ]
+    },
+    "Neko_Tail_04": {
+      "head": [
+        0.2849999964237213,
+        0.2150000035762787,
+        0.5550000071525574
+      ],
+      "tail": [
+        0.375,
+        0.1850000023841858,
+        0.4050000011920929
+      ]
+    },
+    "Neko_Tail_05": {
+      "head": [
+        0.375,
+        0.1850000023841858,
+        0.4050000011920929
+      ],
+      "tail": [
+        0.4650000035762787,
+        0.1599999964237213,
+        0.38999998569488525
+      ]
+    },
+    "Neko_Tail_06": {
+      "head": [
+        0.4650000035762787,
+        0.1599999964237213,
+        0.38999998569488525
+      ],
+      "tail": [
+        0.5049999952316284,
+        0.14000000059604645,
+        0.46000000834465027
+      ]
+    },
+    "Neko_Tail_07": {
+      "head": [
+        0.5049999952316284,
+        0.14000000059604645,
+        0.46000000834465027
+      ],
+      "tail": [
+        0.4950000047683716,
+        0.125,
+        0.5699999928474426
+      ]
+    },
+    "Neko_Tail_08": {
+      "head": [
+        0.4950000047683716,
+        0.125,
+        0.5699999928474426
+      ],
+      "tail": [
+        0.455000102519989,
+        0.1249999925494194,
+        0.6500000357627869
+      ]
+    }
+  },
+  "face_keys": [
+    "Basis",
+    "Fcl_ALL_Neutral",
+    "Fcl_ALL_Angry",
+    "Fcl_ALL_Fun",
+    "Fcl_ALL_Joy",
+    "Fcl_ALL_Sorrow",
+    "Fcl_ALL_Surprised",
+    "Fcl_BRW_Angry",
+    "Fcl_BRW_Fun",
+    "Fcl_BRW_Joy",
+    "Fcl_BRW_Sorrow",
+    "Fcl_BRW_Surprised",
+    "Fcl_EYE_Natural",
+    "Fcl_EYE_Angry",
+    "Fcl_EYE_Close",
+    "Fcl_EYE_Close_R",
+    "Fcl_EYE_Close_L",
+    "Fcl_EYE_Fun",
+    "Fcl_EYE_Joy",
+    "Fcl_EYE_Joy_R",
+    "Fcl_EYE_Joy_L",
+    "Fcl_EYE_Sorrow",
+    "Fcl_EYE_Surprised",
+    "Fcl_EYE_Spread",
+    "Fcl_EYE_Iris_Hide",
+    "Fcl_EYE_Highlight_Hide",
+    "Fcl_MTH_Close",
+    "Fcl_MTH_Up",
+    "Fcl_MTH_Down",
+    "Fcl_MTH_Angry",
+    "Fcl_MTH_Small",
+    "Fcl_MTH_Large",
+    "Fcl_MTH_Neutral",
+    "Fcl_MTH_Fun",
+    "Fcl_MTH_Joy",
+    "Fcl_MTH_Sorrow",
+    "Fcl_MTH_Surprised",
+    "Fcl_MTH_SkinFung",
+    "Fcl_MTH_SkinFung_R",
+    "Fcl_MTH_SkinFung_L",
+    "Fcl_MTH_A",
+    "Fcl_MTH_I",
+    "Fcl_MTH_U",
+    "Fcl_MTH_E",
+    "Fcl_MTH_O",
+    "Fcl_HA_Hide",
+    "Fcl_HA_Fung1",
+    "Fcl_HA_Fung1_Low",
+    "Fcl_HA_Fung1_Up",
+    "Fcl_HA_Fung2",
+    "Fcl_HA_Fung2_Low",
+    "Fcl_HA_Fung2_Up",
+    "Fcl_HA_Fung3",
+    "Fcl_HA_Fung3_Up",
+    "Fcl_HA_Fung3_Low",
+    "Fcl_HA_Short",
+    "Fcl_HA_Short_Up",
+    "Fcl_HA_Short_Low"
+  ]
+}

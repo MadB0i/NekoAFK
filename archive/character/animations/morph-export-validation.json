@@ -1,0 +1,426 @@
+{
+  "barefoot": {
+    "Neko_EDITING_Enter": {
+      "morph_samples": 47,
+      "max_weight": 0.2199999988079071,
+      "blink_max": 0.0
+    },
+    "Neko_EDITING_Idle": {
+      "morph_samples": 289,
+      "max_weight": 0.9935471415519714,
+      "blink_max": 0.9935471415519714
+    },
+    "Neko_TESTING_Enter": {
+      "morph_samples": 47,
+      "max_weight": 0.2199999988079071,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_Idle": {
+      "morph_samples": 193,
+      "max_weight": 0.992595911026001,
+      "blink_max": 0.992595911026001
+    },
+    "Neko_FAILED_Enter": {
+      "morph_samples": 35,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_Idle": {
+      "morph_samples": 193,
+      "max_weight": 0.992595911026001,
+      "blink_max": 0.992595911026001
+    },
+    "Neko_FRUSTRATED_Enter": {
+      "morph_samples": 68,
+      "max_weight": 0.85999995470047,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_Idle": {
+      "morph_samples": 193,
+      "max_weight": 0.992595911026001,
+      "blink_max": 0.992595911026001
+    },
+    "Neko_VERIFYING_Enter": {
+      "morph_samples": 47,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_Idle": {
+      "morph_samples": 193,
+      "max_weight": 0.992595911026001,
+      "blink_max": 0.992595911026001
+    },
+    "Neko_SUCCESS_Enter": {
+      "morph_samples": 78,
+      "max_weight": 0.5775237679481506,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_Idle": {
+      "morph_samples": 193,
+      "max_weight": 0.992595911026001,
+      "blink_max": 0.992595911026001
+    },
+    "Neko_EDITING_to_TESTING": {
+      "morph_samples": 47,
+      "max_weight": 0.2199999988079071,
+      "blink_max": 0.0
+    },
+    "Neko_EDITING_to_FAILED": {
+      "morph_samples": 35,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_EDITING_to_FRUSTRATED": {
+      "morph_samples": 68,
+      "max_weight": 0.8599997758865356,
+      "blink_max": 0.0
+    },
+    "Neko_EDITING_to_VERIFYING": {
+      "morph_samples": 68,
+      "max_weight": 0.4799998700618744,
+      "blink_max": 0.0
+    },
+    "Neko_EDITING_to_SUCCESS": {
+      "morph_samples": 116,
+      "max_weight": 0.6314653754234314,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_to_EDITING": {
+      "morph_samples": 47,
+      "max_weight": 0.2199999988079071,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_to_FAILED": {
+      "morph_samples": 35,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_to_FRUSTRATED": {
+      "morph_samples": 68,
+      "max_weight": 0.8599997758865356,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_to_VERIFYING": {
+      "morph_samples": 68,
+      "max_weight": 0.4799998700618744,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_to_SUCCESS": {
+      "morph_samples": 116,
+      "max_weight": 0.6314653754234314,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_to_EDITING": {
+      "morph_samples": 47,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_to_TESTING": {
+      "morph_samples": 47,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_to_FRUSTRATED": {
+      "morph_samples": 68,
+      "max_weight": 0.85999995470047,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_to_VERIFYING": {
+      "morph_samples": 68,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_to_SUCCESS": {
+      "morph_samples": 116,
+      "max_weight": 0.6314653754234314,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_to_EDITING": {
+      "morph_samples": 68,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_to_TESTING": {
+      "morph_samples": 68,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_to_FAILED": {
+      "morph_samples": 68,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_to_VERIFYING": {
+      "morph_samples": 47,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_to_SUCCESS": {
+      "morph_samples": 78,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_to_EDITING": {
+      "morph_samples": 68,
+      "max_weight": 0.47999998927116394,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_to_TESTING": {
+      "morph_samples": 68,
+      "max_weight": 0.47999998927116394,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_to_FAILED": {
+      "morph_samples": 68,
+      "max_weight": 0.6199999451637268,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_to_FRUSTRATED": {
+      "morph_samples": 47,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_to_SUCCESS": {
+      "morph_samples": 78,
+      "max_weight": 0.5775237679481506,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_to_EDITING": {
+      "morph_samples": 68,
+      "max_weight": 0.5,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_to_TESTING": {
+      "morph_samples": 68,
+      "max_weight": 0.5,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_to_FAILED": {
+      "morph_samples": 68,
+      "max_weight": 0.6199998259544373,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_to_FRUSTRATED": {
+      "morph_samples": 47,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_to_VERIFYING": {
+      "morph_samples": 47,
+      "max_weight": 0.5,
+      "blink_max": 0.0
+    }
+  },
+  "socks": {
+    "Neko_EDITING_Enter": {
+      "morph_samples": 47,
+      "max_weight": 0.2199999988079071,
+      "blink_max": 0.0
+    },
+    "Neko_EDITING_Idle": {
+      "morph_samples": 289,
+      "max_weight": 0.9935471415519714,
+      "blink_max": 0.9935471415519714
+    },
+    "Neko_TESTING_Enter": {
+      "morph_samples": 47,
+      "max_weight": 0.2199999988079071,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_Idle": {
+      "morph_samples": 193,
+      "max_weight": 0.992595911026001,
+      "blink_max": 0.992595911026001
+    },
+    "Neko_FAILED_Enter": {
+      "morph_samples": 35,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_Idle": {
+      "morph_samples": 193,
+      "max_weight": 0.992595911026001,
+      "blink_max": 0.992595911026001
+    },
+    "Neko_FRUSTRATED_Enter": {
+      "morph_samples": 68,
+      "max_weight": 0.85999995470047,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_Idle": {
+      "morph_samples": 193,
+      "max_weight": 0.992595911026001,
+      "blink_max": 0.992595911026001
+    },
+    "Neko_VERIFYING_Enter": {
+      "morph_samples": 47,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_Idle": {
+      "morph_samples": 193,
+      "max_weight": 0.992595911026001,
+      "blink_max": 0.992595911026001
+    },
+    "Neko_SUCCESS_Enter": {
+      "morph_samples": 78,
+      "max_weight": 0.5775237679481506,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_Idle": {
+      "morph_samples": 193,
+      "max_weight": 0.992595911026001,
+      "blink_max": 0.992595911026001
+    },
+    "Neko_EDITING_to_TESTING": {
+      "morph_samples": 47,
+      "max_weight": 0.2199999988079071,
+      "blink_max": 0.0
+    },
+    "Neko_EDITING_to_FAILED": {
+      "morph_samples": 35,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_EDITING_to_FRUSTRATED": {
+      "morph_samples": 68,
+      "max_weight": 0.8599997758865356,
+      "blink_max": 0.0
+    },
+    "Neko_EDITING_to_VERIFYING": {
+      "morph_samples": 68,
+      "max_weight": 0.4799998700618744,
+      "blink_max": 0.0
+    },
+    "Neko_EDITING_to_SUCCESS": {
+      "morph_samples": 116,
+      "max_weight": 0.6314653754234314,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_to_EDITING": {
+      "morph_samples": 47,
+      "max_weight": 0.2199999988079071,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_to_FAILED": {
+      "morph_samples": 35,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_to_FRUSTRATED": {
+      "morph_samples": 68,
+      "max_weight": 0.8599997758865356,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_to_VERIFYING": {
+      "morph_samples": 68,
+      "max_weight": 0.4799998700618744,
+      "blink_max": 0.0
+    },
+    "Neko_TESTING_to_SUCCESS": {
+      "morph_samples": 116,
+      "max_weight": 0.6314653754234314,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_to_EDITING": {
+      "morph_samples": 47,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_to_TESTING": {
+      "morph_samples": 47,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_to_FRUSTRATED": {
+      "morph_samples": 68,
+      "max_weight": 0.85999995470047,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_to_VERIFYING": {
+      "morph_samples": 68,
+      "max_weight": 0.6200000047683716,
+      "blink_max": 0.0
+    },
+    "Neko_FAILED_to_SUCCESS": {
+      "morph_samples": 116,
+      "max_weight": 0.6314653754234314,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_to_EDITING": {
+      "morph_samples": 68,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_to_TESTING": {
+      "morph_samples": 68,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_to_FAILED": {
+      "morph_samples": 68,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_to_VERIFYING": {
+      "morph_samples": 47,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_FRUSTRATED_to_SUCCESS": {
+      "morph_samples": 78,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_to_EDITING": {
+      "morph_samples": 68,
+      "max_weight": 0.47999998927116394,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_to_TESTING": {
+      "morph_samples": 68,
+      "max_weight": 0.47999998927116394,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_to_FAILED": {
+      "morph_samples": 68,
+      "max_weight": 0.6199999451637268,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_to_FRUSTRATED": {
+      "morph_samples": 47,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_VERIFYING_to_SUCCESS": {
+      "morph_samples": 78,
+      "max_weight": 0.5775237679481506,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_to_EDITING": {
+      "morph_samples": 68,
+      "max_weight": 0.5,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_to_TESTING": {
+      "morph_samples": 68,
+      "max_weight": 0.5,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_to_FAILED": {
+      "morph_samples": 68,
+      "max_weight": 0.6199998259544373,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_to_FRUSTRATED": {
+      "morph_samples": 47,
+      "max_weight": 0.8600000143051147,
+      "blink_max": 0.0
+    },
+    "Neko_SUCCESS_to_VERIFYING": {
+      "morph_samples": 47,
+      "max_weight": 0.5,
+      "blink_max": 0.0
+    }
+  }
+}
