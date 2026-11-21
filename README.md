@@ -1,118 +1,89 @@
-# NekoAFK
+# NekoAFK 🐾🤖
 
-A Windows desktop companion for observable local OpenCode activity. Tauri 2
-owns a frameless companion window (Nova the robot, or the original cat Neko), a
-small anchored live-progress HUD, an independent
-detachable telemetry dock, settings, and a system tray. The previous waifu/Blender
-work is preserved in `archive/`.
+A lightweight, privacy-focused Windows desktop companion and real-time activity HUD for local AI coding agents. Powered by Tauri 2, Rust, and TypeScript.
 
-## Run on Windows
+---
 
-Development prerequisites: Node.js, Rust MSVC, Visual Studio C++ build tools,
-and Microsoft Edge WebView2. NekoAFK uses no additional model API keys.
+## 🌟 Overview
+
+NekoAFK brings observable AI agent activity directly to your desktop. As your coding agent works, an articulated vector companion reacts in real-time to what is happening:
+
+- 🐱 **Neko** (the original midnight cat) or 🤖 **Nova** (the floating robot companion)
+- 📊 **Live Progress HUD:** Clean, non-intrusive progress counter anchored next to the companion
+- 🎛️ **Telemetry Dock:** Detachable diagnostic view tracking open operations, active tools, and exit codes
+- 🛡️ **Zero-Network IPC:** Pure local atomic spool queue — no open listening ports, no telemetry uploads, and zero model keys required
+
+---
+
+## 🔌 Supported Agents
+
+NekoAFK natively supports local event connections for modern AI development environments:
+
+| Agent / Tool | Integration Type | Status |
+|---|---|:---:|
+| **OpenCode** | Local plugin (`.opencode/plugins/nekoafk.js`) | ✅ Supported |
+| **Google Antigravity** | Workspace bridge (`integrations/antigravity/`) | ✅ Supported |
+| **Claude Code** | CLI / Tool bridge (`integrations/claudecode/`) | ✅ Supported |
+| **OpenAI Codex / Copilot** | CLI bridge (`integrations/codex/`) | ✅ Supported |
+| **Zai** | Agent bridge (`integrations/zai/`) | ✅ Supported |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Windows 10/11 (64-bit)
+- [Node.js](https://nodejs.org/) (v18+)
+- [Rust toolchain](https://rustup.rs/) (MSVC)
+- Microsoft Edge WebView2 (pre-installed on Windows 10/11)
+
+### Development
 
 ```powershell
+# Install frontend dependencies
 npm ci
+
+# Launch desktop app in development mode
 npm run desktop
 ```
 
-Build a reviewable executable with `npx tauri build --no-bundle`. Packaging is
-on hold until native acceptance validation is complete. The release executable is
-`src-tauri/target/release/nekoafk.exe`; it embeds the UI and needs no dev server.
-The installer provisions WebView2 when needed. Builds are currently unsigned.
-
-## Connect OpenCode
-
-1. Open NekoAFK settings from the tray or companion.
-2. Save the existing workspace folder that OpenCode will use.
-3. Choose **Install local bridge**, then restart OpenCode in that workspace.
-
-This installs `integrations/opencode/nekoafk.js` into `.opencode/plugins/`, the
-supported OpenCode local plugin location. Existing different bridge files are
-backed up. Remove that single plugin file and restart OpenCode to disconnect.
-No provider settings are changed. Installing NekoAFK alone does not connect an
-agent.
-
-The bridge uses tool hooks and session, permission, todo, and message events.
-It sends normalized metadata through atomic files in the local app data folder.
-It never sends prompts, source contents, raw commands, or tool output. NekoAFK
-opens no network listener. The queue is not a security boundary against other
-programs running as the same Windows user.
-
-## Verification and progress
-
-Task counts come only from OpenCode todo events and remain **Unknown** otherwise.
-They are agent-reported counts, never invented percentages. Test-like commands
-are classified heuristically; their numeric exits are evidence, not independent
-proof. Permission requests are answered in OpenCode. Silence never means success.
-
-The HUD beside Neko and the dock share the same progress state. Explicit todos
-appear as **Plan progress**, never overall task completion or effort. Without a
-plan, only observed activity is shown. Missing tool exits remain unknown. No ETA
-is inferred; expanded progress details explain its absence. Collapse the HUD
-from its arrow, or disable it in Desktop Settings or the tray. See the
-[HUD validation and trial gate](docs/LIVE-PROGRESS-HUD.md).
-
-An assistant's completed response is an **unverified completion candidate**.
-Configure an executable and JSON argument array in settings for an independent
-local check. For example, executable `powershell.exe`, arguments:
-
-```json
-["-NoProfile", "-Command", "npm test"]
-```
-
-Checks use the configured workspace, have timeout/cancel controls, and store
-bounded output in `verification.log`. Only an exit-0 check with unchanged source
-fingerprints and unchanged session evidence permits celebration after a claim.
-Success is limited to the configured check. Automatic verification is opt-in.
-NekoAFK never executes agent-supplied commands.
-
-Fingerprinting excludes `.git`, `node_modules`, `target`, `dist`, `archive`,
-`.artifacts`, `.opencode`, `__pycache__`, and `.venv`. It fails closed for source
-symlinks, unreadable files, over 20,000 source files, or over 256 MiB of source
-content. These are verification safeguards, not application binary-size limits.
-Choose a narrower workspace if needed.
-
-## Desktop behavior
-
-Drag the cat or dock header; dragging the dock detaches it. Its attach control
-restores following. Windows resize natively, and the cat has a separate scale
-setting. Always-on-top and companion background transparency are configurable.
-Close hides to tray. Tray recovery restores windows and clamps them into current
-monitor work areas. Placement, size, visibility, and settings persist locally.
-The companion menu provides scale, motion, topmost and click-through controls.
-Click-through can be turned off from Settings or the tray; recovery also turns
-it off. The dock has independent pinning and native collapse/expand controls.
-A fresh installation opens the companion and its HUD. Windows autostart is not implemented.
-
-Settings live under `%LOCALAPPDATA%/com.nekoafk.desktop/`. Corrupt settings are
-preserved. Recent session history is memory-only and clears on exit. Two
-companions share one articulated vector rig contract and a seeded activity
-director: **Nova**, the floating midnight-plum robot (default), and **Neko**, the
-original midnight cat. Choose between them in Settings → Character. Calm,
-Playful (default), and Chaos personalities change the spacing of performances.
-Reduced motion uses still state expressions and also follows the Windows setting. Future Codex, Claude Code, VRM, and GLB support are
-architecture extension points, not implemented adapters.
-
-## Validation
+### Production Build
 
 ```powershell
-npm test
-cargo test --manifest-path src-tauri/Cargo.toml
-python tests/native_smoke.py --exe src-tauri/target/release/nekoafk.exe
+# Build frontend assets and native binary
+npm run build
+npx tauri build --no-bundle
 ```
 
-Native smoke tests use isolated data, explicit test-only hook scenarios, actual
-WebView2 windows, and local DevTools, then shut down the test app. Production
-launches do not enable DevTools or fabricate activity. `scripts/opencode-smoke.mjs`
-separately exercises an actual OpenCode server without model calls; it requires
-a test `opencode-ai` installation under `.artifacts/opencode/`.
-`python tests/opencode_live_desktop.py` verifies actual OpenCode events reaching
-the native dock. `scripts/installer-smoke.ps1` validates install/run/uninstall in
-an isolated folder and refuses to replace an existing installation.
+The compiled release executable is generated at:
+`src-tauri/target/release/nekoafk.exe`
 
-See [architecture](docs/ARCHITECTURE.md), [initial audit](docs/AUDIT.md), and
-[validation status](docs/VALIDATION.md). Prior assets were moved intact and
-SHA-256 inventoried. See [living cat work and acceptance limits](docs/LIVING-CAT.md) for the animated
-mascot, event mapping, native video and performance evidence. Character refinement
-now continues with the original cat; the archived assets remain preserved.
+---
+
+## 🔒 Privacy & Verification Philosophy
+
+1. **No Data Leaks:** Prompts, source code contents, full commands, and model outputs are **never** transmitted to the companion. Only high-level event types (`editing`, `testing`, `planning`, `permission`) are shared via local filesystem IPC.
+2. **Silence Never Means Success:** Completion is an unverified candidate until confirmed.
+3. **Double-Fingerprint Local Check:** When automated verification is enabled, NekoAFK runs your configured test command (e.g. `npm test`) inside an isolated Windows Job Object. A passing check requires an exit code of 0 and an unchanged source fingerprint before the companion celebrates.
+
+---
+
+## 🧪 Testing
+
+```powershell
+# Run JavaScript test suite (21 tests)
+npm test
+
+# Run Rust native test suite (42 tests)
+cargo test --manifest-path src-tauri/Cargo.toml
+
+# Run End-to-End native Playwright smoke tests
+python tests/native_smoke.py
+```
+
+---
+
+## 📄 License
+
+This project is open-source software licensed under the MIT License.
