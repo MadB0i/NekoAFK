@@ -20,7 +20,20 @@ pub struct Progress {
     pub plan: Option<Plan>,
     pub started_at: Option<u64>,
 }
+fn agent_name(session: Option<&Session>) -> &'static str {
+    match session.map(|s| s.adapter.as_str()) {
+        Some("antigravity") => "Antigravity",
+        Some("claudecode" | "claude") => "Claude Code",
+        Some("codex") => "Codex",
+        Some("zai") => "Zai",
+        Some("cursor") => "Cursor",
+        Some("generic") => "Agent",
+        _ => "OpenCode",
+    }
+}
+
 pub fn derive(session: Option<&Session>, connected: bool, state: &str) -> Progress {
+    let agent = agent_name(session);
     let mut p = Progress {
         session_key: session.map(|s| s.key.clone()),
         context: session
@@ -45,14 +58,14 @@ pub fn derive(session: Option<&Session>, connected: bool, state: &str) -> Progre
                         .collect::<String>()
                 )
             })
-            .unwrap_or_else(|| "OpenCode".into()),
+            .unwrap_or_else(|| agent.into()),
         activity: if connected {
             "Waiting for a session"
         } else {
             "Bridge offline"
         }
         .into(),
-        detail: "Connect OpenCode in Settings".into(),
+        detail: format!("Connect {} in Settings", agent),
         tone: "quiet".into(),
         connected,
         plan: None,
@@ -70,62 +83,61 @@ pub fn derive(session: Option<&Session>, connected: bool, state: &str) -> Progre
             historical: !connected || state == "inactive" || state == "closed",
         });
     let (activity, detail, tone) = match state {
-        "permission" => ("Permission needed", "Answer in OpenCode", "attention"),
-        "verifying" => ("Verifying locally", "Independent check running", "active"),
+        "permission" => ("Permission needed", format!("Answer in {}", agent), "attention"),
+        "verifying" => ("Verifying locally", "Independent check running".into(), "active"),
         "disconnected" => (
             "Connection lost",
-            "Last evidence · reconnect OpenCode",
+            format!("Last evidence · reconnect {}", agent),
             "offline",
         ),
         "inactive" => (
             "No recent activity",
-            "Last evidence · current work unknown",
+            "Last evidence · current work unknown".into(),
             "unknown",
         ),
-        "closed" => ("Session closed", "Choose a session in the dock", "quiet"),
+        "closed" => ("Session closed", "Choose a session in the dock".into(), "quiet"),
         "verified" => (
             "Locally verified",
-            "Configured independent check passed",
+            "Configured independent check passed".into(),
             "verified",
         ),
         "claimed" => (
             "Completion unverified",
-            "Agent finished · local proof pending",
+            "Agent finished · local proof pending".into(),
             "unknown",
         ),
         "failed" => (
             "Needs attention",
-            "Failure observed · review evidence",
+            "Failure observed · review evidence".into(),
             "failed",
         ),
         "inconclusive" if s.outcome.as_deref() == Some("interrupted") => {
-            ("Work interrupted", "No verified completion", "unknown")
+            ("Work interrupted", "No verified completion".into(), "unknown")
         }
         "inconclusive" => (
             "Check inconclusive",
-            "Review evidence in the dock",
+            "Review evidence in the dock".into(),
             "unknown",
         ),
-        "planning" => ("Reasoning observed", "Observed OpenCode activity", "active"),
-        "writing" => ("Writing response", "Observed OpenCode activity", "active"),
-        "editing" => ("Editing files", "Observed OpenCode activity", "active"),
-        "testing" => ("Running tests", "Command classified as test-like", "active"),
-        "building" => ("Building", "Command classified as build-like", "active"),
-        "active" => ("Working", "Observed OpenCode activity", "active"),
-        _ => ("Waiting", "No independent check has run", "quiet"),
+        "planning" => ("Reasoning observed", format!("Observed {} activity", agent), "active"),
+        "writing" => ("Writing response", format!("Observed {} activity", agent), "active"),
+        "editing" => ("Editing files", format!("Observed {} activity", agent), "active"),
+        "testing" => ("Running tests", "Command classified as test-like".into(), "active"),
+        "building" => ("Building", "Command classified as build-like".into(), "active"),
+        "active" => ("Working", format!("Observed {} activity", agent), "active"),
+        _ => ("Waiting", "No independent check has run".into(), "quiet"),
     };
     p.activity = activity.into();
-    p.detail = detail.into();
+    p.detail = detail;
     p.tone = tone.into();
     if !connected {
         p.detail = if state == "permission" {
-            "Offline · permission still pending"
+            "Offline · permission still pending".into()
         } else if state == "verifying" {
-            "OpenCode offline · local check running"
+            format!("{} offline · local check running", agent)
         } else {
-            "Last evidence · reconnect OpenCode"
-        }
-        .into();
+            format!("Last evidence · reconnect {}", agent)
+        };
         return p;
     }
     if ["active", "editing", "testing", "building"].contains(&state) && !s.operations.is_empty() {

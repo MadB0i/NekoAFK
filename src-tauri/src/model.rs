@@ -268,10 +268,33 @@ pub struct Engine {
     #[serde(skip)]
     order: VecDeque<String>,
 }
+pub const SUPPORTED_ADAPTERS: &[&str] = &[
+    "opencode",
+    "antigravity",
+    "claudecode",
+    "claude",
+    "codex",
+    "zai",
+    "cursor",
+    "generic",
+];
+
+pub fn adapter_display_name(adapter: &str) -> &'static str {
+    match adapter {
+        "antigravity" => "Antigravity",
+        "claudecode" | "claude" => "Claude Code",
+        "codex" => "Codex",
+        "zai" => "Zai",
+        "cursor" => "Cursor",
+        "generic" => "Agent",
+        _ => "OpenCode",
+    }
+}
+
 impl Engine {
     pub fn ingest(&mut self, e: Evidence, at: u64) -> Option<String> {
         if e.version != 1
-            || e.adapter != "opencode"
+            || !SUPPORTED_ADAPTERS.contains(&e.adapter.as_str())
             || e.id.len() > 256
             || e.source.len() > 128
             || e.session.len() > 256
@@ -504,7 +527,13 @@ impl Engine {
                         s.tasks = Some((done, total));
                     }
                 }
-                s.record(e.timestamp,"Session context recovered from OpenCode; completion still requires a local check".into());
+                s.record(
+                    e.timestamp,
+                    format!(
+                        "Session context recovered from {}; completion still requires a local check",
+                        adapter_display_name(&s.adapter)
+                    ),
+                );
             }
             return None;
         }
@@ -563,7 +592,10 @@ impl Engine {
                 if s.verification != "running" {
                     s.verification = "not_run".into();
                 }
-                s.record(e.timestamp, "Session closed in OpenCode".into());
+                s.record(
+                    e.timestamp,
+                    format!("Session closed in {}", adapter_display_name(&s.adapter)),
+                );
             }
             "active" | "editing" | "testing" | "planning" | "writing" | "building" => {
                 s.outcome = None;
@@ -660,11 +692,17 @@ impl Engine {
                     s.state = "active".into();
                     s.claimed = false;
                 }
-                s.record(e.timestamp, "Permission requested in OpenCode".into());
+                s.record(
+                    e.timestamp,
+                    format!("Permission requested in {}", adapter_display_name(&s.adapter)),
+                );
             }
             "permission_resolved" => {
                 s.permissions.remove(&e.request.unwrap_or_default());
-                s.record(e.timestamp, "Permission answered in OpenCode".into());
+                s.record(
+                    e.timestamp,
+                    format!("Permission answered in {}", adapter_display_name(&s.adapter)),
+                );
             }
             "tasks" => {
                 let tasks = e
@@ -722,7 +760,10 @@ impl Engine {
                 }
                 s.record(
                     e.timestamp,
-                    "OpenCode reported an interrupted response; completion unverified".into(),
+                    format!(
+                        "{} reported an interrupted response; completion unverified",
+                        adapter_display_name(&s.adapter)
+                    ),
                 );
             }
             _ => {}
@@ -891,6 +932,27 @@ mod tests {
         let s = m.sessions.values().next().unwrap();
         assert_eq!(s.state, "claimed");
         assert_eq!(s.verification, "not_run");
+    }
+    #[test]
+    fn multi_agent_adapters_are_accepted_and_recorded() {
+        let mut m = Engine::default();
+        for adapter in ["antigravity", "claudecode", "codex", "zai"] {
+            let ev: Evidence = serde_json::from_value(serde_json::json!({
+                "version": 1,
+                "adapter": adapter,
+                "id": format!("{}-1", adapter),
+                "source": "multi-test",
+                "timestamp": 1000,
+                "workspace": "D:/test-workspace",
+                "session": format!("{}-sess", adapter),
+                "kind": "editing"
+            })).unwrap();
+            m.ingest(ev, 1000);
+            let key = format!("{}|D:/test-workspace|{}-sess", adapter, adapter);
+            let s = m.sessions.get(&key).expect("session exists");
+            assert_eq!(s.adapter, adapter);
+            assert_eq!(s.state, "editing");
+        }
     }
     #[test]
     fn duplicates_and_stale_events_are_ignored() {

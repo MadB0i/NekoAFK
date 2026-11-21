@@ -140,7 +140,14 @@ function update(s: Snapshot) {
     $('compactContext').title=selected?`${selected.workspace} · ${selected.id}`:workspaceName;
     const online=s.selected_connected;
     $('bridgeLabel').textContent=online?'Connected':'Offline'; $('connectionDot').classList.toggle('connected',online);
-    $('connection').textContent=online ? s.selected_state==='inactive'?'No observed activity in the last minute.':'Receiving local OpenCode events' : selected?'Connection lost. Evidence below is historical.':'Connect OpenCode in settings to get started.';
+    const agentName = selected?.adapter ? (
+      selected.adapter === 'antigravity' ? 'Antigravity' :
+      selected.adapter === 'claudecode' || selected.adapter === 'claude' ? 'Claude Code' :
+      selected.adapter === 'codex' ? 'Codex' :
+      selected.adapter === 'zai' ? 'Zai' :
+      selected.adapter === 'cursor' ? 'Cursor' : 'OpenCode'
+    ) : 'OpenCode';
+    $('connection').textContent=online ? s.selected_state==='inactive'?'No observed activity in the last minute.':`Receiving local ${agentName} events` : selected?'Connection lost. Evidence below is historical.':'Connect an agent in settings to get started.';
     $('connection').hidden=online && s.selected_state!=='inactive' || s.settings.dock_collapsed;
     const select=$<HTMLSelectElement>('session'); const signature=Object.keys(s.engine.sessions).join('\n');
     if(select.dataset.signature!==signature) {
