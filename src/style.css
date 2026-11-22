@@ -384,3 +384,30 @@ details.form-group summary { padding-block: var(--s1); }
 .settings .preview-strip { background: var(--base); padding: var(--s4); border: 1px solid var(--line); border-radius: var(--radius); }
 .preview-strip img { background: transparent; width: 128px; height: 128px; }
 .preview-strip img.selected { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: var(--radius); }
+
+/* ── Kuro 2D Anime Stage ─────────────────────────────────────────────────── */
+.kuro-stage {
+  position: absolute; inset: 0; isolation: isolate; user-select: none; touch-action: none;
+  width: 100%; height: 100%;
+}
+.kuro-position {
+  position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+}
+.kuro-motion {
+  position: absolute; inset: 0;
+}
+.kuro-layer {
+  position: absolute; object-fit: contain; opacity: 0; visibility: hidden;
+  transition: opacity 300ms cubic-bezier(.22,.61,.36,1);
+  -webkit-user-drag: none; pointer-events: none;
+}
+.kuro-layer.is-active {
+  opacity: 1; visibility: visible;
+}
+.kuro-shadow {
+  position: absolute; left: 24%; width: 52%; height: 2%;
+  background: #08060e66; border-radius: 50%; filter: blur(7px);
+}
+.editing-rig {
+  position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none;
+}

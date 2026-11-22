@@ -4,6 +4,7 @@ import { createIcons, Settings as SettingsIcon, X, Pin, Unplug, PanelBottom, Gri
 import { companionView, dockView, settingsView, hudView, sections, mascotSvg, characterUrls } from './views';
 import { renderProgress, type LiveProgress } from './progress';
 import { Character } from './character';
+import { KuroCharacter, kuroMarkup } from './kuro';
 import type { Personality } from './director';
 import { sound } from './sound';
 import './style.css';
@@ -38,17 +39,27 @@ if(surface==='settings') {
 }
 const icons = () => createIcons({ icons: { Settings: SettingsIcon, X, Pin, Unplug, PanelBottom, GripVertical, Play, Square, FolderOpen, RotateCcw, Download, Plug, ShieldCheck, Sun, Cat, PanelsTopLeft, HardDrive, Folder, Ellipsis, MousePointer2, Minus, Plus, Pause, Check, ChevronUp, ChevronDown }, attrs: { 'aria-hidden':'true' } });
 icons();
-let character: Character | undefined = surface==='neko' ? new Character($('mascot')) : undefined;
+type CompanionInstance = Character | KuroCharacter;
+let character: CompanionInstance | undefined = surface==='neko' ? new Character($('mascot')) : undefined;
 let mountedCharacter = 'robot';
 // The mascot SVG is baked at startup; switching companions swaps the markup and
 // rebuilds the renderer, suspending the old instance so its loop stops.
 function mountCharacter(kind: string) {
-  const target = kind === 'cat' ? 'cat' : 'robot';
+  const target = kind === 'cat' ? 'cat' : kind === 'kuro' ? 'kuro' : 'robot';
   if (surface !== 'neko' || !character || mountedCharacter === target) return;
-  character.observe('idle', 0, '', 'playful', true, false);
+  if ('destroy' in character && typeof (character as any).destroy === 'function') {
+    (character as any).destroy();
+  } else {
+    character.observe('idle', 0, '', 'playful', true, false);
+  }
   mountedCharacter = target;
-  $('mascot').innerHTML = mascotSvg(target);
-  character = new Character($('mascot'));
+  if (target === 'kuro') {
+    $('mascot').innerHTML = kuroMarkup();
+    character = new KuroCharacter($('mascot'));
+  } else {
+    $('mascot').innerHTML = mascotSvg(target);
+    character = new Character($('mascot'));
+  }
 }
 
 const labels: Record<string,string> = { disconnected:'Bridge offline', closed:'Session closed', idle:'Waiting', active:'Working', planning:'Reasoning observed', writing:'Writing response', building:'Building', inconclusive:'Check inconclusive', editing:'Editing', testing:'Testing', failed:'Needs attention', permission:'Permission needed', claimed:'Completion unverified', verified:'Locally verified', verifying:'Verifying locally', inactive:'No recent activity' };
@@ -126,7 +137,7 @@ function update(s: Snapshot) {
     const selected=s.engine.selected?s.engine.sessions[s.engine.selected]:undefined;
     character!.observe(s.selected_state,selected?.failure_streak||0,`${selected?.key||''}:${selected?.revision||0}`,s.settings.personality||'playful',s.settings.reduced_motion,!document.hidden&&s.settings.neko_visible&&!s.desktop_paused);
     app.style.background=s.settings.transparent?'transparent':'var(--base)';
-    const name=s.settings.character==='cat'?'Neko':'Nova';
+    const name=s.settings.character==='cat'?'Neko':s.settings.character==='kuro'?'Kuro':'Nova';
     $('mascot').setAttribute('aria-label',`${name}: ${labels[s.selected_state]||s.selected_state}`);
     pressed('toggle-top',s.settings.always_on_top); pressed('toggle-motion',s.settings.reduced_motion); pressed('toggle-dock',s.settings.dock_visible);
     pressed('toggle-click-through',s.settings.click_through,s.settings.click_through?'Disable click-through from Settings or tray':'Enable click-through; recover from tray');
@@ -198,11 +209,13 @@ function update(s: Snapshot) {
     const arrow=collapse.querySelector('svg')!; arrow.style.transform=s.settings.dock_collapsed?'rotate(180deg)':'';
   } else {
     if(first || !dirty && !document.querySelector('input:focus,textarea:focus,select:focus')) fill(s.settings);
-    const kind=s.settings.character==='cat'?'cat':'robot',url=characterUrls[kind];
-    for (const id of ['brandImg','appearanceImg'] as const) { const img=$<HTMLImageElement>(id); if(img.getAttribute('src')!==url)img.src=url; }
-    $<HTMLImageElement>('appearanceImg').alt=kind==='cat'?'Neko, the midnight cat':'Nova, the floating robot companion';
-    $('previewRobot').classList.toggle('selected',kind==='robot');
-    $('previewCat').classList.toggle('selected',kind==='cat');
+    const kind=s.settings.character==='cat'?'cat':s.settings.character==='kuro'?'kuro':'robot',url=characterUrls[kind];
+    for (const id of ['brandImg','appearanceImg'] as const) { const img=$<HTMLImageElement>(id); if(img&&img.getAttribute('src')!==url)img.src=url; }
+    const appImg=$<HTMLImageElement>('appearanceImg');
+    if(appImg) appImg.alt=kind==='cat'?'Neko, the midnight cat':kind==='kuro'?'Kuro, anime catgirl companion':'Nova, the floating robot companion';
+    if($('previewRobot')) $('previewRobot').classList.toggle('selected',kind==='robot');
+    if($('previewCat')) $('previewCat').classList.toggle('selected',kind==='cat');
+    if($('previewKuro')) $('previewKuro').classList.toggle('selected',kind==='kuro');
     $('connection').textContent=s.connected?'Connected':'Offline';
     $('notice').hidden=!s.notice; $('notice').textContent=s.notice||'';
     $('bridgeStatus').textContent=s.connected?`${Object.keys(s.engine.sessions).length} observed sessions` : s.bridge_installed?'Bridge installed. Restart OpenCode in the saved workspace to connect.':'Waiting for a local bridge connection.';

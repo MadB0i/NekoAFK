@@ -83,8 +83,16 @@ pub fn derive(session: Option<&Session>, connected: bool, state: &str) -> Progre
             historical: !connected || state == "inactive" || state == "closed",
         });
     let (activity, detail, tone) = match state {
-        "permission" => ("Permission needed", format!("Answer in {}", agent), "attention"),
-        "verifying" => ("Verifying locally", "Independent check running".into(), "active"),
+        "permission" => (
+            "Permission needed",
+            format!("Answer in {}", agent),
+            "attention",
+        ),
+        "verifying" => (
+            "Verifying locally",
+            "Independent check running".into(),
+            "active",
+        ),
         "disconnected" => (
             "Connection lost",
             format!("Last evidence · reconnect {}", agent),
@@ -95,7 +103,11 @@ pub fn derive(session: Option<&Session>, connected: bool, state: &str) -> Progre
             "Last evidence · current work unknown".into(),
             "unknown",
         ),
-        "closed" => ("Session closed", "Choose a session in the dock".into(), "quiet"),
+        "closed" => (
+            "Session closed",
+            "Choose a session in the dock".into(),
+            "quiet",
+        ),
         "verified" => (
             "Locally verified",
             "Configured independent check passed".into(),
@@ -111,19 +123,41 @@ pub fn derive(session: Option<&Session>, connected: bool, state: &str) -> Progre
             "Failure observed · review evidence".into(),
             "failed",
         ),
-        "inconclusive" if s.outcome.as_deref() == Some("interrupted") => {
-            ("Work interrupted", "No verified completion".into(), "unknown")
-        }
+        "inconclusive" if s.outcome.as_deref() == Some("interrupted") => (
+            "Work interrupted",
+            "No verified completion".into(),
+            "unknown",
+        ),
         "inconclusive" => (
             "Check inconclusive",
             "Review evidence in the dock".into(),
             "unknown",
         ),
-        "planning" => ("Reasoning observed", format!("Observed {} activity", agent), "active"),
-        "writing" => ("Writing response", format!("Observed {} activity", agent), "active"),
-        "editing" => ("Editing files", format!("Observed {} activity", agent), "active"),
-        "testing" => ("Running tests", "Command classified as test-like".into(), "active"),
-        "building" => ("Building", "Command classified as build-like".into(), "active"),
+        "planning" => (
+            "Reasoning observed",
+            format!("Observed {} activity", agent),
+            "active",
+        ),
+        "writing" => (
+            "Writing response",
+            format!("Observed {} activity", agent),
+            "active",
+        ),
+        "editing" => (
+            "Editing files",
+            format!("Observed {} activity", agent),
+            "active",
+        ),
+        "testing" => (
+            "Running tests",
+            "Command classified as test-like".into(),
+            "active",
+        ),
+        "building" => (
+            "Building",
+            "Command classified as build-like".into(),
+            "active",
+        ),
         "active" => ("Working", format!("Observed {} activity", agent), "active"),
         _ => ("Waiting", "No independent check has run".into(), "quiet"),
     };

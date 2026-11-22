@@ -73,10 +73,12 @@ impl Settings {
         if !["calm", "playful", "chaos"].contains(&self.personality.as_str()) {
             return Err("Choose Calm, Playful or Chaos personality".into());
         }
-        if !["cat", "robot"].contains(&self.character.as_str()) {
-            return Err("Choose the Nova robot or Neko cat companion".into());
+        if !["cat", "robot", "kuro"].contains(&self.character.as_str()) {
+            return Err("Choose the Nova robot, Neko cat, or Kuro anime companion".into());
         }
-        if !self.theme.is_empty() && !["amber", "cyan", "emerald", "sakura"].contains(&self.theme.as_str()) {
+        if !self.theme.is_empty()
+            && !["amber", "cyan", "emerald", "sakura"].contains(&self.theme.as_str())
+        {
             return Err("Choose Amber, Cyan, Emerald or Sakura theme".into());
         }
         if !self.scale.is_finite() || !(0.5..=2.).contains(&self.scale) {
@@ -701,14 +703,20 @@ impl Engine {
                 }
                 s.record(
                     e.timestamp,
-                    format!("Permission requested in {}", adapter_display_name(&s.adapter)),
+                    format!(
+                        "Permission requested in {}",
+                        adapter_display_name(&s.adapter)
+                    ),
                 );
             }
             "permission_resolved" => {
                 s.permissions.remove(&e.request.unwrap_or_default());
                 s.record(
                     e.timestamp,
-                    format!("Permission answered in {}", adapter_display_name(&s.adapter)),
+                    format!(
+                        "Permission answered in {}",
+                        adapter_display_name(&s.adapter)
+                    ),
                 );
             }
             "tasks" => {
@@ -953,7 +961,8 @@ mod tests {
                 "workspace": "D:/test-workspace",
                 "session": format!("{}-sess", adapter),
                 "kind": "editing"
-            })).unwrap();
+            }))
+            .unwrap();
             m.ingest(ev, 1000);
             let key = format!("{}|D:/test-workspace|{}-sess", adapter, adapter);
             let s = m.sessions.get(&key).expect("session exists");

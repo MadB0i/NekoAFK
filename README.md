@@ -6,12 +6,12 @@ A lightweight, privacy-first desktop companion and real-time telemetry HUD for l
 
 ## Live Demonstration & Companions
 
-NekoAFK includes two fully articulated vector companions that dynamically react to your AI coding agent's workflow:
+NekoAFK includes three fully articulated desktop companions that dynamically react to your AI coding agent's workflow:
 
-| **Neko** &mdash; Midnight Cat | **Nova** &mdash; Floating Robot | **Telemetry & Live HUD** |
-|:---:|:---:|:---:|
-| <img src="assets/neko-showcase.gif" width="260" alt="Neko (Midnight Cat) Showcase Animation" /> | <img src="assets/nova-showcase.gif" width="260" alt="Nova (Floating Robot) Showcase Animation" /> | <img src="assets/live-hud.gif" width="340" alt="Live Progress HUD Animation" /> |
-| *Active typing &amp; file editing* | *Robotic focus &amp; keyboard interaction* | *Plan execution &amp; verification status* |
+| **Neko** &mdash; Midnight Cat | **Nova** &mdash; Floating Robot | **Kuro** &mdash; Anime Catgirl | **Telemetry & Live HUD** |
+|:---:|:---:|:---:|:---:|
+| <img src="assets/neko-showcase.gif" width="220" alt="Neko (Midnight Cat) Showcase Animation" /> | <img src="assets/nova-showcase.gif" width="220" alt="Nova (Floating Robot) Showcase Animation" /> | <img src="assets/kuro-showcase.gif" width="220" alt="Kuro (Anime Catgirl) Showcase Animation" /> | <img src="assets/live-hud.gif" width="280" alt="Live Progress HUD Animation" /> |
+| *Active typing &amp; file editing* | *Robotic focus &amp; keyboard interaction* | *2D cutout puppet rig with eye physics &amp; idle gestures* | *Plan execution &amp; verification status* |
 
 ---
 
@@ -29,7 +29,7 @@ NekoAFK includes two fully articulated vector companions that dynamically react 
 
 ## Key Features
 
-- **Articulated Vector Companions**: Select between **Neko** (midnight cat) or **Nova** (floating robot). Each companion features 11 authored acting states driven by real-time agent telemetry, interactive petting reactions, and procedural Web Audio chimes.
+- **Articulated Companions**: Choose between **Neko** (midnight cat), **Nova** (floating robot), or **Kuro** (anime catgirl companion featuring a high-res 2D cutout puppet rig with breathing, swinging legs, ear twitches, phone scrolling, and double blinks). Each companion reacts dynamically to real-time agent telemetry, interactive petting reactions, and procedural Web Audio chimes.
 - **Zero-Network IPC**: Relies entirely on an atomic filesystem spool queue. No open TCP ports, no background web servers, and zero API keys.
 - **Live Progress HUD**: Compact, docked overlay tracking active tool execution, agent plan steps, and elapsed duration.
 - **Detachable Telemetry Dock**: Inspect active tools, error streaks, execution history, and live verification logs directly on desktop.
