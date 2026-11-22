@@ -4,13 +4,14 @@ A lightweight, privacy-first desktop companion and real-time telemetry HUD for l
 
 ---
 
-## Live Demonstration
+## Live Demonstration & Companions
 
-<div align="center">
-  <img src="assets/neko-showcase.gif" width="380" alt="NekoAFK Character Showcase Animation" />
-  <img src="assets/live-hud.gif" width="450" alt="NekoAFK Live Progress HUD Animation" />
-  <p><em>Left: Articulated vector companion reacting to live agent events &middot; Right: Real-time progress HUD tracking agent plan steps</em></p>
-</div>
+NekoAFK includes two fully articulated vector companions that dynamically react to your AI coding agent's workflow:
+
+| **Neko** &mdash; Midnight Cat | **Nova** &mdash; Floating Robot | **Telemetry & Live HUD** |
+|:---:|:---:|:---:|
+| <img src="assets/neko-showcase.gif" width="260" alt="Neko (Midnight Cat) Showcase Animation" /> | <img src="assets/nova-showcase.gif" width="260" alt="Nova (Floating Robot) Showcase Animation" /> | <img src="assets/live-hud.gif" width="340" alt="Live Progress HUD Animation" /> |
+| *Active typing &amp; file editing* | *Robotic focus &amp; keyboard interaction* | *Plan execution &amp; verification status* |
 
 ---
 
@@ -28,7 +29,7 @@ A lightweight, privacy-first desktop companion and real-time telemetry HUD for l
 
 ## Key Features
 
-- **Articulated Vector Companions**: Select between **Neko** (midnight cat) or **Nova** (floating robot). Each companion features 11 authored acting states driven by real-time agent telemetry.
+- **Articulated Vector Companions**: Select between **Neko** (midnight cat) or **Nova** (floating robot). Each companion features 11 authored acting states driven by real-time agent telemetry, interactive petting reactions, and procedural Web Audio chimes.
 - **Zero-Network IPC**: Relies entirely on an atomic filesystem spool queue. No open TCP ports, no background web servers, and zero API keys.
 - **Live Progress HUD**: Compact, docked overlay tracking active tool execution, agent plan steps, and elapsed duration.
 - **Detachable Telemetry Dock**: Inspect active tools, error streaks, execution history, and live verification logs directly on desktop.
