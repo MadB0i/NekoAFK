@@ -112,7 +112,7 @@ function update(s: Snapshot) {
     mountCharacter(s.settings.character);
     const selected=s.engine.selected?s.engine.sessions[s.engine.selected]:undefined;
     character!.observe(s.selected_state,selected?.failure_streak||0,`${selected?.key||''}:${selected?.revision||0}`,s.settings.personality||'playful',s.settings.reduced_motion,!document.hidden&&s.settings.neko_visible&&!s.desktop_paused);
-    app.style.background=s.settings.transparent?'transparent':'#f8f7f4';
+    app.style.background=s.settings.transparent?'transparent':'var(--base)';
     const name=s.settings.character==='cat'?'Neko':'Nova';
     $('mascot').setAttribute('aria-label',`${name}: ${labels[s.selected_state]||s.selected_state}`);
     pressed('toggle-top',s.settings.always_on_top); pressed('toggle-motion',s.settings.reduced_motion); pressed('toggle-dock',s.settings.dock_visible);
@@ -226,8 +226,10 @@ if(surface==='settings') {
   $('verify').addEventListener('click',()=>void busy($<HTMLButtonElement>('verify'),()=>call('run_verification')));
   $('cancel').addEventListener('click',()=>void busy($<HTMLButtonElement>('cancel'),()=>call('cancel_verification')));
 } else if(surface==='neko') {
-  $('menuToggle').addEventListener('click',()=>{ const open=$('companionTools').hidden; $('companionTools').hidden=!open; $('menuToggle').setAttribute('aria-expanded',String(open)); });
-  document.addEventListener('keydown',e=>{ if(e.key==='Escape') { $('companionTools').hidden=true; $('menuToggle').setAttribute('aria-expanded','false'); $('menuToggle').focus(); } });
+  const closeTools=()=>{ const tools=$('companionTools'); if(!tools||tools.hidden) return; tools.classList.add('tools-hiding'); setTimeout(()=>{ tools.hidden=true; tools.classList.remove('tools-hiding'); },160); $('menuToggle').setAttribute('aria-expanded','false'); };
+  $('menuToggle').addEventListener('click',()=>{ const tools=$('companionTools'),open=tools.hidden; if(open){ tools.hidden=false; tools.classList.remove('tools-hiding'); } else { closeTools(); } $('menuToggle').setAttribute('aria-expanded',String(open)); });
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeTools(); $('menuToggle').focus(); } });
+  document.addEventListener('pointerdown',e=>{ if(!(e.target as Element).closest('#companionTools, #menuToggle')) closeTools(); });
 }
 const handle=$('handle')||$('mascot');
 handle?.addEventListener('mousedown',async e=>{
