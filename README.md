@@ -4,6 +4,16 @@ A lightweight, privacy-first desktop companion and real-time telemetry HUD for l
 
 ---
 
+## Live Demonstration
+
+<div align="center">
+  <img src="assets/neko-showcase.gif" width="380" alt="NekoAFK Character Showcase Animation" />
+  <img src="assets/live-hud.gif" width="450" alt="NekoAFK Live Progress HUD Animation" />
+  <p><em>Left: Articulated vector companion reacting to live agent events &middot; Right: Real-time progress HUD tracking agent plan steps</em></p>
+</div>
+
+---
+
 ## Visual Preview
 
 | Desktop Companion (Neko) | Telemetry Dock | Preferences & Settings |
