@@ -24,6 +24,17 @@ const pulse = (t: number, start: number, duration: number) => {
   return u > 0 && u < 1 ? Math.sin(Math.PI * u) ** 2 : 0;
 };
 const wave = (t: number, period: number, amplitude: number) => Math.sin((t * Math.PI * 2) / period) * amplitude;
+const smoothStep = (t: number, a: number, b: number) => {
+  const x = Math.max(0, Math.min(1, (t - a) / (b - a)));
+  return x * x * (3 - 2 * x);
+};
+const plateau = (t: number, start: number, attack: number, hold: number, decay: number) => {
+  if (t < start) return 0;
+  if (t < start + attack) return smoothStep(t, start, start + attack);
+  if (t < start + attack + hold) return 1;
+  if (t < start + attack + hold + decay) return 1 - smoothStep(t, start + attack + hold, start + attack + hold + decay);
+  return 0;
+};
 
 type ManifestFrame = { size: [number, number]; bounds: [number, number, number, number]; contact: [number, number] };
 const MANIFEST: Record<string, ManifestFrame> = {
@@ -229,33 +240,52 @@ export class KuroCharacter {
   }
 
   private angles(t: number): Record<string, number> {
-    const head = wave(t, 12, 0.22);
-    const scroll = [2.8, 7.4, 12.6, 20.2].reduce((s, v) => s + pulse(t, v, 0.68), 0);
+    // 32-second authored acting cycle with distinct micro-gestures:
+    // 01. (00-08s): Active Phone Scrolling & Foot Swinging
+    // 02. (08-15s): Curious Glance Up at User / Monitor with perked ears & wide tail wave
+    // 03. (15-22s): Deep Relaxed Breath / Contented Sigh
+    // 04. (22-32s): Playful Head Tilt, Ear Wiggle & Resume Fast Scrolling
+
+    const glance = plateau(t, 8.2, 0.9, 4.8, 1.2);
+    const sigh = plateau(t, 16.5, 1.2, 2.8, 1.4);
+    const tilt = plateau(t, 23.8, 0.7, 4.8, 1.0);
+
+    const scrollActive = 1 - glance * 0.96;
+    const scroll = [1.2, 2.8, 4.6, 6.8, 19.5, 21.2, 27.2, 29.4].reduce((s, v) => s + pulse(t, v, 0.65), 0) * scrollActive;
+
+    const baseHead = wave(t, 12, 0.22);
+    const head = baseHead - glance * 4.2 + sigh * 1.5 + tilt * 3.4;
+
+    const baseFoot = -wave(t, 4, 0.2);
+    const foot = baseFoot * (1 - sigh * 0.6);
+
     const angles: Record<string, number> = {
       base: 0,
-      torso: wave(t, 8, 0.035),
+      torso: wave(t, 8, 0.035) + sigh * 0.9,
       'upper-leg': 0,
-      'lower-leg': wave(t, 4, 1.65) + wave(t, 8, 0.18),
-      foot: -wave(t, 4, 0.2),
-      'second-foot': (pulse(t, 8.2, 1.5) + pulse(t, 18.1, 1.8)) * 0.9,
-      tail: wave(t, 8, 0.95) + wave(t, 12, 0.25),
+      'lower-leg': wave(t, 4, 1.65) * (1 - glance * 0.4) + wave(t, 8, 0.18),
+      foot,
+      'second-foot': (pulse(t, 8.2, 1.5) + pulse(t, 18.1, 1.8)) * 0.9 + sigh * 1.2,
+      tail: wave(t, 8, 0.95) + wave(t, 12, 0.25) + glance * wave(t, 4.5, 3.2) - sigh * 1.5,
       head,
-      'ear-left': (pulse(t, 3.5, 0.38) - pulse(t, 3.88, 0.22) * 0.3 + pulse(t, 16.2, 0.32)) * 0.95,
-      'ear-right': (pulse(t, 10.3, 0.36) - pulse(t, 10.66, 0.22) * 0.3) * 1.1,
-      'hair-back': -wave(t - 0.28, 12, 0.12),
-      'hair-front': wave(t - 0.16, 12, 0.22) - head,
-      'hair-tips': wave(t - 0.32, 12, 0.35) - head,
-      'phone-hand': -scroll * 0.08,
+      'ear-left': (pulse(t, 3.5, 0.38) - pulse(t, 3.88, 0.22) * 0.3 + pulse(t, 16.2, 0.32)) * 0.95
+        + glance * 2.6 + pulse(t, 24.2, 0.32) * 3.8,
+      'ear-right': (pulse(t, 10.3, 0.36) - pulse(t, 10.66, 0.22) * 0.3) * 1.1
+        - glance * 2.3 - pulse(t, 24.7, 0.32) * 3.8,
+      'hair-back': -wave(t - 0.28, 12, 0.12) - sigh * 0.8,
+      'hair-front': wave(t - 0.16, 12, 0.22) - head * 0.45,
+      'hair-tips': wave(t - 0.32, 12, 0.35) - head * 0.6,
+      'phone-hand': -scroll * 0.08 + glance * 1.8,
       thumb: scroll * 1.8,
       mouth: 0,
       eyes: 0,
     };
 
     if (this.petBoost > 0) {
-      angles['ear-left'] += Math.sin(this.petBoost * 14) * 2.2;
-      angles['ear-right'] -= Math.sin(this.petBoost * 14) * 2.2;
-      angles.tail += Math.sin(this.petBoost * 18) * 3.8;
-      angles.head += Math.sin(this.petBoost * 8) * 0.9;
+      angles['ear-left'] += Math.sin(this.petBoost * 24) * 4.5;
+      angles['ear-right'] -= Math.sin(this.petBoost * 24) * 4.5;
+      angles.tail += Math.sin(this.petBoost * 18) * 6.5;
+      angles.head += Math.sin(this.petBoost * 12) * 2.4;
     }
     return angles;
   }
@@ -283,12 +313,62 @@ export class KuroCharacter {
     }
 
     if (this.blinkImage && this.blinkHalf) {
-      const elapsed = [2.1, 6.7, 11.4, 17.6, 22.7].map(start => t - start).find(v => v >= 0 && v < 0.17);
+      const blinkStarts = [2.2, 5.6, 8.6, 14.0, 17.8, 22.2, 25.4, 29.5];
+      const elapsed = blinkStarts.map(start => t - start).find(v => v >= 0 && v < 0.17);
       const blink = elapsed !== undefined;
       const eyeFrame = !blink ? 'open' : elapsed < 0.035 || elapsed > 0.115 ? 'half' : 'closed';
       this.blinkImage.style.display = eyeFrame === 'closed' ? '' : 'none';
       this.blinkHalf.style.display = eyeFrame === 'half' ? '' : 'none';
     }
+  }
+
+  private paintSecondary(t: number, state: string) {
+    const active = this.layers.find(img => img.dataset.k === state);
+    if (!active) return;
+
+    let dy = 0;
+    let rot = 0;
+    let sy = 1;
+    let sx = 1;
+
+    if (state === 'testing') {
+      // Focused typing rhythm + focused breathing
+      const typing = Math.sin(t * 16) * 0.8;
+      const breath = Math.sin(t * 3.2) * 1.5;
+      dy = typing + breath;
+      sy = 1 + Math.sin(t * 3.2) * 0.007;
+      rot = Math.sin(t * 1.4) * 0.4;
+    } else if (state === 'verifying') {
+      // Floating inspection hover + magnifying plate examination
+      dy = Math.sin(t * 2.5) * 3.8;
+      rot = Math.sin(t * 1.8) * 0.9;
+      sy = 1 + Math.sin(t * 2.5) * 0.01;
+    } else if (state === 'success') {
+      // Joyful celebratory bounce & cheerful sway
+      dy = -Math.abs(Math.sin(t * 4.2)) * 6.5;
+      rot = Math.sin(t * 3.2) * 1.8;
+      sx = 1 + Math.cos(t * 4.2) * 0.012;
+      sy = 1 - Math.cos(t * 4.2) * 0.012;
+    } else if (state === 'failed') {
+      // Annoyed pout huff & disappointed ear droop
+      const huff = Math.sin(t * 1.6) * 2.0;
+      const droop = pulse(t, 2.5, 0.4) * -2.2;
+      dy = huff + droop;
+      rot = -1.2 + Math.sin(t * 1.2) * 0.5;
+      sy = 1 + Math.sin(t * 1.6) * 0.012;
+    } else if (state === 'frustrated') {
+      // Sorrowful slump & slow confused head-shake
+      dy = Math.sin(t * 1.4) * 2.4 + 2.0;
+      rot = Math.sin(t * 2.4) * 1.1;
+      sy = 1 - Math.sin(t * 1.4) * 0.01;
+    }
+
+    if (this.petBoost > 0) {
+      dy -= Math.sin(this.petBoost * 16) * 6.0;
+      rot += Math.sin(this.petBoost * 20) * 2.5;
+    }
+
+    active.style.transform = `translate3d(0, ${dy.toFixed(2)}px, 0) rotate(${rot.toFixed(2)}deg) scale(${sx.toFixed(4)}, ${sy.toFixed(4)})`;
   }
 
   pet() {
@@ -329,7 +409,10 @@ export class KuroCharacter {
     this.layers.forEach(img => {
       const active = img.dataset.k === name;
       img.classList.toggle('is-active', active && !isPuppet);
+      if (!active) img.style.transform = '';
     });
+
+    this.sync();
   }
 
   private sync() {
@@ -338,10 +421,14 @@ export class KuroCharacter {
     this.lastTime = null;
 
     const running = !this.suspended && !document.hidden && !this.reduced && !this.systemMotion.matches;
-    if (running && this.currentState === 'editing') {
+    if (running) {
       this.frameId = requestAnimationFrame(t => this.tick(t));
     } else {
-      this.paintPuppet();
+      if (this.currentState === 'editing') {
+        this.paintPuppet();
+      } else {
+        this.paintSecondary(0, this.currentState);
+      }
     }
   }
 
@@ -349,20 +436,32 @@ export class KuroCharacter {
     if (this.suspended || document.hidden || this.reduced || this.systemMotion.matches) {
       this.frameId = null;
       this.lastTime = null;
-      this.paintPuppet();
+      if (this.currentState === 'editing') this.paintPuppet();
+      else this.paintSecondary(0, this.currentState);
       return;
     }
 
     const dt = this.lastTime === null ? 0 : Math.min((now - this.lastTime) / 1000, 0.05);
     this.lastTime = now;
-    this.time = (this.time + dt) % 24;
+    this.time = (this.time + dt) % 32;
 
     if (this.petBoost > 0) {
-      this.petBoost = Math.max(0, this.petBoost - dt * 1.5);
+      this.petBoost = Math.max(0, this.petBoost - dt * 1.6);
     }
 
-    this.paintPuppet();
+    if (this.currentState === 'editing') {
+      this.paintPuppet();
+    } else {
+      this.paintSecondary(this.time, this.currentState);
+    }
+
     this.frameId = requestAnimationFrame(t => this.tick(t));
+  }
+
+  setTimeForTest(t: number) {
+    this.time = t;
+    if (this.currentState === 'editing') this.paintPuppet();
+    else this.paintSecondary(t, this.currentState);
   }
 
   destroy() {
