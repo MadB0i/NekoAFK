@@ -787,6 +787,23 @@ fn cancel_verification(host: tauri::State<Host>) {
     }
 }
 #[tauri::command]
+fn get_verification_log(host: tauri::State<Host>) -> Result<String, String> {
+    let log_path = host.dir.join("verification.log");
+    if !log_path.exists() {
+        return Ok("No verification log available yet. Run local verification first.".into());
+    }
+    match fs::read_to_string(&log_path) {
+        Ok(content) => {
+            if content.is_empty() {
+                Ok("Verification command exited without writing to standard output.".into())
+            } else {
+                Ok(content)
+            }
+        }
+        Err(e) => Err(format!("Could not read verification log: {}", e)),
+    }
+}
+#[tauri::command]
 fn quit_app(app: tauri::AppHandle, window: tauri::WebviewWindow) {
     request_quit(app, window.label());
 }
@@ -807,9 +824,21 @@ fn request_quit(app: tauri::AppHandle, origin: &str) {
 
 fn poll(app: tauri::AppHandle) {
     thread::spawn(move || loop {
+        let app_clone = app.clone();
+        let result = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| {
+            poll_cycle(&app_clone);
+        }));
+        if let Err(e) = result {
+            eprintln!("NekoAFK: Spool poller recovered from panic: {:?}", e);
+            thread::sleep(Duration::from_millis(1000));
+        }
+    });
+}
+fn poll_cycle(app: &tauri::AppHandle) {
+    loop {
         thread::sleep(Duration::from_millis(500));
         let host = app.state::<Host>();
-        let fullscreen = foreground_fullscreen(&app);
+        let fullscreen = foreground_fullscreen(app);
         let changed = {
             let mut h = host.inner.lock().unwrap();
             let changed = h.fullscreen != fullscreen;
@@ -817,7 +846,7 @@ fn poll(app: tauri::AppHandle) {
             changed
         };
         if changed {
-            refresh_pin(&app);
+            refresh_pin(app);
         }
         let dir = host.dir.join("bridge/queue");
         let mut auto = vec![];
@@ -860,8 +889,8 @@ fn poll(app: tauri::AppHandle) {
         for key in auto {
             let _ = start_verification(app.clone(), key);
         }
-        publish(&app);
-    });
+        publish(app);
+    }
 }
 fn main() {
     tauri::Builder::default()
@@ -881,6 +910,7 @@ fn main() {
             install_bridge,
             run_verification,
             cancel_verification,
+            get_verification_log,
             open_data_folder,
             quit_app
         ])

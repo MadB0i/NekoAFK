@@ -5,9 +5,10 @@ import { companionView, dockView, settingsView, hudView, sections, mascotSvg, ch
 import { renderProgress, type LiveProgress } from './progress';
 import { Character } from './character';
 import type { Personality } from './director';
+import { sound } from './sound';
 import './style.css';
 
-type Settings = { personality: Personality; character: string; workspace: string; verify_program: string; verify_args: string[]; verify_timeout: number; auto_verify: boolean; scale: number; always_on_top: boolean; transparent: boolean; attached: boolean; reduced_motion: boolean; neko_visible: boolean; dock_visible: boolean; click_through: boolean; dock_pinned: boolean; dock_collapsed: boolean; hud_enabled: boolean; hud_collapsed: boolean };
+type Settings = { personality: Personality; character: string; workspace: string; verify_program: string; verify_args: string[]; verify_timeout: number; auto_verify: boolean; scale: number; always_on_top: boolean; transparent: boolean; attached: boolean; reduced_motion: boolean; neko_visible: boolean; dock_visible: boolean; click_through: boolean; dock_pinned: boolean; dock_collapsed: boolean; hud_enabled: boolean; hud_collapsed: boolean; sfx_enabled?: boolean; theme?: string };
 type Session = { key: string; id: string; adapter: string; workspace: string; state: string; last_activity: number; tasks: [number, number] | null; failures: number; failure_streak: number; revision: number; tests_passed: number; claimed: boolean; verification: string; activity: { at: number; text: string }[]; permissions: string[]; operations: Record<string,string> };
 type Snapshot = { settings: Settings; engine: { sessions: Record<string, Session>; selected: string | null }; selected_state: string; connected: boolean; selected_connected: boolean; notice: string | null; data_dir: string; verification_running: boolean; bridge_installed: boolean; desktop_paused: boolean; progress: LiveProgress };
 const surface = new URLSearchParams(location.search).get('surface') || 'neko';
@@ -93,20 +94,32 @@ function settingsFromForm(): Settings {
   if (!Array.isArray(args) || args.some(a => typeof a !== 'string')) return invalid('arguments','Arguments must be a JSON array of strings.','argsError');
   const timeout = Number(field('timeout').value);
   if (!Number.isInteger(timeout) || timeout < 5 || timeout > 600) return invalid('timeout','Choose a timeout from 5 to 600 seconds.','timeoutError');
-  return { ...current.settings, personality:$<HTMLSelectElement>('personality').value as Personality, character:$<HTMLSelectElement>('character').value, workspace:field('workspaceInput').value.trim(), verify_program:field('program').value.trim(), verify_args:args, verify_timeout:timeout, auto_verify:field('auto').checked, scale:Number(field('scale').value)/100, always_on_top:field('top').checked, transparent:field('transparent').checked, attached:field('attached').checked, reduced_motion:field('motion').checked, click_through:field('clickThrough').checked, dock_pinned:field('dockPinned').checked, hud_enabled:field('hudEnabled').checked, hud_collapsed:field('hudCollapsed').checked };
+  const themeEl = $<HTMLSelectElement>('theme');
+  const sfxEl = field('sfx');
+  return { ...current.settings, personality:$<HTMLSelectElement>('personality').value as Personality, character:$<HTMLSelectElement>('character').value, workspace:field('workspaceInput').value.trim(), verify_program:field('program').value.trim(), verify_args:args, verify_timeout:timeout, auto_verify:field('auto').checked, scale:Number(field('scale').value)/100, always_on_top:field('top').checked, transparent:field('transparent').checked, attached:field('attached').checked, reduced_motion:field('motion').checked, click_through:field('clickThrough').checked, dock_pinned:field('dockPinned').checked, hud_enabled:field('hudEnabled').checked, hud_collapsed:field('hudCollapsed').checked, sfx_enabled:sfxEl?sfxEl.checked:true, theme:themeEl?themeEl.value:'amber' };
 }
 function fill(s: Settings) {
   $<HTMLSelectElement>('personality').value=s.personality||'playful';
   $<HTMLSelectElement>('character').value=s.character||'robot';
   field('workspaceInput').value=s.workspace; field('program').value=s.verify_program; $<HTMLTextAreaElement>('arguments').value=JSON.stringify(s.verify_args);
   field('timeout').value=String(s.verify_timeout); field('scale').value=String(s.scale*100); $('scaleValue').textContent=`${Math.round(s.scale*100)}%`;
+  if($('theme')) $<HTMLSelectElement>('theme').value=s.theme||'amber';
+  if(field('sfx')) field('sfx').checked=s.sfx_enabled!==false;
   for (const [id,val] of Object.entries({ auto:s.auto_verify,top:s.always_on_top,transparent:s.transparent,attached:s.attached,motion:s.reduced_motion,clickThrough:s.click_through,dockPinned:s.dock_pinned,hudEnabled:s.hud_enabled,hudCollapsed:s.hud_collapsed })) field(id).checked=val;
 }
 function pressed(action: string, value: boolean, title?: string) {
   document.querySelectorAll<HTMLButtonElement>(`[data-action="${action}"]`).forEach(b => { b.setAttribute('aria-pressed',String(value)); if(title) { b.title=title; b.setAttribute('aria-label',title); } });
 }
 function update(s: Snapshot) {
-  const first = !current; current=s; app.dataset.ready='true'; app.dataset.state=s.selected_state;
+  const first = !current;
+  if (current && current.selected_state !== s.selected_state) {
+    if (s.selected_state === 'verified') sound.playVictory();
+    else if (s.selected_state === 'failed') sound.playAlert();
+  }
+  current=s;
+  document.documentElement.dataset.theme = s.settings.theme || 'amber';
+  sound.enabled = s.settings.sfx_enabled !== false;
+  app.dataset.ready='true'; app.dataset.state=s.selected_state;
   app.dataset.reducedMotion=String(s.settings.reduced_motion);
   if(surface==='neko') {
     mountCharacter(s.settings.character);
@@ -143,9 +156,10 @@ function update(s: Snapshot) {
     const agentName = selected?.adapter ? (
       selected.adapter === 'antigravity' ? 'Antigravity' :
       selected.adapter === 'claudecode' || selected.adapter === 'claude' ? 'Claude Code' :
+      selected.adapter === 'cursor' ? 'Cursor' :
+      selected.adapter === 'windsurf' ? 'Windsurf' :
       selected.adapter === 'codex' ? 'Codex' :
-      selected.adapter === 'zai' ? 'Zai' :
-      selected.adapter === 'cursor' ? 'Cursor' : 'OpenCode'
+      selected.adapter === 'zai' ? 'Zai' : 'OpenCode'
     ) : 'OpenCode';
     $('connection').textContent=online ? s.selected_state==='inactive'?'No observed activity in the last minute.':`Receiving local ${agentName} events` : selected?'Connection lost. Evidence below is historical.':'Connect an agent in settings to get started.';
     $('connection').hidden=online && s.selected_state!=='inactive' || s.settings.dock_collapsed;
@@ -225,11 +239,30 @@ if(surface==='settings') {
   $('session').addEventListener('change',e=>void call('select_session',{key:(e.target as HTMLSelectElement).value}).catch(showError));
   $('verify').addEventListener('click',()=>void busy($<HTMLButtonElement>('verify'),()=>call('run_verification')));
   $('cancel').addEventListener('click',()=>void busy($<HTMLButtonElement>('cancel'),()=>call('cancel_verification')));
+  $('viewLog')?.addEventListener('click',async()=>{
+    const drawer=$('logDrawer'); if(!drawer) return;
+    const open=drawer.hidden;
+    if(open){
+      drawer.hidden=false; $('logContent').textContent='Loading verification log...';
+      try { const log=await call<string>('get_verification_log'); $('logContent').textContent=log; }
+      catch(e){ $('logContent').textContent=String(e); }
+    } else { drawer.hidden=true; }
+  });
+  $('closeLog')?.addEventListener('click',()=>{ const d=$('logDrawer'); if(d) d.hidden=true; });
 } else if(surface==='neko') {
   const closeTools=()=>{ const tools=$('companionTools'); if(!tools||tools.hidden) return; tools.classList.add('tools-hiding'); setTimeout(()=>{ tools.hidden=true; tools.classList.remove('tools-hiding'); },160); $('menuToggle').setAttribute('aria-expanded','false'); };
   $('menuToggle').addEventListener('click',()=>{ const tools=$('companionTools'),open=tools.hidden; if(open){ tools.hidden=false; tools.classList.remove('tools-hiding'); } else { closeTools(); } $('menuToggle').setAttribute('aria-expanded',String(open)); });
   document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeTools(); $('menuToggle').focus(); } });
   document.addEventListener('pointerdown',e=>{ if(!(e.target as Element).closest('#companionTools, #menuToggle')) closeTools(); });
+  let downPos={x:0,y:0,time:0};
+  $('mascot')?.addEventListener('pointerdown',e=>{ downPos={x:e.clientX,y:e.clientY,time:Date.now()}; });
+  $('mascot')?.addEventListener('pointerup',e=>{
+    const dx=Math.abs(e.clientX-downPos.x),dy=Math.abs(e.clientY-downPos.y),dt=Date.now()-downPos.time;
+    if(dx<6 && dy<6 && dt<400 && !(e.target as Element).closest('button,select,input')){
+      character?.pet();
+      sound.playPet();
+    }
+  });
 }
 const handle=$('handle')||$('mascot');
 handle?.addEventListener('mousedown',async e=>{

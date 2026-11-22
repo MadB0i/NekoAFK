@@ -29,6 +29,15 @@ export class Character {
   this.pupils=Array.from(root.querySelectorAll<SVGElement>('.pupil'));
   this.system.addEventListener('change',()=>this.refresh());
  }
+ pet(){
+  if(this.suspended) return;
+  this.follow.earL += 22;
+  this.follow.earR -= 22;
+  this.follow.charm += 25;
+  if(this.rig==='cat') this.follow.tail += 26;
+  this.sleeping = false;
+  this.refresh();
+ }
  observe(state:string,streak:number,token:string,personality:Personality,reduced:boolean,visible:boolean){
   this.advance(performance.now());
   const signature=`${state}:${streak}:${token}:${personality}`;const interrupted=signature!==this.observed;this.observed=signature;

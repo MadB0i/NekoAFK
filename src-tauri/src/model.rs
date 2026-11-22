@@ -31,6 +31,8 @@ pub struct Settings {
     pub dock_collapsed: bool,
     pub hud_enabled: bool,
     pub hud_collapsed: bool,
+    pub sfx_enabled: bool,
+    pub theme: String,
 }
 impl Default for Settings {
     fn default() -> Self {
@@ -54,6 +56,8 @@ impl Default for Settings {
             dock_collapsed: false,
             hud_enabled: true,
             hud_collapsed: false,
+            sfx_enabled: true,
+            theme: "amber".into(),
         }
     }
 }
@@ -71,6 +75,9 @@ impl Settings {
         }
         if !["cat", "robot"].contains(&self.character.as_str()) {
             return Err("Choose the Nova robot or Neko cat companion".into());
+        }
+        if !self.theme.is_empty() && !["amber", "cyan", "emerald", "sakura"].contains(&self.theme.as_str()) {
+            return Err("Choose Amber, Cyan, Emerald or Sakura theme".into());
         }
         if !self.scale.is_finite() || !(0.5..=2.).contains(&self.scale) {
             return Err("Scale must be between 50 and 200 percent".into());
