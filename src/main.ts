@@ -233,6 +233,11 @@ function update(s: Snapshot) {
     const collapse=document.querySelector<HTMLButtonElement>('[data-action="toggle-collapse"]')!;
     collapse.title=s.settings.dock_collapsed?'Expand dock':'Collapse dock'; collapse.setAttribute('aria-label',collapse.title); collapse.setAttribute('aria-expanded',String(!s.settings.dock_collapsed));
     const arrow=collapse.querySelector('svg')!; arrow.style.transform=s.settings.dock_collapsed?'rotate(180deg)':'';
+    document.querySelectorAll<HTMLButtonElement>('.dock-char-pill').forEach(btn => {
+      const isThis = btn.dataset.character === s.settings.character;
+      btn.classList.toggle('selected', isThis);
+      btn.setAttribute('aria-checked', String(isThis));
+    });
   } else {
     if(first || !dirty && !document.querySelector('input:focus,textarea:focus,select:focus')) fill(s.settings);
     syncCharacterUI(s.settings.character || 'robot');
@@ -275,7 +280,40 @@ if(surface==='settings') {
   $('discard').addEventListener('click',()=>{ if(current) fill(current.settings); dirty=false; $<HTMLButtonElement>('discard').disabled=true; $('saved').textContent='Changes discarded'; clearError(); });
   $('install').addEventListener('click',()=>void busy($<HTMLButtonElement>('install'),async()=>{ await save(); await call('install_bridge'); $('installStatus').textContent='Bridge installed. Restart OpenCode in this workspace.'; update(await call<Snapshot>('get_snapshot')); }));
   $('openData').addEventListener('click',()=>void busy($<HTMLButtonElement>('openData'),()=>call('open_data_folder')));
+  $('browseWorkspace')?.addEventListener('click', async () => {
+    try {
+      const chosen = await call<string | null>('pick_workspace_folder');
+      if (chosen) {
+        $<HTMLInputElement>('workspaceInput').value = chosen;
+        await save();
+      }
+    } catch (e) {
+      showError(e);
+    }
+  });
 } else if(surface==='telemetry') {
+  document.querySelectorAll<HTMLButtonElement>('.dock-char-pill').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const char = btn.dataset.character;
+      if (char && current) {
+        current.settings.character = char;
+        await call('save_settings', { settings: current.settings });
+        update(await call<Snapshot>('get_snapshot'));
+      }
+    });
+  });
+  $('dockBrowse')?.addEventListener('click', async () => {
+    try {
+      const chosen = await call<string | null>('pick_workspace_folder');
+      if (chosen && current) {
+        current.settings.workspace = chosen;
+        await call('save_settings', { settings: current.settings });
+        update(await call<Snapshot>('get_snapshot'));
+      }
+    } catch (e) {
+      showError(e);
+    }
+  });
   $('latestActivity').addEventListener('click',()=>{ $('activity').scrollTop=0;$('latestActivity').hidden=true;$('activity').focus(); });
   $('activity').addEventListener('scroll',()=>{if($('activity').scrollTop<=8)$('latestActivity').hidden=true;},{passive:true});
   $('session').addEventListener('change',e=>void call('select_session',{key:(e.target as HTMLSelectElement).value}).catch(showError));

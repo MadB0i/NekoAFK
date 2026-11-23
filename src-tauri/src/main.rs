@@ -697,6 +697,37 @@ fn open_data_folder(host: tauri::State<Host>) -> Result<(), String> {
         .map_err(|_| "Could not open the local data folder".to_string())?;
     Ok(())
 }
+#[tauri::command]
+fn pick_workspace_folder() -> Result<Option<String>, String> {
+    #[cfg(windows)]
+    {
+        let script = r#"
+Add-Type -AssemblyName System.Windows.Forms
+$dialog = New-Object System.Windows.Forms.FolderBrowserDialog
+$dialog.AutoUpgradeEnabled = $true
+$dialog.Description = "Select project workspace folder for NekoAFK"
+if ($dialog.ShowDialog() -eq [System.Windows.Forms.DialogResult]::OK) {
+    [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+    [Console]::WriteLine($dialog.SelectedPath)
+}
+"#;
+        let mut command = std::process::Command::new("powershell.exe");
+        verification::hidden(&mut command);
+        command.args(["-NoProfile", "-NonInteractive", "-Command", script]);
+        let output = command.output().map_err(|e| e.to_string())?;
+        if output.status.success() {
+            let path = String::from_utf8_lossy(&output.stdout).trim().to_string();
+            if !path.is_empty() && std::path::Path::new(&path).is_dir() {
+                return Ok(Some(path));
+            }
+        }
+        Ok(None)
+    }
+    #[cfg(not(windows))]
+    {
+        Ok(None)
+    }
+}
 fn finish_running_check(
     h: &mut Inner,
     token: &str,
@@ -915,6 +946,7 @@ fn main() {
             cancel_verification,
             get_verification_log,
             open_data_folder,
+            pick_workspace_folder,
             quit_app
         ])
         .setup(|app| {

@@ -167,8 +167,8 @@ small { font-weight: 400; }
 .settings-header { padding: var(--s6) var(--s8) var(--s5); flex-shrink: 0; display: flex; justify-content: space-between; align-items: center; }
 .eyebrow { color: var(--accent); font-size: var(--font-small); font-weight: 600; margin-bottom: var(--s2); }
 .settings-header .caption { margin-top: var(--s2); }
-.settings-content main { padding: 0 var(--s8); overflow-y: auto; flex: 1; min-height: 0; scrollbar-width: thin; scrollbar-color: #b7b9af transparent; scroll-behavior: smooth; }
-.settings-content #preferences { display: contents; }
+.settings-content main { padding: 0 var(--s8); overflow-y: auto; overflow-x: hidden; flex: 1; min-height: 0; scrollbar-width: thin; scrollbar-color: #b7b9af transparent; scroll-behavior: smooth; }
+.settings-content #preferences { display: flex; flex-direction: column; flex: 1; min-height: 0; }
 .settings-content .panel { padding-bottom: var(--s6); }
 .settings-content .panel>p { margin-bottom: var(--s5); }
 .form-group { display: grid; gap: var(--s2); padding: var(--s4) 0; border-top: 1px solid var(--line); }
@@ -209,15 +209,28 @@ details.form-group summary { padding-block: var(--s1); }
 .dock header .title { display: flex; align-items: center; gap: var(--s2); font-weight: 600; font-size: var(--font-small); }
 .dock header .title svg { width: 14px; color: var(--muted); }
 .dock nav { display: flex; gap: 0; }
-.dock main { min-height: 0; flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.dock main { min-height: 0; flex: 1; display: flex; flex-direction: column; overflow-y: auto; overflow-x: hidden; scrollbar-width: thin; scrollbar-color: #b7b9af transparent; scroll-behavior: smooth; }
+.dock-companion-bar { display: flex; align-items: center; justify-content: space-between; gap: var(--s2); padding: var(--s2) var(--s5); background: var(--surface); border-bottom: 1px solid var(--line); }
+.dock-companion-label { font-size: 11px; font-weight: 600; color: var(--muted); display: inline-flex; align-items: center; gap: var(--s1); }
+.dock-companion-label svg { width: 13px; height: 13px; }
+.dock-companion-pills { display: inline-flex; gap: var(--s1); }
+.dock-char-pill { min-height: 24px; height: 24px; padding: 0 var(--s2); font-size: 11px; font-weight: 600; border-radius: 999px; border: 1px solid var(--line); background: var(--base); color: var(--ink); cursor: pointer; transition: all var(--fast); }
+.dock-char-pill:hover { border-color: var(--accent); background: var(--surface); }
+.dock-char-pill.selected { background: var(--accent); color: #fff; border-color: var(--accent); box-shadow: 0 1px 4px rgba(146, 87, 7, 0.3); }
 .dock-summary { padding: var(--s4) var(--s5) var(--s3); }
 .dock h1 { font-size: var(--font-status); margin: var(--s2) 0; transition: color var(--motion); }
 .dock .agent-line { font-size: var(--font-small); font-weight: 600; display: flex; align-items: center; justify-content: space-between; gap: var(--s2); }
 .dock .agent-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 #compactContext { display: none; font-weight: 400; color: var(--muted); }
-.dock .workspace-line { display: flex; align-items: center; gap: var(--s2); margin-top: var(--s2); }
+.dock .workspace-line { display: flex; align-items: center; justify-content: space-between; gap: var(--s2); margin-top: var(--s2); }
 .dock .workspace-line svg { width: 14px; flex-shrink: 0; color: var(--muted); }
-.dock #workspace { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: var(--muted); }
+.dock #workspace { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: var(--muted); font-size: 11px; }
+.dock-browse-btn { font-size: 11px; min-height: 22px; height: 22px; padding: 0 var(--s2); border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); color: var(--accent); font-weight: 600; flex-shrink: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; }
+.dock-browse-btn svg { width: 11px; height: 11px; }
+.dock-browse-btn:hover { background: var(--accent-soft); border-color: var(--accent); }
+.workspace-input-row { display: flex; gap: var(--s2); align-items: center; }
+.workspace-input-row input { flex: 1; min-width: 0; }
+.browse-btn { flex-shrink: 0; min-height: 38px; padding: 0 var(--s3); font-weight: 600; display: inline-flex; align-items: center; gap: var(--s2); }
 .dock select { font-size: var(--font-small); background: transparent; min-height: 32px; margin-top: var(--s2); padding: var(--s1) var(--s2); }
 .evidence-counts { display: grid; grid-template-columns: 1fr 1fr; margin: 0 var(--s5); padding-block: var(--s3); border-block: 1px solid var(--line); gap: var(--s4); }
 .evidence-counts div { display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: baseline; gap: var(--s2); }
