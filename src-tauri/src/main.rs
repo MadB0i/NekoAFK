@@ -898,7 +898,10 @@ fn main() {
             if let Some(d) = app.try_state::<Arc<diagnostics::Diagnostics>>() {
                 d.record("second_instance", serde_json::json!({}));
             }
-            let _ = window_action(app.clone(), "settings".into());
+            let handle = app.clone();
+            let _ = app.run_on_main_thread(move || {
+                let _ = window_action(handle, "settings".into());
+            });
         }))
         .invoke_handler(tauri::generate_handler![
             get_snapshot,
@@ -927,7 +930,11 @@ fn main() {
                 // No payload, file path or stack: these may contain private workspace data.
                 panic_diagnostics.record(
                     "rust_panic",
-                    serde_json::json!({"line":info.location().map(|l|l.line())}),
+                    serde_json::json!({
+                        "line": info.location().map(|l| l.line()),
+                        "file": info.location().map(|l| l.file()),
+                        "msg": info.to_string(),
+                    }),
                 );
                 previous_hook(info);
             }));
@@ -1066,9 +1073,7 @@ fn main() {
                 })
                 .build(app)?;
             apply(app.handle(), !config.placements.contains_key("neko"))?;
-            if app.state::<Host>().inner.lock().unwrap().notice.is_some() {
-                let _ = window_action(app.handle().clone(), "settings".into());
-            }
+            let _ = window_action(app.handle().clone(), "settings".into());
             poll(app.handle().clone());
             Ok(())
         })
