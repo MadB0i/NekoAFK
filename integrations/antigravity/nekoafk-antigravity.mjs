@@ -6,6 +6,50 @@
 import { NekoBridge, classifyTool, TOOL_LABELS } from '../shared/bridge-core.mjs';
 import path from 'node:path';
 import fs from 'node:fs';
+import os from 'node:os';
+
+function resolveWorkspace(cliArg) {
+  if (cliArg) return path.resolve(cliArg);
+  try {
+    const settingsPath = path.join(
+      process.env.LOCALAPPDATA || path.join(os.homedir(), 'AppData', 'Local'),
+      'com.nekoafk.desktop',
+      'settings.json'
+    );
+    if (fs.existsSync(settingsPath)) {
+      const data = JSON.parse(fs.readFileSync(settingsPath, 'utf8'));
+      if (data?.settings?.workspace && fs.existsSync(data.settings.workspace)) {
+        return path.resolve(data.settings.workspace);
+      }
+    }
+  } catch {}
+  return process.cwd();
+}
+
+function findLatestTranscript() {
+  try {
+    const brainDir = path.join(os.homedir(), '.gemini', 'antigravity', 'brain');
+    if (!fs.existsSync(brainDir)) return null;
+    const entries = fs.readdirSync(brainDir, { withFileTypes: true });
+    let latestPath = null;
+    let latestMtime = 0;
+    for (const entry of entries) {
+      if (entry.isDirectory()) {
+        const candidate = path.join(brainDir, entry.name, '.system_generated', 'logs', 'transcript.jsonl');
+        if (fs.existsSync(candidate)) {
+          const mtime = fs.statSync(candidate).mtimeMs;
+          if (mtime > latestMtime) {
+            latestMtime = mtime;
+            latestPath = candidate;
+          }
+        }
+      }
+    }
+    return latestPath;
+  } catch {
+    return null;
+  }
+}
 
 export class AntigravityBridge extends NekoBridge {
   constructor({ workspace = process.cwd(), session = 'antigravity-main' } = {}) {
@@ -71,21 +115,60 @@ export class AntigravityBridge extends NekoBridge {
 
 // Standalone CLI execution
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(import.meta.filename)) {
-  const workspace = process.argv[2] || process.cwd();
+  const workspace = resolveWorkspace(process.argv[2]);
   console.log(`[NekoAFK] Antigravity Bridge active for: ${workspace}`);
   const bridge = new AntigravityBridge({ workspace });
 
-  // Optional: watch transcript.jsonl if specified
-  const transcriptPath = process.argv[3];
+  // Auto-detect or watch specified transcript.jsonl
+  const transcriptPath = process.argv[3] || findLatestTranscript();
   if (transcriptPath && fs.existsSync(transcriptPath)) {
     console.log(`[NekoAFK] Watching Antigravity transcript: ${transcriptPath}`);
-    let lastSize = 0;
-    fs.watchFile(transcriptPath, { interval: 500 }, () => {
+    let lastSize = fs.statSync(transcriptPath).size;
+    let idleTimer = null;
+    const resetIdleTimer = () => {
+      if (idleTimer) clearTimeout(idleTimer);
+      idleTimer = setTimeout(() => {
+        bridge.reportIdle();
+      }, 15000);
+      idleTimer.unref?.();
+    };
+
+    fs.watchFile(transcriptPath, { interval: 300 }, () => {
       try {
         const stats = fs.statSync(transcriptPath);
         if (stats.size > lastSize) {
-          bridge.reportThinking();
+          const buffer = Buffer.alloc(stats.size - lastSize);
+          const fd = fs.openSync(transcriptPath, 'r');
+          fs.readSync(fd, buffer, 0, buffer.length, lastSize);
+          fs.closeSync(fd);
           lastSize = stats.size;
+
+          const text = buffer.toString('utf8');
+          const lines = text.split('\n').filter(Boolean);
+          for (const line of lines) {
+            try {
+              const data = JSON.parse(line);
+              if (data.type === 'PLANNER_RESPONSE') {
+                if (Array.isArray(data.tool_calls) && data.tool_calls.length > 0) {
+                  for (const call of data.tool_calls) {
+                    bridge.reportToolStart(call.name, call.args || {});
+                  }
+                } else {
+                  bridge.reportThinking();
+                }
+                resetIdleTimer();
+              } else if (data.type === 'GENERIC') {
+                const content = String(data.content || '');
+                const exitMatch = content.match(/Command exited with code (\d+)/);
+                const exitCode = exitMatch ? parseInt(exitMatch[1], 10) : 0;
+                bridge.reportToolEnd('tool', 'step', exitCode);
+                resetIdleTimer();
+              } else if (data.type === 'USER_INPUT') {
+                bridge.reportWriting();
+                resetIdleTimer();
+              }
+            } catch {}
+          }
         }
       } catch {}
     });
