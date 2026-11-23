@@ -385,6 +385,96 @@ details.form-group summary { padding-block: var(--s1); }
 .preview-strip img { background: transparent; width: 128px; height: 128px; }
 .preview-strip img.selected { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: var(--radius); }
 
+/* ── Interactive Character Cards ────────────────────────────────────────── */
+.character-header-block { margin-bottom: var(--s4); }
+.character-header-block h2 { font-size: 18px; margin: 2px 0 4px; }
+.character-picker-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s3);
+  margin-bottom: var(--s5);
+}
+.char-picker-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--s4) var(--s2);
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  outline: none;
+  font-family: inherit;
+  color: inherit;
+}
+.char-picker-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+.char-picker-card.selected {
+  border-color: var(--accent);
+  background: var(--base);
+  box-shadow: 0 0 0 1px var(--accent), 0 4px 16px rgba(190, 149, 79, 0.2);
+}
+.char-avatar-box {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--s2);
+}
+.char-avatar-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+.char-picker-card:hover .char-avatar-box img {
+  transform: scale(1.06);
+}
+.char-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: var(--s2);
+}
+.char-title {
+  font-size: var(--font-medium);
+  font-weight: 700;
+  color: var(--ink);
+}
+.char-desc {
+  font-size: var(--font-small);
+  color: var(--muted);
+}
+.char-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--line);
+  color: var(--muted);
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.char-picker-card.selected .char-badge {
+  opacity: 1;
+  background: var(--accent);
+  color: #fff;
+}
+.char-badge svg {
+  width: 12px;
+  height: 12px;
+}
+
 /* ── Kuro 2D Anime Stage ─────────────────────────────────────────────────── */
 .kuro-stage {
   position: absolute; inset: 0; isolation: isolate; user-select: none; touch-action: none;

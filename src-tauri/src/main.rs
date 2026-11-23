@@ -1073,7 +1073,9 @@ fn main() {
                 })
                 .build(app)?;
             apply(app.handle(), !config.placements.contains_key("neko"))?;
-            let _ = window_action(app.handle().clone(), "settings".into());
+            if app.state::<Host>().inner.lock().unwrap().notice.is_some() {
+                let _ = window_action(app.handle().clone(), "settings".into());
+            }
             poll(app.handle().clone());
             Ok(())
         })

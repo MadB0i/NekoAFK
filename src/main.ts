@@ -109,9 +109,35 @@ function settingsFromForm(): Settings {
   const sfxEl = field('sfx');
   return { ...current.settings, personality:$<HTMLSelectElement>('personality').value as Personality, character:$<HTMLSelectElement>('character').value, workspace:field('workspaceInput').value.trim(), verify_program:field('program').value.trim(), verify_args:args, verify_timeout:timeout, auto_verify:field('auto').checked, scale:Number(field('scale').value)/100, always_on_top:field('top').checked, transparent:field('transparent').checked, attached:field('attached').checked, reduced_motion:field('motion').checked, click_through:field('clickThrough').checked, dock_pinned:field('dockPinned').checked, hud_enabled:field('hudEnabled').checked, hud_collapsed:field('hudCollapsed').checked, sfx_enabled:sfxEl?sfxEl.checked:true, theme:themeEl?themeEl.value:'amber' };
 }
+function syncCharacterUI(choice: string) {
+  const kind = choice === 'cat' ? 'cat' : choice === 'kuro' ? 'kuro' : 'robot';
+  const select = $<HTMLSelectElement>('character');
+  if (select && select.value !== kind) select.value = kind;
+  document.querySelectorAll<HTMLButtonElement>('.char-picker-card').forEach(card => {
+    const isThis = card.dataset.character === kind;
+    card.classList.toggle('selected', isThis);
+    card.setAttribute('aria-checked', String(isThis));
+  });
+  if ($('previewRobot')) $('previewRobot').classList.toggle('selected', kind === 'robot');
+  if ($('previewCat')) $('previewCat').classList.toggle('selected', kind === 'cat');
+  if ($('previewKuro')) $('previewKuro').classList.toggle('selected', kind === 'kuro');
+  const url = characterUrls[kind];
+  for (const id of ['brandImg', 'appearanceImg'] as const) {
+    const img = $<HTMLImageElement>(id);
+    if (img && img.getAttribute('src') !== url) img.src = url;
+  }
+  const appImg = $<HTMLImageElement>('appearanceImg');
+  if (appImg) {
+    appImg.alt = kind === 'cat' ? 'Neko, the midnight cat' : kind === 'kuro' ? 'Kuro, anime catgirl companion' : 'Nova, the floating robot companion';
+  }
+}
+async function selectCharacter(choice: string) {
+  syncCharacterUI(choice);
+  await save();
+}
 function fill(s: Settings) {
   $<HTMLSelectElement>('personality').value=s.personality||'playful';
-  $<HTMLSelectElement>('character').value=s.character||'robot';
+  syncCharacterUI(s.character || 'robot');
   field('workspaceInput').value=s.workspace; field('program').value=s.verify_program; $<HTMLTextAreaElement>('arguments').value=JSON.stringify(s.verify_args);
   field('timeout').value=String(s.verify_timeout); field('scale').value=String(s.scale*100); $('scaleValue').textContent=`${Math.round(s.scale*100)}%`;
   if($('theme')) $<HTMLSelectElement>('theme').value=s.theme||'amber';
@@ -209,13 +235,7 @@ function update(s: Snapshot) {
     const arrow=collapse.querySelector('svg')!; arrow.style.transform=s.settings.dock_collapsed?'rotate(180deg)':'';
   } else {
     if(first || !dirty && !document.querySelector('input:focus,textarea:focus,select:focus')) fill(s.settings);
-    const kind=s.settings.character==='cat'?'cat':s.settings.character==='kuro'?'kuro':'robot',url=characterUrls[kind];
-    for (const id of ['brandImg','appearanceImg'] as const) { const img=$<HTMLImageElement>(id); if(img&&img.getAttribute('src')!==url)img.src=url; }
-    const appImg=$<HTMLImageElement>('appearanceImg');
-    if(appImg) appImg.alt=kind==='cat'?'Neko, the midnight cat':kind==='kuro'?'Kuro, anime catgirl companion':'Nova, the floating robot companion';
-    if($('previewRobot')) $('previewRobot').classList.toggle('selected',kind==='robot');
-    if($('previewCat')) $('previewCat').classList.toggle('selected',kind==='cat');
-    if($('previewKuro')) $('previewKuro').classList.toggle('selected',kind==='kuro');
+    syncCharacterUI(s.settings.character || 'robot');
     $('connection').textContent=s.connected?'Connected':'Offline';
     $('notice').hidden=!s.notice; $('notice').textContent=s.notice||'';
     $('bridgeStatus').textContent=s.connected?`${Object.keys(s.engine.sessions).length} observed sessions` : s.bridge_installed?'Bridge installed. Restart OpenCode in the saved workspace to connect.':'Waiting for a local bridge connection.';
@@ -239,6 +259,15 @@ $('dismissError').addEventListener('click',clearError);
 if(surface==='settings') {
   section(location.hash.slice(1)||'connections');
   document.querySelectorAll<HTMLButtonElement>('[data-section]').forEach(b=>b.addEventListener('click',()=>section(b.dataset.section!,true)));
+  document.querySelectorAll<HTMLButtonElement>('.char-picker-card').forEach(b => {
+    b.addEventListener('click', () => {
+      const char = b.dataset.character;
+      if (char) void selectCharacter(char);
+    });
+  });
+  $<HTMLSelectElement>('character')?.addEventListener('change', e => {
+    void selectCharacter((e.target as HTMLSelectElement).value);
+  });
   window.addEventListener('hashchange',()=>section(location.hash.slice(1)));
   $('preferences').addEventListener('input',()=>{ dirty=true; $('saved').textContent='Unsaved changes'; $<HTMLButtonElement>('discard').disabled=false; });
   $('scale').addEventListener('input',()=>{ $('scaleValue').textContent=`${field('scale').value}%`; });
